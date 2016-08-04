@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>项目统计</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1,user-scalable=no">
+	<script type="text/javascript" src="{work=$Think.const.WORK_LOG}/js/jquery-1.11.1.min.js"></script>
+	<link rel="stylesheet" href="{work=$Think.const.WORK_LOG}/css/index.css?time={work=:time()}">
+</head>
+<body id="statistical-body">
+	<header>
+		<a href="javascript:history.go(-1);" class="back iconfont "></a>
+		<span class="title">项目统计</span>
+		<a href="{work=:U("Index/index")}" class="home iconfont "></a>
+	</header>
+	<div class="statistical-wrap">
+		<volist id="list" name="list">
+			<div class="skillbar clearfix " data-percent="{work=$list.proportion}">
+				 <div class="skillbar-title" style="background: {work=$list.color1};"><span>{work=$list.name}</span></div>
+				 <div class="skillbar-bar" style="background: {work=$list.color2};"></div>
+				 <div class="skill-bar-percent">{work=$list.nums}</div>
+			</div>
+		</volist>
+	</div>
+	<script>
+		jQuery(document).ready(function(){
+			jQuery('.skillbar').each(function(){
+				jQuery(this).find('.skillbar-bar').animate({
+					width:jQuery(this).attr('data-percent')
+				},6000);
+			});
+		});
+	</script>
+</body>
+</html>

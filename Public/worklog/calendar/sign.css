@@ -1,0 +1,33 @@
+.singer_r_img{display:block;width:114px;height:52px;line-height:45px;vertical-align:middle;*margin-bottom:-10px;text-decoration:none;}
+.singer_r_img:hover{background-position:right -53px;text-decoration:none;}
+.singer_r_img span{margin-left:14px;font-size:16px;font-family:'Hiragino Sans GB','Microsoft YaHei',sans-serif !important;font-weight:700;color:#165379;}
+.singer_r_img.current{
+	text-decoration:none;
+	border:0;
+}
+.sign table{border-collapse: collapse;border-spacing: 0;width:100%;}
+.sign th,.sign td {width: 30px;height: 80px;text-align: center;line-height: 40px;border:1px solid #e3e3e3;}
+.sign th {font-size: 2.2rem;}
+.sign td {color: #404040;vertical-align: middle; font-size: 2.1rem;}   
+.sign .on {background: url(signin.png) no-repeat center 50%; color: rgba(0,0,0,0.3);}
+.calendar_month_next {float: right;background:url('arrow-r.png') no-repeat center 50% #fff; }
+.calendar_month_span {
+	display: inline-block;
+	font-size: 2.2rem;
+	color: #656565;
+	letter-spacing: 2px;
+	font-weight: bold;
+}
+.calendar_month_prev {float: left;background:url('arrow-l.png') no-repeat center 50% #fff;}
+.calendar_month_next,.calendar_month_prev{height: 50px; width: 50px; margin: 8px;-webkit-background-size: 60%;
+background-size: 60%; border-radius: 50%; line-height: 60px;cursor: pointer; font-size: 2.2rem; color:#fff; text-indent: -99999px;}
+.sign_succ_calendar_title {
+	display: flex;
+	justify-content:space-between;
+	width:100%; 
+	background-color: #ed746c; 
+	line-height: 60px; 
+	border-radius:8px 8px 0 0; 
+}
+.sign_main {width: 99%;border-top:1px solid #e3e3e3;font-family: "Microsoft YaHei",SimHei; margin: 0 auto;}
+.sign_main #sign_cal{background-color: #f3f5e7; border-radius: 0 0 8px 8px;}

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+
+    <title>AJAX and JSON Data Loading via Data Renderers</title>
+
+    <link class="include" rel="stylesheet" type="text/css" href="{work=$Think.const.WORK_LOG}/data_card/js/jquery.jqplot.min.css" />
+    <script class="include" type="text/javascript" src="{work=$Think.const.WORK_LOG}/data_card/js/jquery-1.11.1.min.js"></script>
+   
+</head>
+<body>
+    <div class="colmask leftmenu">
+      <div class="colleft">
+        <div class="col1" id="example-content">
+
+  
+<!-- Example scripts go here -->
+
+<div id="chart2" style="height:300px; width:500px;"></div>
+
+<pre class="code prettyprint brush: js"></pre>
+
+  
+<script class="code" type="text/javascript">
+$(document).ready(function(){
+  // Our ajax data renderer which here retrieves a text file.
+  // it could contact any source and pull data, however.
+  // The options argument isn't used in this renderer.
+  var ajaxDataRenderer = function(url, plot, options) {
+    var ret = null;
+    $.ajax({
+      // have to use synchronous here, else the function 
+      // will return before the data is fetched
+      async: false,
+      url: url,
+      dataType:"json",
+      success: function(data) {
+        ret = data;
+      }
+    });
+    return [[[1459267200,2], [1459353600,3]]];
+  };
+  var sineRenderer = function() {
+    var data = [[]];
+    for (var i=0; i<13; i+=0.5) {
+      data[0].push([i, Math.sin(i)]);
+    }
+    console.log(data);
+    return data;
+  };
+
+  // The url for our json data
+  var jsonurl = "./jsondata.txt";
+
+  // passing in the url string as the jqPlot data argument is a handy
+  // shortcut for our renderer.  You could also have used the
+  // "dataRendererOptions" option to pass in the url.
+  var plot2 = $.jqplot('chart2', '',{
+    title: "AJAX JSON Data Renderer",
+    dataRenderer: ajaxDataRenderer,
+    axes: {
+        xaxis: {
+            tickOptions: {
+                formatString: "%b %e",
+            },
+        },
+    },
+    highlighter: {
+        show: true, 
+        showLabel: true, 
+        tooltipAxes: 'y',
+        sizeAdjust: 7.5 , 
+        tooltipLocation : 'ne',
+        // formatString: "$%'d"
+    },
+  });
+});
+</script>
+
+
+<!-- End example scripts -->
+
+<!-- Don't touch this! -->
+
+
+    <script class="include" type="text/javascript" src="{work=$Think.const.WORK_LOG}/data_card/js/jquery.jqplot.min.js"></script>
+
+<script class="include" type="text/javascript" src="{work=$Think.const.WORK_LOG}/data_card/js/jqplot.highlighter.min.js"></script>
+
+
+<!-- End additional plugins -->
+
+        </div>
+               </div>
+    </div>
+
+</body>
+
+
+</html>

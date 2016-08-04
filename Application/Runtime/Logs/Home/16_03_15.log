@@ -1,0 +1,698 @@
+[ 2016-03-15T09:37:30+08:00 ] 127.0.0.1 /work_log/index.php/Home/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `w_logs` [ RunTime:0.0120s ]
+SQL: SELECT * FROM `w_logs` WHERE `delete` = 0 ORDER BY finished,create_time desc  [ RunTime:0.0020s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `w_logs` WHERE `finished` = 1 AND `delete` = 0 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `w_logs` WHERE `finished` = 0 AND `delete` = 0 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `w_project_class` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `w_project_class` WHERE `delete` = 0  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-03-15T09:37:31+08:00 ] 127.0.0.1 /work_log/index.php/Home/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `w_logs` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `w_logs` WHERE `delete` = 0 ORDER BY finished,create_time desc  [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `w_logs` WHERE `finished` = 1 AND `delete` = 0 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `w_logs` WHERE `finished` = 0 AND `delete` = 0 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `w_project_class` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `w_project_class` WHERE `delete` = 0  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.007000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.007000s ]
+
+[ 2016-03-15T09:37:36+08:00 ] 127.0.0.1 /work_log/index.php/Home/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `w_logs` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `w_logs` WHERE `delete` = 0 ORDER BY finished,create_time desc  [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `w_logs` WHERE `finished` = 1 AND `delete` = 0 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `w_logs` WHERE `finished` = 0 AND `delete` = 0 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `w_project_class` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `w_project_class` WHERE `delete` = 0  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-03-15T09:38:08+08:00 ] 127.0.0.1 /work_log/index.php/Home/Index/addlogs?content=%E5%B0%81%E8%A3%85WEBUI%E7%9A%84%E6%A0%B7%E5%BC%8F%EF%BC%88%E6%95%B4%E6%88%90JS%EF%BC%89&difficulty=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `w_logs` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `w_logs` WHERE `content` LIKE '%封装%' AND `delete` = 0 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `w_project_class` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `w_project_class` WHERE `delete` = 0 AND `name` LIKE '%封装%' LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: validate D:\WWW\work_log\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\WWW\work_log\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: INSERT INTO `w_project_class` (`name`,`time`,`year`,`month`,`day`) VALUES ('封装','1458005888','2016','3','15') [ RunTime:0.0010s ]
+SQL: UPDATE `w_logs` SET `pid`='15' WHERE `content` LIKE '%封装%' AND `delete` = 0 AND `pid` = 0 [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: validate D:\WWW\work_log\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\WWW\work_log\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: INSERT INTO `w_logs` (`content`,`difficulty`,`create_time`,`year`,`month`,`day`) VALUES ('封装WEBUI的样式（整成JS）','1','1458005888','2016','3','15') [ RunTime:0.0010s ]
+SQL: SELECT * FROM `w_logs` WHERE ( id=195 )  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: str D:\WWW\work_log\Application\Home\Controller\IndexController.class.php 第 158 行.
+SQL: SELECT * FROM `w_logs` WHERE ( id=195 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `w_project_class` WHERE `name` LIKE '%封装%' AND `delete` = 0 LIMIT 1   [ RunTime:0.0010s ]
+SQL: UPDATE `w_logs` SET `pid`='15' WHERE ( id=195 ) [ RunTime:0.0000s ]
+SQL: UPDATE `w_project_class` SET `nums`=nums+1 WHERE ( id=15 ) [ RunTime:0.0000s ]
+
+[ 2016-03-15T10:06:56+08:00 ] 127.0.0.1 /work_log/index.php/Home/Index/chooseDay?data%5Bday%5D=15
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `w_logs` [ RunTime:0.0030s ]
+NOTIC: [8] Undefined index: year D:\WWW\work_log\Application\Home\Controller\IndexController.class.php 第 225 行.
+NOTIC: [8] Undefined index: month D:\WWW\work_log\Application\Home\Controller\IndexController.class.php 第 226 行.
+SQL: SELECT * FROM `w_logs` WHERE `year` = null AND `month` = null AND `day` = 15 AND `delete` = 0 ORDER BY finished,create_time desc  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: str D:\WWW\work_log\Application\Home\Controller\IndexController.class.php 第 175 行.
+
+[ 2016-03-15T10:06:59+08:00 ] 127.0.0.1 /work_log/index.php/Home/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `w_logs` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `w_logs` WHERE `delete` = 0 ORDER BY finished,create_time desc  [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `w_logs` WHERE `finished` = 1 AND `delete` = 0 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `w_logs` WHERE `finished` = 0 AND `delete` = 0 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `w_project_class` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `w_project_class` WHERE `delete` = 0  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-03-15T10:46:13+08:00 ] 127.0.0.1 /work_log/index.php/Home/Index/addlogs?content=%E5%B0%86%E4%BA%BA%E4%BA%BA%E4%B8%AD%E6%8A%BD%E5%A5%96%EF%BC%8C%E7%AD%BE%E5%88%B0%EF%BC%8C%E4%B8%8A%E4%BC%A0%E5%BA%97%E9%93%BA%E5%9B%BE%E7%89%87%E6%8F%90%E5%8F%96%E5%87%BA%E6%9D%A5&difficulty=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `w_logs` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `w_logs` WHERE `content` LIKE '%将人%' AND `delete` = 0 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `w_logs` WHERE `content` LIKE '%将人人%' AND `delete` = 0 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `w_logs` WHERE `content` LIKE '%将人人中%' AND `delete` = 0 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `w_logs` WHERE `content` LIKE '%将人人中抽%' AND `delete` = 0 LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: validate D:\WWW\work_log\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\WWW\work_log\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: INSERT INTO `w_logs` (`content`,`difficulty`,`create_time`,`year`,`month`,`day`) VALUES ('将人人中抽奖，签到，上传店铺图片提取出来','1','1458009973','2016','3','15') [ RunTime:0.0000s ]
+SQL: SELECT * FROM `w_logs` WHERE ( id=196 )  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: str D:\WWW\work_log\Application\Home\Controller\IndexController.class.php 第 158 行.
+SQL: SELECT * FROM `w_logs` WHERE ( id=196 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `w_project_class` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `w_project_class` WHERE `name` LIKE '%将人%' AND `delete` = 0 LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2016-03-15T14:12:54+08:00 ] 127.0.0.1 /work_log/index.php/Home/Index/finishLog?id=164
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `w_logs` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `w_logs` WHERE ( id=164 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `w_logs` SET `finished`='1',`finish_time`='1458022374' WHERE ( id=164 ) [ RunTime:0.0070s ]
+
+[ 2016-03-15T14:14:05+08:00 ] 127.0.0.1 /work_log/index.php/Home/Index/editlogs?con=%E6%97%A5%E5%BF%97%E4%BC%98%E5%8C%96%E6%80%A7%E8%83%BD%EF%BC%88%E7%AC%AC%E4%B8%80%E6%AC%A1%EF%BC%89&id=164
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `w_logs` [ RunTime:0.0180s ]
+SQL: SELECT * FROM `w_logs` WHERE ( id=164 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: UPDATE `w_logs` SET `content`='日志优化性能（第一次）' WHERE ( id=164 ) [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.008000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.008000s ]
+
+[ 2016-03-15T14:14:06+08:00 ] 127.0.0.1 /work_log/index.php/Home/Index/editlogs?con=%E6%97%A5%E5%BF%97%E7%B3%BB%E7%BB%9F%E4%B8%AD%E6%97%A5%E5%8E%86%E9%80%89%E6%8B%A9%E5%BD%93%E5%A4%A9%E5%86%85%E5%AE%B9%E6%98%BE%E7%A4%BA%E5%87%BA%E9%94%99&id=179
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `w_logs` [ RunTime:0.0180s ]
+SQL: SELECT * FROM `w_logs` WHERE ( id=179 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: UPDATE `w_logs` SET `content`='日志系统中日历选择当天内容显示出错' WHERE ( id=179 ) [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-03-15T14:14:21+08:00 ] 127.0.0.1 /work_log/index.php/Home/Index/editlogs?con=%E6%97%A5%E5%BF%97%E7%B3%BB%E7%BB%9F%E4%B8%AD%E6%97%A5%E5%8E%86%E9%80%89%E6%8B%A9%E5%BD%93%E5%A4%A9%E5%86%85%E5%AE%B9%E6%98%BE%E7%A4%BA%E5%87%BA%E9%94%99&id=179
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `w_logs` [ RunTime:0.0170s ]
+SQL: SELECT * FROM `w_logs` WHERE ( id=179 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: UPDATE `w_logs` SET `content`='日志系统中日历选择当天内容显示出错' WHERE ( id=179 ) [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003000s ]
+
+[ 2016-03-15T14:14:53+08:00 ] 127.0.0.1 /work_log/index.php/Home/Index/addlogs?content=%E6%97%A5%E5%BF%97%E7%82%B9%E5%87%BB%E5%AE%8C%E6%88%90%E7%9A%84%E6%97%A5%E5%BF%97%E7%9A%84%E6%97%B6%E5%80%99%E6%98%BE%E7%A4%BA%E5%88%9B%E5%BB%BA%E6%97%A5%E6%9C%9F%E5%92%8C%E5%AE%8C%E6%88%90%E6%97%A5%E6%9C%9F&difficulty=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `w_logs` [ RunTime:0.0170s ]
+SQL: SELECT * FROM `w_logs` WHERE `content` LIKE '%日志%' AND `delete` = 0 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `w_project_class` [ RunTime:0.0140s ]
+SQL: SELECT * FROM `w_project_class` WHERE `delete` = 0 AND `name` LIKE '%日志%' LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: validate D:\WWW\work_log\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\WWW\work_log\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: INSERT INTO `w_logs` (`content`,`difficulty`,`create_time`,`year`,`month`,`day`) VALUES ('日志点击完成的日志的时候显示创建日期和完成日期','1','1458022493','2016','3','15') [ RunTime:0.0070s ]
+SQL: SELECT * FROM `w_logs` WHERE ( id=197 )  [ RunTime:0.0010s ]
+NOTIC: [8] Undefined variable: str D:\WWW\work_log\Application\Home\Controller\IndexController.class.php 第 158 行.
+SQL: SELECT * FROM `w_logs` WHERE ( id=197 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `w_project_class` WHERE `name` LIKE '%日志%' AND `delete` = 0 LIMIT 1   [ RunTime:0.0010s ]
+SQL: UPDATE `w_logs` SET `pid`='11' WHERE ( id=197 ) [ RunTime:0.0000s ]
+SQL: UPDATE `w_project_class` SET `nums`=nums+1 WHERE ( id=11 ) [ RunTime:0.0010s ]
+
+[ 2016-03-15T14:15:27+08:00 ] 127.0.0.1 /work_log/index.php/Home/Index/addlogs?content=%E6%97%A5%E5%BF%97%E5%88%86BUG%E5%A4%84%E7%90%86%E5%92%8C%E5%8A%9F%E8%83%BD%E5%88%9B%E5%BB%BA%E4%B8%A4%E4%B8%AA%E6%A8%A1%E5%9D%97&difficulty=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `w_logs` [ RunTime:0.0170s ]
+SQL: SELECT * FROM `w_logs` WHERE `content` LIKE '%日志%' AND `delete` = 0 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `w_project_class` [ RunTime:0.0170s ]
+SQL: SELECT * FROM `w_project_class` WHERE `delete` = 0 AND `name` LIKE '%日志%' LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: validate D:\WWW\work_log\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\WWW\work_log\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: INSERT INTO `w_logs` (`content`,`difficulty`,`create_time`,`year`,`month`,`day`) VALUES ('日志分BUG处理和功能创建两个模块','1','1458022527','2016','3','15') [ RunTime:0.0000s ]
+SQL: SELECT * FROM `w_logs` WHERE ( id=198 )  [ RunTime:0.0010s ]
+NOTIC: [8] Undefined variable: str D:\WWW\work_log\Application\Home\Controller\IndexController.class.php 第 158 行.
+SQL: SELECT * FROM `w_logs` WHERE ( id=198 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `w_project_class` WHERE `name` LIKE '%日志%' AND `delete` = 0 LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `w_logs` SET `pid`='11' WHERE ( id=198 ) [ RunTime:0.0010s ]
+SQL: UPDATE `w_project_class` SET `nums`=nums+1 WHERE ( id=11 ) [ RunTime:0.0000s ]
+
+[ 2016-03-15T14:15:53+08:00 ] 127.0.0.1 /work_log/index.php/Home/Index/addlogs?content=%E6%97%A5%E5%BF%97%E5%8F%B3%E4%B8%8A%E8%A7%92%E6%95%B0%E5%AD%97%E8%BF%87%E5%A4%A7%E7%A7%BB%E5%88%B0%E5%85%B6%E5%AE%83%E4%BD%8D%E7%BD%AE%E6%98%BE%E7%A4%BA&difficulty=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `w_logs` [ RunTime:0.0170s ]
+SQL: SELECT * FROM `w_logs` WHERE `content` LIKE '%日志%' AND `delete` = 0 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `w_project_class` [ RunTime:0.0150s ]
+SQL: SELECT * FROM `w_project_class` WHERE `delete` = 0 AND `name` LIKE '%日志%' LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: validate D:\WWW\work_log\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\WWW\work_log\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: INSERT INTO `w_logs` (`content`,`difficulty`,`create_time`,`year`,`month`,`day`) VALUES ('日志右上角数字过大移到其它位置显示','1','1458022553','2016','3','15') [ RunTime:0.0010s ]
+SQL: SELECT * FROM `w_logs` WHERE ( id=199 )  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: str D:\WWW\work_log\Application\Home\Controller\IndexController.class.php 第 158 行.
+SQL: SELECT * FROM `w_logs` WHERE ( id=199 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `w_project_class` WHERE `name` LIKE '%日志%' AND `delete` = 0 LIMIT 1   [ RunTime:0.0010s ]
+SQL: UPDATE `w_logs` SET `pid`='11' WHERE ( id=199 ) [ RunTime:0.0000s ]
+SQL: UPDATE `w_project_class` SET `nums`=nums+1 WHERE ( id=11 ) [ RunTime:0.0010s ]
+
+[ 2016-03-15T14:20:41+08:00 ] 127.0.0.1 /work_log/index.php/Home/Index/chooseDay?data%5Bday%5D=15
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `w_logs` [ RunTime:0.0040s ]
+NOTIC: [8] Undefined index: year D:\WWW\work_log\Application\Home\Controller\IndexController.class.php 第 225 行.
+NOTIC: [8] Undefined index: month D:\WWW\work_log\Application\Home\Controller\IndexController.class.php 第 226 行.
+SQL: SELECT * FROM `w_logs` WHERE `year` = null AND `month` = null AND `day` = 15 AND `delete` = 0 ORDER BY finished,create_time desc  [ RunTime:0.0070s ]
+NOTIC: [8] Undefined variable: str D:\WWW\work_log\Application\Home\Controller\IndexController.class.php 第 175 行.
+
+[ 2016-03-15T14:22:51+08:00 ] 127.0.0.1 /work_log/index.php/Home/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `w_logs` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `w_logs` WHERE `delete` = 0 ORDER BY finished,create_time desc  [ RunTime:0.0080s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `w_logs` WHERE `finished` = 1 AND `delete` = 0 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `w_logs` WHERE `finished` = 0 AND `delete` = 0 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `w_project_class` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `w_project_class` WHERE `delete` = 0  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001001s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.020001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-03-15T14:22:54+08:00 ] 127.0.0.1 /work_log/index.php/Home/Index/chooseDay?data%5Bday%5D=15
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `w_logs` [ RunTime:0.0120s ]
+NOTIC: [8] Undefined index: year D:\WWW\work_log\Application\Home\Controller\IndexController.class.php 第 225 行.
+NOTIC: [8] Undefined index: month D:\WWW\work_log\Application\Home\Controller\IndexController.class.php 第 226 行.
+SQL: SELECT * FROM `w_logs` WHERE `year` = null AND `month` = null AND `day` = 15 AND `delete` = 0 ORDER BY finished,create_time desc  [ RunTime:0.0010s ]
+NOTIC: [8] Undefined variable: str D:\WWW\work_log\Application\Home\Controller\IndexController.class.php 第 175 行.
+
+[ 2016-03-15T14:23:32+08:00 ] 127.0.0.1 /work_log/index.php/Home/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001001s ]
+SQL: SHOW COLUMNS FROM `w_logs` [ RunTime:0.0130s ]
+SQL: SELECT * FROM `w_logs` WHERE `delete` = 0 ORDER BY finished,create_time desc  [ RunTime:0.0030s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `w_logs` WHERE `finished` = 1 AND `delete` = 0 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `w_logs` WHERE `finished` = 0 AND `delete` = 0 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `w_project_class` [ RunTime:0.0090s ]
+SQL: SELECT * FROM `w_project_class` WHERE `delete` = 0  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-03-15T14:23:35+08:00 ] 127.0.0.1 /work_log/index.php/Home/Index/chooseDay?data%5Byear%5D=2016&data%5Bmonth%5D=3&data%5Bday%5D=15
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002001s ]
+SQL: SHOW COLUMNS FROM `w_logs` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `w_logs` WHERE `year` = 2016 AND `month` = 3 AND `day` = 15 AND `delete` = 0 ORDER BY finished,create_time desc  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: str D:\WWW\work_log\Application\Home\Controller\IndexController.class.php 第 158 行.
+
+[ 2016-03-15T14:23:43+08:00 ] 127.0.0.1 /work_log/index.php/Home/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `w_logs` [ RunTime:0.0120s ]
+SQL: SELECT * FROM `w_logs` WHERE `delete` = 0 ORDER BY finished,create_time desc  [ RunTime:0.0030s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `w_logs` WHERE `finished` = 1 AND `delete` = 0 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `w_logs` WHERE `finished` = 0 AND `delete` = 0 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `w_project_class` [ RunTime:0.0120s ]
+SQL: SELECT * FROM `w_project_class` WHERE `delete` = 0  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-03-15T14:24:05+08:00 ] 127.0.0.1 /work_log/index.php/Home/Index/finishLog?id=179
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `w_logs` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `w_logs` WHERE ( id=179 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `w_logs` SET `finished`='1',`finish_time`='1458023045' WHERE ( id=179 ) [ RunTime:0.0000s ]
+
+[ 2016-03-15T15:49:26+08:00 ] 127.0.0.1 /work_log/index.php/Home/Index/statistical
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `w_logs` [ RunTime:0.0150s ]
+SQL: SHOW COLUMNS FROM `w_project_class` [ RunTime:0.0090s ]
+SQL: SELECT * FROM `w_project_class` ORDER BY nums desc  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-03-15T15:51:08+08:00 ] 127.0.0.1 /work_log/index.php/Home/Index/statistical
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `w_logs` [ RunTime:0.0120s ]
+SQL: SHOW COLUMNS FROM `w_project_class` [ RunTime:0.0110s ]
+SQL: SELECT * FROM `w_project_class` ORDER BY nums desc  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-03-15T15:51:15+08:00 ] 127.0.0.1 /work_log/index.php/Home/Index/statistical
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `w_logs` [ RunTime:0.0140s ]
+SQL: SHOW COLUMNS FROM `w_project_class` [ RunTime:0.0090s ]
+SQL: SELECT * FROM `w_project_class` ORDER BY nums desc  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-03-15T15:51:32+08:00 ] 127.0.0.1 /work_log/index.php/Home/Index/statistical
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `w_logs` [ RunTime:0.0140s ]
+SQL: SHOW COLUMNS FROM `w_project_class` [ RunTime:0.0090s ]
+SQL: SELECT * FROM `w_project_class` ORDER BY nums desc  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-03-15T15:53:24+08:00 ] 127.0.0.1 /work_log/index.php/Home/Index/test
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `w_logs` [ RunTime:0.0120s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-03-15T15:53:48+08:00 ] 127.0.0.1 /work_log/index.php/Home/Index/test
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `w_logs` [ RunTime:0.0140s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-03-15T15:54:26+08:00 ] 127.0.0.1 /work_log/index.php/Home/Index/test
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `w_logs` [ RunTime:0.0180s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-03-15T15:54:40+08:00 ] 127.0.0.1 /work_log/index.php/Home/Index/test
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `w_logs` [ RunTime:0.0140s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-03-15T17:06:35+08:00 ] 127.0.0.1 /work_log/index.php/Home/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `w_logs` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `w_logs` WHERE `delete` = 0 ORDER BY finished,create_time desc  [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `w_logs` WHERE `finished` = 1 AND `delete` = 0 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `w_logs` WHERE `finished` = 0 AND `delete` = 0 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `w_project_class` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `w_project_class` WHERE `delete` = 0  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-03-15T17:06:39+08:00 ] 127.0.0.1 /work_log/index.php/Home/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `w_logs` [ RunTime:0.0090s ]
+SQL: SELECT * FROM `w_logs` WHERE `delete` = 0 ORDER BY finished,create_time desc  [ RunTime:0.0020s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `w_logs` WHERE `finished` = 1 AND `delete` = 0 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `w_logs` WHERE `finished` = 0 AND `delete` = 0 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `w_project_class` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `w_project_class` WHERE `delete` = 0  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-03-15T17:06:43+08:00 ] 127.0.0.1 /work_log/index.php/Home/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `w_logs` [ RunTime:0.0130s ]
+SQL: SELECT * FROM `w_logs` WHERE `delete` = 0 ORDER BY finished,create_time desc  [ RunTime:0.0030s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `w_logs` WHERE `finished` = 1 AND `delete` = 0 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `w_logs` WHERE `finished` = 0 AND `delete` = 0 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `w_project_class` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `w_project_class` WHERE `delete` = 0  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-03-15T17:09:13+08:00 ] 127.0.0.1 /work_log/index.php/Home/Index/addlogs?content=%E5%88%9B%E6%83%A0%E8%AE%A2%E5%8D%95%E5%8F%AF%E4%BF%AE%E6%94%B9%E4%B8%8B%E5%8D%95%E4%BA%BA%EF%BC%8C%E7%94%B5%E8%AF%9D%EF%BC%8C%E5%9C%B0%E5%9D%80&difficulty=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `w_logs` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `w_logs` WHERE `content` LIKE '%创惠%' AND `delete` = 0 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `w_project_class` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `w_project_class` WHERE `delete` = 0 AND `name` LIKE '%创惠%' LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: validate D:\WWW\work_log\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\WWW\work_log\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: INSERT INTO `w_logs` (`content`,`difficulty`,`create_time`,`year`,`month`,`day`) VALUES ('创惠订单可修改下单人，电话，地址','1','1458032953','2016','3','15') [ RunTime:0.0000s ]
+SQL: SELECT * FROM `w_logs` WHERE ( id=200 )  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: str D:\WWW\work_log\Application\Home\Controller\IndexController.class.php 第 158 行.
+SQL: SELECT * FROM `w_logs` WHERE ( id=200 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `w_project_class` WHERE `name` LIKE '%创惠%' AND `delete` = 0 LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `w_logs` SET `pid`='2' WHERE ( id=200 ) [ RunTime:0.0000s ]
+SQL: UPDATE `w_project_class` SET `nums`=nums+1 WHERE ( id=2 ) [ RunTime:0.0000s ]
+
+[ 2016-03-15T17:11:04+08:00 ] 127.0.0.1 /work_log/index.php/Home/Index/addlogs?content=%E5%88%9B%E6%83%A0%E4%BD%A3%E9%87%91%E6%8F%90%E7%8E%B0%E8%AE%B0%E5%BD%95%E5%8F%AF%E4%BF%AE%E6%94%B9%E5%A7%93%E5%90%8D%EF%BC%8C%E5%BC%80%E6%88%B7%E8%A1%8C%EF%BC%8C%E9%93%B6%E8%A1%8C%E5%8D%A1%E5%8F%B7%EF%BC%8C%E6%B7%98%E5%AE%9D&difficulty=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `w_logs` [ RunTime:0.0100s ]
+SQL: SELECT * FROM `w_logs` WHERE `content` LIKE '%创惠%' AND `delete` = 0 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `w_project_class` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `w_project_class` WHERE `delete` = 0 AND `name` LIKE '%创惠%' LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: validate D:\WWW\work_log\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\WWW\work_log\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: INSERT INTO `w_logs` (`content`,`difficulty`,`create_time`,`year`,`month`,`day`) VALUES ('创惠佣金提现记录可修改姓名，开户行，银行卡号，淘宝','1','1458033064','2016','3','15') [ RunTime:0.0000s ]
+SQL: SELECT * FROM `w_logs` WHERE ( id=201 )  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: str D:\WWW\work_log\Application\Home\Controller\IndexController.class.php 第 158 行.
+SQL: SELECT * FROM `w_logs` WHERE ( id=201 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `w_project_class` WHERE `name` LIKE '%创惠%' AND `delete` = 0 LIMIT 1   [ RunTime:0.0010s ]
+SQL: UPDATE `w_logs` SET `pid`='2' WHERE ( id=201 ) [ RunTime:0.0000s ]
+SQL: UPDATE `w_project_class` SET `nums`=nums+1 WHERE ( id=2 ) [ RunTime:0.0000s ]
+

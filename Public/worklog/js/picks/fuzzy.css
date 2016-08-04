@@ -1,0 +1,14 @@
+.fuzzy1{
+	animation: filterIn 5s;
+	-moz-animation: filterIn 5s;	/* Firefox */
+	-webkit-animation: filterIn 5s;	/* Safari 和 Chrome */
+	-o-animation: filterIn 5s;
+}
+@keyframes filterIn {
+  from {
+  	opacity: 0;
+  }
+  to {
+  	opacity: 1;
+  }
+}

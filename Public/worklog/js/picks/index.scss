@@ -1,0 +1,14 @@
+#pmd{
+	.abs{ position:absolute;}
+	.rel{ position:relative;}
+	.main{ height:718px; }
+	.con980{ width: 90%; margin:0 auto;}
+	.header{ width:100%; height:50px;} 
+	.play{ background:url() no-repeat; width:100%; height:625px; padding:22px 0 0 21px;}
+	td{width:187px; height:115px; background-color:#666; text-align:center; line-height:115px; font-size:80px; }
+	.playcurr{ background-color:#F60;}
+	.playnormal{ background-color:#666;}
+	.play_btn{ width:50%; height:115px; display:block; margin: 0 auto; background-color:#F60;border:0; cursor:pointer;  font-size:40px;}
+	.play_btn:hover{ background-position:0 -115px;}
+	.btn_arr{display: block; width: 100%;top:255px;}
+}

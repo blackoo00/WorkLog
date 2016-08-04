@@ -1,0 +1,1544 @@
+[ 2016-03-16T08:35:07+08:00 ] 127.0.0.1 /work_log/index.php/Home/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `w_logs` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `w_logs` WHERE `delete` = 0 ORDER BY finished,create_time desc  [ RunTime:0.0020s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `w_logs` WHERE `finished` = 1 AND `delete` = 0 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `w_logs` WHERE `finished` = 0 AND `delete` = 0 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `w_project_class` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `w_project_class` WHERE `delete` = 0  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.019001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-03-16T08:35:11+08:00 ] 127.0.0.1 /work_log/index.php/Home/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `w_logs` [ RunTime:0.0090s ]
+SQL: SELECT * FROM `w_logs` WHERE `delete` = 0 ORDER BY finished,create_time desc  [ RunTime:0.0030s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `w_logs` WHERE `finished` = 1 AND `delete` = 0 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `w_logs` WHERE `finished` = 0 AND `delete` = 0 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `w_project_class` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `w_project_class` WHERE `delete` = 0  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-03-16T09:55:18+08:00 ] 127.0.0.1 /work_log/index.php/Home/Index/finishLog?id=200
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `w_logs` [ RunTime:0.0090s ]
+SQL: SELECT * FROM `w_logs` WHERE ( id=200 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `w_logs` SET `finished`='1',`finish_time`='1458093318' WHERE ( id=200 ) [ RunTime:0.0000s ]
+
+[ 2016-03-16T10:09:58+08:00 ] 127.0.0.1 /work_log/index.php/Home/Index/editlogs?con=%E5%88%9B%E6%83%A0%E4%BD%A3%E9%87%91%E6%8F%90%E7%8E%B0%E8%AE%B0%E5%BD%95%E5%8F%AF%E4%BF%AE%E6%94%B9%E5%A7%93%E5%90%8D%EF%BC%8C%E5%BC%80%E6%88%B7%E8%A1%8C%EF%BC%8C%E9%93%B6%E8%A1%8C%E5%8D%A1%E5%8F%B7%EF%BC%8C%E6%94%AF%E4%BB%98%E5%AE%9D&id=201
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `w_logs` [ RunTime:0.0156s ]
+SQL: SELECT * FROM `w_logs` WHERE ( id=201 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `w_logs` SET `content`='创惠佣金提现记录可修改姓名，开户行，银行卡号，支付宝' WHERE ( id=201 ) [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-03-16T10:09:59+08:00 ] 127.0.0.1 /work_log/index.php/Home/Index/editlogs?con=%E5%88%9B%E6%83%A0%E8%AE%A2%E5%8D%95%E5%8F%AF%E4%BF%AE%E6%94%B9%E4%B8%8B%E5%8D%95%E4%BA%BA%EF%BC%8C%E7%94%B5%E8%AF%9D%EF%BC%8C%E5%9C%B0%E5%9D%80&id=200
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `w_logs` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `w_logs` WHERE ( id=200 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `w_logs` SET `content`='创惠订单可修改下单人，电话，地址' WHERE ( id=200 ) [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-03-16T10:10:02+08:00 ] 127.0.0.1 /work_log/index.php/Home/Index/editlogs?con=%E5%88%9B%E6%83%A0%E8%AE%A2%E5%8D%95%E5%8F%AF%E4%BF%AE%E6%94%B9%E4%B8%8B%E5%8D%95%E4%BA%BA%EF%BC%8C%E7%94%B5%E8%AF%9D%EF%BC%8C%E5%9C%B0%E5%9D%80&id=200
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `w_logs` [ RunTime:0.0156s ]
+SQL: SELECT * FROM `w_logs` WHERE ( id=200 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `w_logs` SET `content`='创惠订单可修改下单人，电话，地址' WHERE ( id=200 ) [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-03-16T11:10:45+08:00 ] 127.0.0.1 /work_log/index.php/Home/Index/finishLog?id=201
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `w_logs` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `w_logs` WHERE ( id=201 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `w_logs` SET `finished`='1',`finish_time`='1458097845' WHERE ( id=201 ) [ RunTime:0.0000s ]
+
+[ 2016-03-16T11:10:48+08:00 ] 127.0.0.1 /work_log/index.php/Home/Index/editlogs?con=%E5%88%9B%E6%83%A0%E8%AE%A2%E5%8D%95%E5%8F%AF%E4%BF%AE%E6%94%B9%E4%B8%8B%E5%8D%95%E4%BA%BA%EF%BC%8C%E7%94%B5%E8%AF%9D%EF%BC%8C%E5%9C%B0%E5%9D%80&id=200
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001001s ]
+SQL: SHOW COLUMNS FROM `w_logs` [ RunTime:0.0156s ]
+SQL: SELECT * FROM `w_logs` WHERE ( id=200 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `w_logs` SET `content`='创惠订单可修改下单人，电话，地址' WHERE ( id=200 ) [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-03-16T11:10:53+08:00 ] 127.0.0.1 /work_log/index.php/Home/Index/editlogs?con=%E5%88%9B%E6%83%A0%E8%AE%A2%E5%8D%95%E5%8F%AF%E4%BF%AE%E6%94%B9%E4%B8%8B%E5%8D%95%E4%BA%BA%EF%BC%8C%E7%94%B5%E8%AF%9D%EF%BC%8C%E5%9C%B0%E5%9D%80&id=200
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `w_logs` [ RunTime:0.0100s ]
+SQL: SELECT * FROM `w_logs` WHERE ( id=200 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: UPDATE `w_logs` SET `content`='创惠订单可修改下单人，电话，地址' WHERE ( id=200 ) [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-03-16T12:08:25+08:00 ] 127.0.0.1 /work_log/index.php/Home/Index/editlogs?con=%E5%88%9B%E6%83%A0%E8%AE%A2%E5%8D%95%E5%8F%AF%E4%BF%AE%E6%94%B9%E4%B8%8B%E5%8D%95%E4%BA%BA%EF%BC%8C%E7%94%B5%E8%AF%9D%EF%BC%8C%E5%9C%B0%E5%9D%80&id=200
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `w_logs` [ RunTime:0.0170s ]
+SQL: SELECT * FROM `w_logs` WHERE ( id=200 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: UPDATE `w_logs` SET `content`='创惠订单可修改下单人，电话，地址' WHERE ( id=200 ) [ RunTime:0.0030s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002001s ]
+
+[ 2016-03-16T13:09:53+08:00 ] 127.0.0.1 /work_log/index.php/Home/Index/editlogs?con=%E5%88%9B%E6%83%A0%E8%AE%A2%E5%8D%95%E5%8F%AF%E4%BF%AE%E6%94%B9%E4%B8%8B%E5%8D%95%E4%BA%BA%EF%BC%8C%E7%94%B5%E8%AF%9D%EF%BC%8C%E5%9C%B0%E5%9D%80&id=200
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `w_logs` [ RunTime:0.0156s ]
+SQL: SELECT * FROM `w_logs` WHERE ( id=200 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `w_logs` SET `content`='创惠订单可修改下单人，电话，地址' WHERE ( id=200 ) [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-03-16T13:21:48+08:00 ] 127.0.0.1 /work_log/index.php/Home/Index/editlogs?con=%E5%88%9B%E6%83%A0%E8%AE%A2%E5%8D%95%E5%8F%AF%E4%BF%AE%E6%94%B9%E4%B8%8B%E5%8D%95%E4%BA%BA%EF%BC%8C%E7%94%B5%E8%AF%9D%EF%BC%8C%E5%9C%B0%E5%9D%80&id=200
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `w_logs` [ RunTime:0.0170s ]
+SQL: SELECT * FROM `w_logs` WHERE ( id=200 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: UPDATE `w_logs` SET `content`='创惠订单可修改下单人，电话，地址' WHERE ( id=200 ) [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003001s ]
+
+[ 2016-03-16T13:21:49+08:00 ] 127.0.0.1 /work_log/index.php/Home/Index/editlogs?con=%E6%97%A5%E5%BF%97%E5%8F%B3%E4%B8%8A%E8%A7%92%E6%95%B0%E5%AD%97%E8%BF%87%E5%A4%A7%E7%A7%BB%E5%88%B0%E5%85%B6%E5%AE%83%E4%BD%8D%E7%BD%AE%E6%98%BE%E7%A4%BA&id=199
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `w_logs` [ RunTime:0.0156s ]
+SQL: SELECT * FROM `w_logs` WHERE ( id=199 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `w_logs` SET `content`='日志右上角数字过大移到其它位置显示' WHERE ( id=199 ) [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-03-16T13:21:50+08:00 ] 127.0.0.1 /work_log/index.php/Home/Index/editlogs?con=%E6%97%A5%E5%BF%97%E5%88%86BUG%E5%A4%84%E7%90%86%E5%92%8C%E5%8A%9F%E8%83%BD%E5%88%9B%E5%BB%BA%E4%B8%A4%E4%B8%AA%E6%A8%A1%E5%9D%97&id=198
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `w_logs` [ RunTime:0.0156s ]
+SQL: SELECT * FROM `w_logs` WHERE ( id=198 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `w_logs` SET `content`='日志分BUG处理和功能创建两个模块' WHERE ( id=198 ) [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-03-16T13:31:56+08:00 ] 127.0.0.1 /work_log/index.php/Home/Index/editlogs?con=%E6%97%A5%E5%BF%97%E5%88%86BUG%E5%A4%84%E7%90%86%E5%92%8C%E5%8A%9F%E8%83%BD%E5%88%9B%E5%BB%BA%E4%B8%A4%E4%B8%AA%E6%A8%A1%E5%9D%97&id=198
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `w_logs` [ RunTime:0.0100s ]
+SQL: SELECT * FROM `w_logs` WHERE ( id=198 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: UPDATE `w_logs` SET `content`='日志分BUG处理和功能创建两个模块' WHERE ( id=198 ) [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-03-16T13:33:44+08:00 ] 127.0.0.1 /work_log/index.php/Home/Index/editlogs?con=%E6%97%A5%E5%BF%97%E5%88%86BUG%E5%A4%84%E7%90%86%E5%92%8C%E5%8A%9F%E8%83%BD%E5%88%9B%E5%BB%BA%E4%B8%A4%E4%B8%AA%E6%A8%A1%E5%9D%97&id=198
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `w_logs` [ RunTime:0.0156s ]
+SQL: SELECT * FROM `w_logs` WHERE ( id=198 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `w_logs` SET `content`='日志分BUG处理和功能创建两个模块' WHERE ( id=198 ) [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-03-16T13:33:50+08:00 ] 127.0.0.1 /work_log/index.php/Home/Project/lucky
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+ERR: 1146:Table 'work.w_integral_winner' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `w_integral_winner`
+ERR: 1146:Table 'work.w_integral_winner' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `w_integral_winner`
+
+[ 2016-03-16T13:40:27+08:00 ] 127.0.0.1 /work_log/index.php/Home/Project/lucky
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+ERR: 1146:Table 'work.w_integral_products' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `w_integral_products`
+ERR: 1146:Table 'work.w_integral_products' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `w_integral_products`
+
+[ 2016-03-16T13:41:48+08:00 ] 127.0.0.1 /work_log/index.php/Home/Project/lucky
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `w_integral_products` [ RunTime:0.0160s ]
+SQL: SELECT * FROM `w_integral_products` WHERE `nums` > 0  [ RunTime:0.0010s ]
+NOTIC: [8] Undefined offset: 11 D:\WWW\work_log\Application\Home\Controller\ProjectController.class.php 第 67 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: win D:\WWW\work_log\Application\Runtime\Cache\Home\89f429b7f610c15f679cc754a77d3fe1.php 第 41 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-03-16T13:41:48+08:00 ] 127.0.0.1 /work_log/index.php/Home/Project/tpl/Wap/default/common/css/store/lucky/images/jp3.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-03-16T13:41:48+08:00 ] 127.0.0.1 /work_log/index.php/Home/Project/tpl/Wap/default/common/css/store/lucky/images/jp5.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-03-16T13:41:48+08:00 ] 127.0.0.1 /work_log/index.php/Home/Project/tpl/Wap/default/common/css/store/lucky/images/jp11.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-03-16T13:41:48+08:00 ] 127.0.0.1 /work_log/index.php/Home/Project/tpl/Wap/default/common/css/store/lucky/images/jp.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-03-16T13:41:48+08:00 ] 127.0.0.1 /work_log/index.php/Home/Project/tpl/Wap/default/common/css/store/lucky/images/jp10.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003000s ]
+
+[ 2016-03-16T13:41:48+08:00 ] 127.0.0.1 /work_log/index.php/Home/Project/tpl/Wap/default/common/css/store/lucky/images/jp1.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-03-16T13:41:49+08:00 ] 127.0.0.1 /work_log/index.php/Home/Project/tpl/Wap/default/common/css/store/lucky/images/jp6.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-03-16T13:41:49+08:00 ] 127.0.0.1 /work_log/index.php/Home/Project/tpl/Wap/default/common/css/store/lucky/images/jp2.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-03-16T13:41:49+08:00 ] 127.0.0.1 /work_log/index.php/Home/Project/tpl/Wap/default/common/css/store/lucky/images/jp9.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-03-16T13:41:49+08:00 ] 127.0.0.1 /work_log/index.php/Home/Project/tpl/Wap/default/common/css/store/lucky/images/jp7.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-03-16T13:41:49+08:00 ] 127.0.0.1 /work_log/index.php/Home/Project/tpl/Wap/default/common/css/store/lucky/images/jp3.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-03-16T13:41:56+08:00 ] 127.0.0.1 /work_log/index.php/Home/Project/lucky
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `w_integral_products` [ RunTime:0.0156s ]
+SQL: SELECT * FROM `w_integral_products` WHERE `nums` > 0 ORDER BY prob  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: id D:\WWW\work_log\Application\Home\Controller\ProjectController.class.php 第 25 行.
+SQL: SELECT * FROM `w_integral_products` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2016-03-16T13:42:04+08:00 ] 127.0.0.1 /work_log/index.php/Home/Project/lucky
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.015600s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `w_integral_products` [ RunTime:0.0156s ]
+SQL: SELECT * FROM `w_integral_products` WHERE `nums` > 0 ORDER BY prob  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: id D:\WWW\work_log\Application\Home\Controller\ProjectController.class.php 第 42 行.
+SQL: SELECT * FROM `w_integral_products` WHERE ( id=12 ) LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2016-03-16T13:43:14+08:00 ] 127.0.0.1 /work_log/index.php/Home/Project/lucky
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `w_integral_products` [ RunTime:0.0140s ]
+SQL: SELECT * FROM `w_integral_products` WHERE `nums` > 0  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined offset: 11 D:\WWW\work_log\Application\Home\Controller\ProjectController.class.php 第 67 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: win D:\WWW\work_log\Application\Runtime\Cache\Home\89f429b7f610c15f679cc754a77d3fe1.php 第 41 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.020001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002001s ]
+
+[ 2016-03-16T13:43:14+08:00 ] 127.0.0.1 /work_log/index.php/Home/Project/tpl/Wap/default/common/css/store/lucky/images/jp3.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-03-16T13:43:14+08:00 ] 127.0.0.1 /work_log/index.php/Home/Project/tpl/Wap/default/common/css/store/lucky/images/jp9.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-03-16T13:43:14+08:00 ] 127.0.0.1 /work_log/index.php/Home/Project/tpl/Wap/default/common/css/store/lucky/images/jp10.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-03-16T13:43:14+08:00 ] 127.0.0.1 /work_log/index.php/Home/Project/tpl/Wap/default/common/css/store/lucky/images/jp7.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-03-16T13:43:14+08:00 ] 127.0.0.1 /work_log/index.php/Home/Project/tpl/Wap/default/common/css/store/lucky/images/jp11.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-03-16T13:43:14+08:00 ] 127.0.0.1 /work_log/index.php/Home/Project/tpl/Wap/default/common/css/store/lucky/images/jp.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-03-16T13:43:14+08:00 ] 127.0.0.1 /work_log/index.php/Home/Project/tpl/Wap/default/common/css/store/lucky/images/jp2.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-03-16T13:43:14+08:00 ] 127.0.0.1 /work_log/index.php/Home/Project/tpl/Wap/default/common/css/store/lucky/images/jp5.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-03-16T13:43:14+08:00 ] 127.0.0.1 /work_log/index.php/Home/Project/tpl/Wap/default/common/css/store/lucky/images/jp6.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-03-16T13:44:49+08:00 ] 127.0.0.1 /work_log/index.php/Home/Project/lucky
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `w_integral_products` [ RunTime:0.0100s ]
+SQL: SELECT * FROM `w_integral_products` WHERE `nums` > 0  [ RunTime:0.0010s ]
+NOTIC: [8] Undefined offset: 11 D:\WWW\work_log\Application\Home\Controller\ProjectController.class.php 第 67 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: win D:\WWW\work_log\Application\Runtime\Cache\Home\89f429b7f610c15f679cc754a77d3fe1.php 第 41 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.025001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.025001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-03-16T13:44:56+08:00 ] 127.0.0.1 /work_log/index.php/Home/Project/lucky
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `w_integral_products` [ RunTime:0.0130s ]
+SQL: SELECT * FROM `w_integral_products` WHERE `nums` > 0  [ RunTime:0.0010s ]
+NOTIC: [8] Undefined offset: 11 D:\WWW\work_log\Application\Home\Controller\ProjectController.class.php 第 67 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: win D:\WWW\work_log\Application\Runtime\Cache\Home\89f429b7f610c15f679cc754a77d3fe1.php 第 41 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-03-16T13:45:32+08:00 ] 127.0.0.1 /work_log/index.php/Home/Project/lucky
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `w_integral_products` [ RunTime:0.0140s ]
+SQL: SELECT * FROM `w_integral_products` WHERE `nums` > 0  [ RunTime:0.0010s ]
+NOTIC: [8] Undefined offset: 10 D:\WWW\work_log\Application\Home\Controller\ProjectController.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 11 D:\WWW\work_log\Application\Home\Controller\ProjectController.class.php 第 67 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: win D:\WWW\work_log\Application\Runtime\Cache\Home\89f429b7f610c15f679cc754a77d3fe1.php 第 41 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.019002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-03-16T13:45:38+08:00 ] 127.0.0.1 /work_log/index.php/Home/Project/lucky
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `w_integral_products` [ RunTime:0.0110s ]
+SQL: SELECT * FROM `w_integral_products` WHERE `nums` > 0  [ RunTime:0.0010s ]
+NOTIC: [8] Undefined offset: 10 D:\WWW\work_log\Application\Home\Controller\ProjectController.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 11 D:\WWW\work_log\Application\Home\Controller\ProjectController.class.php 第 67 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: win D:\WWW\work_log\Application\Runtime\Cache\Home\89f429b7f610c15f679cc754a77d3fe1.php 第 41 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-03-16T13:45:41+08:00 ] 127.0.0.1 /work_log/index.php/Home/Project/lucky
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `w_integral_products` [ RunTime:0.0130s ]
+SQL: SELECT * FROM `w_integral_products` WHERE `nums` > 0  [ RunTime:0.0010s ]
+NOTIC: [8] Undefined offset: 10 D:\WWW\work_log\Application\Home\Controller\ProjectController.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 11 D:\WWW\work_log\Application\Home\Controller\ProjectController.class.php 第 67 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined variable: win D:\WWW\work_log\Application\Runtime\Cache\Home\89f429b7f610c15f679cc754a77d3fe1.php 第 41 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.022002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-03-16T13:45:46+08:00 ] 127.0.0.1 /work_log/index.php/Home/Project/lucky
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `w_integral_products` [ RunTime:0.0140s ]
+SQL: SELECT * FROM `w_integral_products` WHERE `nums` > 0  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined offset: 10 D:\WWW\work_log\Application\Home\Controller\ProjectController.class.php 第 67 行.
+NOTIC: [8] Undefined offset: 11 D:\WWW\work_log\Application\Home\Controller\ProjectController.class.php 第 67 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined variable: win D:\WWW\work_log\Application\Runtime\Cache\Home\89f429b7f610c15f679cc754a77d3fe1.php 第 41 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-03-16T13:46:01+08:00 ] 127.0.0.1 /work_log/index.php/Home/Project/lucky
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001001s ]
+SQL: SHOW COLUMNS FROM `w_integral_products` [ RunTime:0.0130s ]
+SQL: SELECT * FROM `w_integral_products` WHERE `nums` > 0  [ RunTime:0.0010s ]
+NOTIC: [8] Undefined offset: 11 D:\WWW\work_log\Application\Home\Controller\ProjectController.class.php 第 67 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined variable: win D:\WWW\work_log\Application\Runtime\Cache\Home\89f429b7f610c15f679cc754a77d3fe1.php 第 41 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.021001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-03-16T13:46:05+08:00 ] 127.0.0.1 /work_log/index.php/Home/Project/lucky
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `w_integral_products` [ RunTime:0.0156s ]
+SQL: SELECT * FROM `w_integral_products` WHERE `nums` > 0 ORDER BY prob  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `w_integral_products` WHERE ( id=0 ) LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2016-03-16T13:46:12+08:00 ] 127.0.0.1 /work_log/index.php/Home/Project/lucky
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `w_integral_products` [ RunTime:0.0156s ]
+SQL: SELECT * FROM `w_integral_products` WHERE `nums` > 0 ORDER BY prob  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `w_integral_products` WHERE ( id=0 ) LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2016-03-16T13:46:20+08:00 ] 127.0.0.1 /work_log/index.php/Home/Project/lucky
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `w_integral_products` [ RunTime:0.0100s ]
+SQL: SELECT * FROM `w_integral_products` WHERE `nums` > 0 ORDER BY prob  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: id D:\WWW\work_log\Application\Home\Controller\ProjectController.class.php 第 25 行.
+SQL: SELECT * FROM `w_integral_products` WHERE ( id=4 ) LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2016-03-16T13:46:34+08:00 ] 127.0.0.1 /work_log/index.php/Home/Project/lucky
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `w_integral_products` [ RunTime:0.0140s ]
+SQL: SELECT * FROM `w_integral_products` WHERE `nums` > 0  [ RunTime:0.0010s ]
+NOTIC: [8] Undefined offset: 11 D:\WWW\work_log\Application\Home\Controller\ProjectController.class.php 第 67 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: win D:\WWW\work_log\Application\Runtime\Cache\Home\89f429b7f610c15f679cc754a77d3fe1.php 第 41 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-03-16T13:49:09+08:00 ] 127.0.0.1 /work_log/index.php/Home/Project/lucky
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `w_integral_products` [ RunTime:0.0130s ]
+SQL: SELECT * FROM `w_integral_products` WHERE `nums` > 0  [ RunTime:0.0010s ]
+NOTIC: [8] Undefined offset: 11 D:\WWW\work_log\Application\Home\Controller\ProjectController.class.php 第 67 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: win D:\WWW\work_log\Application\Runtime\Cache\Home\89f429b7f610c15f679cc754a77d3fe1.php 第 41 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-03-16T13:49:14+08:00 ] 127.0.0.1 /work_log/index.php/Home/Project/lucky
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `w_integral_products` [ RunTime:0.0100s ]
+SQL: SELECT * FROM `w_integral_products` WHERE `nums` > 0  [ RunTime:0.0010s ]
+NOTIC: [8] Undefined offset: 11 D:\WWW\work_log\Application\Home\Controller\ProjectController.class.php 第 67 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: win D:\WWW\work_log\Application\Runtime\Cache\Home\89f429b7f610c15f679cc754a77d3fe1.php 第 41 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-03-16T13:49:31+08:00 ] 127.0.0.1 /work_log/index.php/Home/Project/lucky
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `w_integral_products` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `w_integral_products` WHERE `nums` > 0  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined offset: 11 D:\WWW\work_log\Application\Home\Controller\ProjectController.class.php 第 67 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: win D:\WWW\work_log\Application\Runtime\Cache\Home\89f429b7f610c15f679cc754a77d3fe1.php 第 41 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-03-16T13:49:48+08:00 ] 127.0.0.1 /work_log/index.php/Home/Project/lucky
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `w_integral_products` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `w_integral_products` WHERE `nums` > 0  [ RunTime:0.0010s ]
+NOTIC: [8] Undefined offset: 11 D:\WWW\work_log\Application\Home\Controller\ProjectController.class.php 第 67 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-03-16T14:00:56+08:00 ] 127.0.0.1 /work_log/index.php/Home/Project/sign
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `w_integral_sign` [ RunTime:0.0050s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+ [ SQL语句 ] : SELECT * FROM `w_integral_sign` WHERE ( mid= ) 
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+ [ SQL语句 ] : SELECT * FROM `w_integral_sign` WHERE ( mid= ) 
+
+[ 2016-03-16T14:03:21+08:00 ] 127.0.0.1 /work_log/index.php/Home/Project/sign
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-03-16T14:03:47+08:00 ] 127.0.0.1 /work_log/index.php/Home/Project/sign
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `w_integral_sign` [ RunTime:0.0110s ]
+SQL: SELECT * FROM `w_integral_sign` WHERE ( mid=1 )  [ RunTime:0.0000s ]
+SQL: SELECT SUM(integral) AS tp_sum FROM `w_integral_sign` WHERE ( mid=1 ) LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.019001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-03-16T14:03:49+08:00 ] 127.0.0.1 /work_log/index.php?m=Home&c=Project&a=memberSign
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `w_integral_sign` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `w_integral_sign` WHERE `mid` = 1 AND ( `addtime` > 1458057600 AND `addtime` < 1458144000  ) LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2016-03-16T14:04:30+08:00 ] 127.0.0.1 /work_log/index.php/Home/Project/sign
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `w_integral_sign` [ RunTime:0.0150s ]
+SQL: SELECT * FROM `w_integral_sign` WHERE ( mid=1 )  [ RunTime:0.0010s ]
+SQL: SELECT SUM(integral) AS tp_sum FROM `w_integral_sign` WHERE ( mid=1 ) LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-03-16T14:04:31+08:00 ] 127.0.0.1 /work_log/index.php?m=Home&c=Project&a=memberSign
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `w_integral_sign` [ RunTime:0.0170s ]
+SQL: SELECT * FROM `w_integral_sign` WHERE `mid` = 1 AND ( `addtime` > 1458057600 AND `addtime` < 1458144000  ) LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2016-03-16T14:04:35+08:00 ] 127.0.0.1 /work_log/index.php?m=Home&c=Project&a=memberSign
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `w_integral_sign` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `w_integral_sign` WHERE `mid` = 1 AND ( `addtime` > 1458057600 AND `addtime` < 1458144000  ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `w_integral_sign` WHERE `mid` = 1 AND ( `addtime` > 1457539200 AND `addtime` < 1458057600  ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: INSERT INTO `w_integral_sign` (`mid`,`integral`,`addtime`,`year`,`month`,`day`) VALUES ('1','1','1458108275','2016','3','16') [ RunTime:0.0000s ]
+SQL: SELECT SUM(integral) AS tp_sum FROM `w_integral_sign` WHERE ( mid=1 ) LIMIT 1   [ RunTime:0.0156s ]
+
+[ 2016-03-16T14:04:47+08:00 ] 127.0.0.1 /work_log/index.php/Home/Project/sign
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `w_integral_sign` [ RunTime:0.0110s ]
+SQL: SELECT * FROM `w_integral_sign` WHERE ( mid=1 )  [ RunTime:0.0000s ]
+SQL: SELECT SUM(integral) AS tp_sum FROM `w_integral_sign` WHERE ( mid=1 ) LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-03-16T14:04:49+08:00 ] 127.0.0.1 /work_log/index.php?m=Home&c=Project&a=memberSign
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `w_integral_sign` [ RunTime:0.0200s ]
+SQL: SELECT * FROM `w_integral_sign` WHERE `mid` = 1 AND ( `addtime` > 1458057600 AND `addtime` < 1458144000  ) LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2016-03-16T14:05:04+08:00 ] 127.0.0.1 /work_log/index.php/Home/Project/sign
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `w_integral_sign` [ RunTime:0.0110s ]
+SQL: SELECT * FROM `w_integral_sign` WHERE ( mid=1 )  [ RunTime:0.0010s ]
+SQL: SELECT SUM(integral) AS tp_sum FROM `w_integral_sign` WHERE ( mid=1 ) LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-03-16T14:05:05+08:00 ] 127.0.0.1 /work_log/index.php?m=Home&c=Project&a=memberSign
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `w_integral_sign` [ RunTime:0.0100s ]
+SQL: SELECT * FROM `w_integral_sign` WHERE `mid` = 1 AND ( `addtime` > 1458057600 AND `addtime` < 1458144000  ) LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2016-03-16T14:06:01+08:00 ] 127.0.0.1 /work_log/index.php/Home/Project/sign
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `w_integral_sign` [ RunTime:0.0210s ]
+SQL: SELECT * FROM `w_integral_sign` WHERE ( mid=1 )  [ RunTime:0.0010s ]
+SQL: SELECT SUM(integral) AS tp_sum FROM `w_integral_sign` WHERE ( mid=1 ) LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-03-16T14:06:03+08:00 ] 127.0.0.1 /work_log/index.php?m=Home&c=Project&a=memberSign
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `w_integral_sign` [ RunTime:0.0170s ]
+SQL: SELECT * FROM `w_integral_sign` WHERE `mid` = 1 AND ( `addtime` > 1458057600 AND `addtime` < 1458144000  ) LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2016-03-16T14:11:13+08:00 ] 127.0.0.1 /work_log/index.php/Home/Project/test
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001001s ]
+SQL: SHOW COLUMNS FROM `w_integral_sign` [ RunTime:0.0100s ]
+SQL: SELECT * FROM `w_integral_sign` WHERE `mid` = 1 AND ( `addtime` > 1457971200 AND `addtime` < 1458057600  ) LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-03-16T14:11:21+08:00 ] 127.0.0.1 /work_log/index.php/Home/Project/test
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `w_integral_sign` [ RunTime:0.0130s ]
+SQL: SELECT * FROM `w_integral_sign` WHERE `mid` = 1 AND ( `addtime` > 1457971200 AND `addtime` < 1458057600  ) LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003000s ]
+
+[ 2016-03-16T14:11:52+08:00 ] 127.0.0.1 /work_log/index.php/Home/Project/sign
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `w_integral_sign` [ RunTime:0.0170s ]
+SQL: SELECT * FROM `w_integral_sign` WHERE ( mid=1 )  [ RunTime:0.0020s ]
+SQL: SELECT SUM(integral) AS tp_sum FROM `w_integral_sign` WHERE ( mid=1 ) LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-03-16T14:11:54+08:00 ] 127.0.0.1 /work_log/index.php?m=Home&c=Project&a=memberSign
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `w_integral_sign` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `w_integral_sign` WHERE `mid` = 1 AND ( `addtime` > 1458057600 AND `addtime` < 1458144000  ) LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2016-03-16T14:12:06+08:00 ] 127.0.0.1 /work_log/index.php/Home/Project/test
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `w_integral_sign` [ RunTime:0.0160s ]
+SQL: SELECT * FROM `w_integral_sign` WHERE `mid` = 1 AND ( `addtime` > 1458057600 AND `addtime` < 1458144000  ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `w_integral_sign` WHERE `mid` = 1 AND ( `addtime` > 1458144000 AND `addtime` < 1458230400  ) LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001001s ]
+
+[ 2016-03-16T14:12:47+08:00 ] 127.0.0.1 /work_log/index.php/Home/Project/test
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `w_integral_sign` [ RunTime:0.0140s ]
+SQL: SELECT * FROM `w_integral_sign` WHERE `mid` = 1 AND ( `addtime` > 1458057600 AND `addtime` < 1458144000  ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `w_integral_sign` WHERE `mid` = 1 AND ( `addtime` > 1458144000 AND `addtime` < 1458230400  ) LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-03-16T14:13:19+08:00 ] 127.0.0.1 /work_log/index.php/Home/Project/test
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `w_integral_sign` [ RunTime:0.0140s ]
+SQL: SELECT * FROM `w_integral_sign` WHERE `mid` = 1 AND ( `addtime` > 1458057600 AND `addtime` < 1458144000  ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `w_integral_sign` WHERE `mid` = 1 AND ( `addtime` > 1457971200 AND `addtime` < 1458057600  ) LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-03-16T14:13:47+08:00 ] 127.0.0.1 /work_log/index.php/Home/Project/test
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `w_integral_sign` [ RunTime:0.0130s ]
+SQL: SELECT * FROM `w_integral_sign` WHERE `mid` = 1 AND ( `addtime` > 1458057600 AND `addtime` < 1458144000  ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `w_integral_sign` WHERE `mid` = 1 AND ( `addtime` > 1457971200 AND `addtime` < 1458057600  ) LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-03-16T14:14:10+08:00 ] 127.0.0.1 /work_log/index.php/Home/Project/test
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `w_integral_sign` [ RunTime:0.0130s ]
+SQL: SELECT * FROM `w_integral_sign` WHERE `mid` = 1 AND ( `addtime` > 1457422265 AND `addtime` < 1457508665  ) LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-03-16T14:14:15+08:00 ] 127.0.0.1 /work_log/index.php/Home/Project/test
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `w_integral_sign` [ RunTime:0.0110s ]
+SQL: SELECT * FROM `w_integral_sign` WHERE `mid` = 1 AND ( `addtime` > '1457422265' AND `addtime` < 1457508665  ) LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-03-16T14:14:21+08:00 ] 127.0.0.1 /work_log/index.php/Home/Project/test
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `w_integral_sign` [ RunTime:0.0160s ]
+SQL: SELECT * FROM `w_integral_sign` WHERE `mid` = 1 AND ( `addtime` > 1458057600 AND `addtime` < 1458144000  ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `w_integral_sign` WHERE `mid` = 1 AND ( `addtime` > 1457971200 AND `addtime` < 1458057600  ) LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-03-16T14:14:39+08:00 ] 127.0.0.1 /work_log/index.php/Home/Project/test
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `w_integral_sign` [ RunTime:0.0110s ]
+SQL: SELECT * FROM `w_integral_sign` WHERE `mid` = 1 AND ( `addtime` > 1457422265 AND `addtime` < 1457508665  ) LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002001s ]
+
+[ 2016-03-16T14:16:11+08:00 ] 127.0.0.1 /work_log/index.php/Home/Project/test
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `w_integral_sign` [ RunTime:0.0130s ]
+SQL: SELECT * FROM `w_integral_sign` WHERE `mid` = 1 AND ( `addtime` > 1457971200 AND `addtime` < 1458057600  ) LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-03-16T14:16:38+08:00 ] 127.0.0.1 /work_log/index.php/Home/Project/test
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `w_integral_sign` [ RunTime:0.0140s ]
+SQL: SELECT * FROM `w_integral_sign` WHERE `mid` = 1 AND ( `addtime` > 1457397436 AND `addtime` < 1457483836  ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `w_integral_sign` WHERE `mid` = 1 AND ( `addtime` > 1457311036 AND `addtime` < 1457397436  ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `w_integral_sign` WHERE `mid` = 1 AND ( `addtime` > 1457224636 AND `addtime` < 1457311036  ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `w_integral_sign` WHERE `mid` = 1 AND ( `addtime` > 1457138236 AND `addtime` < 1457224636  ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `w_integral_sign` WHERE `mid` = 1 AND ( `addtime` > 1457051836 AND `addtime` < 1457138236  ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `w_integral_sign` WHERE `mid` = 1 AND ( `addtime` > 1456965436 AND `addtime` < 1457051836  ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `w_integral_sign` WHERE `mid` = 1 AND ( `addtime` > 1456879036 AND `addtime` < 1456965436  ) LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-03-16T14:17:20+08:00 ] 127.0.0.1 /work_log/index.php/Home/Project/test
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `w_integral_sign` [ RunTime:0.0130s ]
+SQL: SELECT * FROM `w_integral_sign` WHERE `mid` = 1 AND ( `addtime` > 1457397436 AND `addtime` < 1457483836  ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `w_integral_sign` WHERE `mid` = 1 AND ( `addtime` > 1457311036 AND `addtime` < 1457397436  ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `w_integral_sign` WHERE `mid` = 1 AND ( `addtime` > 1457224636 AND `addtime` < 1457311036  ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `w_integral_sign` WHERE `mid` = 1 AND ( `addtime` > 1457138236 AND `addtime` < 1457224636  ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `w_integral_sign` WHERE `mid` = 1 AND ( `addtime` > 1457051836 AND `addtime` < 1457138236  ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `w_integral_sign` WHERE `mid` = 1 AND ( `addtime` > 1456965436 AND `addtime` < 1457051836  ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `w_integral_sign` WHERE `mid` = 1 AND ( `addtime` > 1456879036 AND `addtime` < 1456965436  ) LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001001s ]
+
+[ 2016-03-16T14:18:17+08:00 ] 127.0.0.1 /work_log/index.php/Home/Project/test
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-03-16T14:18:26+08:00 ] 127.0.0.1 /work_log/index.php/Home/Project/test
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `w_integral_sign` [ RunTime:0.0170s ]
+SQL: SELECT * FROM `w_integral_sign` WHERE `mid` = 1 AND ( `addtime` > 1457397436 AND `addtime` < 1457483836  ) LIMIT 1   [ RunTime:0.0020s ]
+NOTIC: [8] Undefined variable: days D:\WWW\work_log\Application\Home\Controller\ProjectController.class.php 第 117 行.
+SQL: SELECT * FROM `w_integral_sign` WHERE `mid` = 1 AND ( `addtime` > 1457311036 AND `addtime` < 1457397436  ) LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: days D:\WWW\work_log\Application\Home\Controller\ProjectController.class.php 第 117 行.
+SQL: SELECT * FROM `w_integral_sign` WHERE `mid` = 1 AND ( `addtime` > 1457224636 AND `addtime` < 1457311036  ) LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined variable: days D:\WWW\work_log\Application\Home\Controller\ProjectController.class.php 第 117 行.
+SQL: SELECT * FROM `w_integral_sign` WHERE `mid` = 1 AND ( `addtime` > 1457138236 AND `addtime` < 1457224636  ) LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined variable: days D:\WWW\work_log\Application\Home\Controller\ProjectController.class.php 第 117 行.
+SQL: SELECT * FROM `w_integral_sign` WHERE `mid` = 1 AND ( `addtime` > 1457051836 AND `addtime` < 1457138236  ) LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: days D:\WWW\work_log\Application\Home\Controller\ProjectController.class.php 第 117 行.
+SQL: SELECT * FROM `w_integral_sign` WHERE `mid` = 1 AND ( `addtime` > 1456965436 AND `addtime` < 1457051836  ) LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: days D:\WWW\work_log\Application\Home\Controller\ProjectController.class.php 第 117 行.
+SQL: SELECT * FROM `w_integral_sign` WHERE `mid` = 1 AND ( `addtime` > 1456879036 AND `addtime` < 1456965436  ) LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined variable: days D:\WWW\work_log\Application\Home\Controller\ProjectController.class.php 第 120 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-03-16T14:18:40+08:00 ] 127.0.0.1 /work_log/index.php/Home/Project/test
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `w_integral_sign` [ RunTime:0.0160s ]
+SQL: SELECT * FROM `w_integral_sign` WHERE `mid` = 1 AND ( `addtime` > 1457397436 AND `addtime` < 1457483836  ) LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined variable: days D:\WWW\work_log\Application\Home\Controller\ProjectController.class.php 第 117 行.
+SQL: SELECT * FROM `w_integral_sign` WHERE `mid` = 1 AND ( `addtime` > 1457311036 AND `addtime` < 1457397436  ) LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined variable: days D:\WWW\work_log\Application\Home\Controller\ProjectController.class.php 第 117 行.
+SQL: SELECT * FROM `w_integral_sign` WHERE `mid` = 1 AND ( `addtime` > 1457224636 AND `addtime` < 1457311036  ) LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined variable: days D:\WWW\work_log\Application\Home\Controller\ProjectController.class.php 第 117 行.
+SQL: SELECT * FROM `w_integral_sign` WHERE `mid` = 1 AND ( `addtime` > 1457138236 AND `addtime` < 1457224636  ) LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: days D:\WWW\work_log\Application\Home\Controller\ProjectController.class.php 第 117 行.
+SQL: SELECT * FROM `w_integral_sign` WHERE `mid` = 1 AND ( `addtime` > 1457051836 AND `addtime` < 1457138236  ) LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined variable: days D:\WWW\work_log\Application\Home\Controller\ProjectController.class.php 第 117 行.
+SQL: SELECT * FROM `w_integral_sign` WHERE `mid` = 1 AND ( `addtime` > 1456965436 AND `addtime` < 1457051836  ) LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined variable: days D:\WWW\work_log\Application\Home\Controller\ProjectController.class.php 第 117 行.
+SQL: SELECT * FROM `w_integral_sign` WHERE `mid` = 1 AND ( `addtime` > 1456879036 AND `addtime` < 1456965436  ) LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: days D:\WWW\work_log\Application\Home\Controller\ProjectController.class.php 第 120 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-03-16T14:19:23+08:00 ] 127.0.0.1 /work_log/index.php/Home/Project/test
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `w_integral_sign` [ RunTime:0.0140s ]
+SQL: SELECT * FROM `w_integral_sign` WHERE `mid` = 1 AND ( `addtime` > 1457397436 AND `addtime` < 1457483836  ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `w_integral_sign` WHERE `mid` = 1 AND ( `addtime` > 1457311036 AND `addtime` < 1457397436  ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `w_integral_sign` WHERE `mid` = 1 AND ( `addtime` > 1457224636 AND `addtime` < 1457311036  ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `w_integral_sign` WHERE `mid` = 1 AND ( `addtime` > 1457138236 AND `addtime` < 1457224636  ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `w_integral_sign` WHERE `mid` = 1 AND ( `addtime` > 1457051836 AND `addtime` < 1457138236  ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `w_integral_sign` WHERE `mid` = 1 AND ( `addtime` > 1456965436 AND `addtime` < 1457051836  ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `w_integral_sign` WHERE `mid` = 1 AND ( `addtime` > 1456879036 AND `addtime` < 1456965436  ) LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-03-16T14:19:48+08:00 ] 127.0.0.1 /work_log/index.php/Home/Project/test
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `w_integral_sign` [ RunTime:0.0100s ]
+SQL: SELECT * FROM `w_integral_sign` WHERE `mid` = 1 AND ( `addtime` > 1457397436 AND `addtime` < 1457483836  ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `w_integral_sign` WHERE `mid` = 1 AND ( `addtime` > 1457311036 AND `addtime` < 1457397436  ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `w_integral_sign` WHERE `mid` = 1 AND ( `addtime` > 1457224636 AND `addtime` < 1457311036  ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `w_integral_sign` WHERE `mid` = 1 AND ( `addtime` > 1457138236 AND `addtime` < 1457224636  ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `w_integral_sign` WHERE `mid` = 1 AND ( `addtime` > 1457051836 AND `addtime` < 1457138236  ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `w_integral_sign` WHERE `mid` = 1 AND ( `addtime` > 1456965436 AND `addtime` < 1457051836  ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `w_integral_sign` WHERE `mid` = 1 AND ( `addtime` > 1456879036 AND `addtime` < 1456965436  ) LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-03-16T14:20:21+08:00 ] 127.0.0.1 /work_log/index.php/Home/Project/test
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `w_integral_sign` [ RunTime:0.0130s ]
+SQL: SELECT * FROM `w_integral_sign` WHERE `mid` = 1 AND ( `addtime` > 1457397436 AND `addtime` < 1457483836  ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `w_integral_sign` WHERE `mid` = 1 AND ( `addtime` > 1457311036 AND `addtime` < 1457397436  ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `w_integral_sign` WHERE `mid` = 1 AND ( `addtime` > 1457224636 AND `addtime` < 1457311036  ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `w_integral_sign` WHERE `mid` = 1 AND ( `addtime` > 1457138236 AND `addtime` < 1457224636  ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `w_integral_sign` WHERE `mid` = 1 AND ( `addtime` > 1457051836 AND `addtime` < 1457138236  ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `w_integral_sign` WHERE `mid` = 1 AND ( `addtime` > 1456965436 AND `addtime` < 1457051836  ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `w_integral_sign` WHERE `mid` = 1 AND ( `addtime` > 1456879036 AND `addtime` < 1456965436  ) LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003000s ]
+
+[ 2016-03-16T14:20:36+08:00 ] 127.0.0.1 /work_log/index.php/Home/Project/test
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `w_integral_sign` [ RunTime:0.0180s ]
+SQL: SELECT * FROM `w_integral_sign` WHERE `mid` = 1 AND ( `addtime` > 1457397436 AND `addtime` < 1457483836  ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `w_integral_sign` WHERE `mid` = 1 AND ( `addtime` > 1457311036 AND `addtime` < 1457397436  ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `w_integral_sign` WHERE `mid` = 1 AND ( `addtime` > 1457224636 AND `addtime` < 1457311036  ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `w_integral_sign` WHERE `mid` = 1 AND ( `addtime` > 1457138236 AND `addtime` < 1457224636  ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `w_integral_sign` WHERE `mid` = 1 AND ( `addtime` > 1457051836 AND `addtime` < 1457138236  ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `w_integral_sign` WHERE `mid` = 1 AND ( `addtime` > 1456965436 AND `addtime` < 1457051836  ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `w_integral_sign` WHERE `mid` = 1 AND ( `addtime` > 1456879036 AND `addtime` < 1456965436  ) LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-03-16T14:22:30+08:00 ] 127.0.0.1 /work_log/index.php/Home/Project/test
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001001s ]
+SQL: SHOW COLUMNS FROM `w_integral_sign` [ RunTime:0.0170s ]
+SQL: SELECT * FROM `w_integral_sign` WHERE `mid` = 1 AND ( `addtime` > 1457397436 AND `addtime` < 1457483836  ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `w_integral_sign` WHERE `mid` = 1 AND ( `addtime` > 1457311036 AND `addtime` < 1457397436  ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `w_integral_sign` WHERE `mid` = 1 AND ( `addtime` > 1457224636 AND `addtime` < 1457311036  ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `w_integral_sign` WHERE `mid` = 1 AND ( `addtime` > 1457138236 AND `addtime` < 1457224636  ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `w_integral_sign` WHERE `mid` = 1 AND ( `addtime` > 1457051836 AND `addtime` < 1457138236  ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `w_integral_sign` WHERE `mid` = 1 AND ( `addtime` > 1456965436 AND `addtime` < 1457051836  ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `w_integral_sign` WHERE `mid` = 1 AND ( `addtime` > 1456879036 AND `addtime` < 1456965436  ) LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-03-16T14:22:36+08:00 ] 127.0.0.1 /work_log/index.php/Home/Project/test
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `w_integral_sign` [ RunTime:0.0120s ]
+SQL: SELECT * FROM `w_integral_sign` WHERE `mid` = 1 AND ( `addtime` > 1457397436 AND `addtime` < 1457483836  ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `w_integral_sign` WHERE `mid` = 1 AND ( `addtime` > 1457311036 AND `addtime` < 1457397436  ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `w_integral_sign` WHERE `mid` = 1 AND ( `addtime` > 1457224636 AND `addtime` < 1457311036  ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `w_integral_sign` WHERE `mid` = 1 AND ( `addtime` > 1457138236 AND `addtime` < 1457224636  ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `w_integral_sign` WHERE `mid` = 1 AND ( `addtime` > 1457051836 AND `addtime` < 1457138236  ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `w_integral_sign` WHERE `mid` = 1 AND ( `addtime` > 1456965436 AND `addtime` < 1457051836  ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `w_integral_sign` WHERE `mid` = 1 AND ( `addtime` > 1456879036 AND `addtime` < 1456965436  ) LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-03-16T14:22:40+08:00 ] 127.0.0.1 /work_log/index.php/Home/Project/test
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `w_integral_sign` [ RunTime:0.0160s ]
+SQL: SELECT * FROM `w_integral_sign` WHERE `mid` = 1 AND ( `addtime` > 1457397436 AND `addtime` < 1457483836  ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `w_integral_sign` WHERE `mid` = 1 AND ( `addtime` > 1457311036 AND `addtime` < 1457397436  ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `w_integral_sign` WHERE `mid` = 1 AND ( `addtime` > 1457224636 AND `addtime` < 1457311036  ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `w_integral_sign` WHERE `mid` = 1 AND ( `addtime` > 1457138236 AND `addtime` < 1457224636  ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `w_integral_sign` WHERE `mid` = 1 AND ( `addtime` > 1457051836 AND `addtime` < 1457138236  ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `w_integral_sign` WHERE `mid` = 1 AND ( `addtime` > 1456965436 AND `addtime` < 1457051836  ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `w_integral_sign` WHERE `mid` = 1 AND ( `addtime` > 1456879036 AND `addtime` < 1456965436  ) LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-03-16T14:22:46+08:00 ] 127.0.0.1 /work_log/index.php/Home/Project/test
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `w_integral_sign` [ RunTime:0.0100s ]
+SQL: SELECT * FROM `w_integral_sign` WHERE `mid` = 1 AND ( `addtime` > 1457397436 AND `addtime` < 1457483836  ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `w_integral_sign` WHERE `mid` = 1 AND ( `addtime` > 1457311036 AND `addtime` < 1457397436  ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `w_integral_sign` WHERE `mid` = 1 AND ( `addtime` > 1457224636 AND `addtime` < 1457311036  ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `w_integral_sign` WHERE `mid` = 1 AND ( `addtime` > 1457138236 AND `addtime` < 1457224636  ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `w_integral_sign` WHERE `mid` = 1 AND ( `addtime` > 1457051836 AND `addtime` < 1457138236  ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `w_integral_sign` WHERE `mid` = 1 AND ( `addtime` > 1456965436 AND `addtime` < 1457051836  ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `w_integral_sign` WHERE `mid` = 1 AND ( `addtime` > 1456879036 AND `addtime` < 1456965436  ) LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-03-16T14:23:02+08:00 ] 127.0.0.1 /work_log/index.php/Home/Project/test
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `w_integral_sign` [ RunTime:0.0110s ]
+SQL: SELECT * FROM `w_integral_sign` WHERE `mid` = 1 AND ( `addtime` > 1457397436 AND `addtime` < 1457483836  ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `w_integral_sign` WHERE `mid` = 1 AND ( `addtime` > 1457311036 AND `addtime` < 1457397436  ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `w_integral_sign` WHERE `mid` = 1 AND ( `addtime` > 1457224636 AND `addtime` < 1457311036  ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `w_integral_sign` WHERE `mid` = 1 AND ( `addtime` > 1457138236 AND `addtime` < 1457224636  ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `w_integral_sign` WHERE `mid` = 1 AND ( `addtime` > 1457051836 AND `addtime` < 1457138236  ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `w_integral_sign` WHERE `mid` = 1 AND ( `addtime` > 1456965436 AND `addtime` < 1457051836  ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `w_integral_sign` WHERE `mid` = 1 AND ( `addtime` > 1456879036 AND `addtime` < 1456965436  ) LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined variable: nums D:\WWW\work_log\Application\Home\Controller\ProjectController.class.php 第 124 行.
+NOTIC: [8] Undefined variable: nums D:\WWW\work_log\Application\Home\Controller\ProjectController.class.php 第 124 行.
+NOTIC: [8] Undefined variable: nums D:\WWW\work_log\Application\Home\Controller\ProjectController.class.php 第 124 行.
+NOTIC: [8] Undefined variable: nums D:\WWW\work_log\Application\Home\Controller\ProjectController.class.php 第 124 行.
+NOTIC: [8] Undefined variable: nums D:\WWW\work_log\Application\Home\Controller\ProjectController.class.php 第 124 行.
+NOTIC: [8] Undefined variable: nums D:\WWW\work_log\Application\Home\Controller\ProjectController.class.php 第 124 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-03-16T14:23:11+08:00 ] 127.0.0.1 /work_log/index.php/Home/Project/test
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `w_integral_sign` [ RunTime:0.0150s ]
+SQL: SELECT * FROM `w_integral_sign` WHERE `mid` = 1 AND ( `addtime` > 1457397436 AND `addtime` < 1457483836  ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `w_integral_sign` WHERE `mid` = 1 AND ( `addtime` > 1457311036 AND `addtime` < 1457397436  ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `w_integral_sign` WHERE `mid` = 1 AND ( `addtime` > 1457224636 AND `addtime` < 1457311036  ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `w_integral_sign` WHERE `mid` = 1 AND ( `addtime` > 1457138236 AND `addtime` < 1457224636  ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `w_integral_sign` WHERE `mid` = 1 AND ( `addtime` > 1457051836 AND `addtime` < 1457138236  ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `w_integral_sign` WHERE `mid` = 1 AND ( `addtime` > 1456965436 AND `addtime` < 1457051836  ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `w_integral_sign` WHERE `mid` = 1 AND ( `addtime` > 1456879036 AND `addtime` < 1456965436  ) LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: nums D:\WWW\work_log\Application\Home\Controller\ProjectController.class.php 第 124 行.
+NOTIC: [8] Undefined variable: nums D:\WWW\work_log\Application\Home\Controller\ProjectController.class.php 第 124 行.
+NOTIC: [8] Undefined variable: nums D:\WWW\work_log\Application\Home\Controller\ProjectController.class.php 第 124 行.
+NOTIC: [8] Undefined variable: nums D:\WWW\work_log\Application\Home\Controller\ProjectController.class.php 第 124 行.
+NOTIC: [8] Undefined variable: nums D:\WWW\work_log\Application\Home\Controller\ProjectController.class.php 第 124 行.
+NOTIC: [8] Undefined variable: nums D:\WWW\work_log\Application\Home\Controller\ProjectController.class.php 第 124 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-03-16T14:23:18+08:00 ] 127.0.0.1 /work_log/index.php/Home/Project/test
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `w_integral_sign` [ RunTime:0.0140s ]
+SQL: SELECT * FROM `w_integral_sign` WHERE `mid` = 1 AND ( `addtime` > 1457397436 AND `addtime` < 1457483836  ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `w_integral_sign` WHERE `mid` = 1 AND ( `addtime` > 1457311036 AND `addtime` < 1457397436  ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `w_integral_sign` WHERE `mid` = 1 AND ( `addtime` > 1457224636 AND `addtime` < 1457311036  ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `w_integral_sign` WHERE `mid` = 1 AND ( `addtime` > 1457138236 AND `addtime` < 1457224636  ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `w_integral_sign` WHERE `mid` = 1 AND ( `addtime` > 1457051836 AND `addtime` < 1457138236  ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `w_integral_sign` WHERE `mid` = 1 AND ( `addtime` > 1456965436 AND `addtime` < 1457051836  ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `w_integral_sign` WHERE `mid` = 1 AND ( `addtime` > 1456879036 AND `addtime` < 1456965436  ) LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined variable: nums D:\WWW\work_log\Application\Home\Controller\ProjectController.class.php 第 125 行.
+NOTIC: [8] Undefined variable: nums D:\WWW\work_log\Application\Home\Controller\ProjectController.class.php 第 125 行.
+NOTIC: [8] Undefined variable: nums D:\WWW\work_log\Application\Home\Controller\ProjectController.class.php 第 125 行.
+NOTIC: [8] Undefined variable: nums D:\WWW\work_log\Application\Home\Controller\ProjectController.class.php 第 125 行.
+NOTIC: [8] Undefined variable: nums D:\WWW\work_log\Application\Home\Controller\ProjectController.class.php 第 125 行.
+NOTIC: [8] Undefined variable: nums D:\WWW\work_log\Application\Home\Controller\ProjectController.class.php 第 125 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-03-16T14:23:47+08:00 ] 127.0.0.1 /work_log/index.php/Home/Project/test
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `w_integral_sign` [ RunTime:0.0130s ]
+SQL: SELECT * FROM `w_integral_sign` WHERE `mid` = 1 AND ( `addtime` > 1457397436 AND `addtime` < 1457483836  ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `w_integral_sign` WHERE `mid` = 1 AND ( `addtime` > 1457311036 AND `addtime` < 1457397436  ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `w_integral_sign` WHERE `mid` = 1 AND ( `addtime` > 1457224636 AND `addtime` < 1457311036  ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `w_integral_sign` WHERE `mid` = 1 AND ( `addtime` > 1457138236 AND `addtime` < 1457224636  ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `w_integral_sign` WHERE `mid` = 1 AND ( `addtime` > 1457051836 AND `addtime` < 1457138236  ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `w_integral_sign` WHERE `mid` = 1 AND ( `addtime` > 1456965436 AND `addtime` < 1457051836  ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `w_integral_sign` WHERE `mid` = 1 AND ( `addtime` > 1456879036 AND `addtime` < 1456965436  ) LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-03-16T14:25:54+08:00 ] 127.0.0.1 /work_log/index.php/Home/Project/test
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `w_integral_sign` [ RunTime:0.0120s ]
+SQL: SELECT * FROM `w_integral_sign` WHERE `mid` = 1 AND ( `addtime` > 1457397436 AND `addtime` < 1457483836  ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `w_integral_sign` WHERE `mid` = 1 AND ( `addtime` > 1457311036 AND `addtime` < 1457397436  ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `w_integral_sign` WHERE `mid` = 1 AND ( `addtime` > 1457224636 AND `addtime` < 1457311036  ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `w_integral_sign` WHERE `mid` = 1 AND ( `addtime` > 1457138236 AND `addtime` < 1457224636  ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `w_integral_sign` WHERE `mid` = 1 AND ( `addtime` > 1457051836 AND `addtime` < 1457138236  ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `w_integral_sign` WHERE `mid` = 1 AND ( `addtime` > 1456965436 AND `addtime` < 1457051836  ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `w_integral_sign` WHERE `mid` = 1 AND ( `addtime` > 1456879036 AND `addtime` < 1456965436  ) LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-03-16T14:26:05+08:00 ] 127.0.0.1 /work_log/index.php/Home/Project/test
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `w_integral_sign` [ RunTime:0.0160s ]
+SQL: SELECT * FROM `w_integral_sign` WHERE `mid` = 1 AND ( `addtime` > 1457397436 AND `addtime` < 1457483836  ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `w_integral_sign` WHERE `mid` = 1 AND ( `addtime` > 1457311036 AND `addtime` < 1457397436  ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `w_integral_sign` WHERE `mid` = 1 AND ( `addtime` > 1457224636 AND `addtime` < 1457311036  ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `w_integral_sign` WHERE `mid` = 1 AND ( `addtime` > 1457138236 AND `addtime` < 1457224636  ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `w_integral_sign` WHERE `mid` = 1 AND ( `addtime` > 1457051836 AND `addtime` < 1457138236  ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `w_integral_sign` WHERE `mid` = 1 AND ( `addtime` > 1456965436 AND `addtime` < 1457051836  ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `w_integral_sign` WHERE `mid` = 1 AND ( `addtime` > 1456879036 AND `addtime` < 1456965436  ) LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-03-16T17:15:00+08:00 ] 127.0.0.1 /work_log/index.php/Home/Project/test
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `w_integral_sign` [ RunTime:0.0120s ]
+SQL: SELECT * FROM `w_integral_sign` WHERE `mid` = 1 AND ( `addtime` > 1457397436 AND `addtime` < 1457483836  ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `w_integral_sign` WHERE `mid` = 1 AND ( `addtime` > 1457311036 AND `addtime` < 1457397436  ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `w_integral_sign` WHERE `mid` = 1 AND ( `addtime` > 1457224636 AND `addtime` < 1457311036  ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `w_integral_sign` WHERE `mid` = 1 AND ( `addtime` > 1457138236 AND `addtime` < 1457224636  ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `w_integral_sign` WHERE `mid` = 1 AND ( `addtime` > 1457051836 AND `addtime` < 1457138236  ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `w_integral_sign` WHERE `mid` = 1 AND ( `addtime` > 1456965436 AND `addtime` < 1457051836  ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `w_integral_sign` WHERE `mid` = 1 AND ( `addtime` > 1456879036 AND `addtime` < 1456965436  ) LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+

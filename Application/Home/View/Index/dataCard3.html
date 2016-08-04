@@ -1,0 +1,66 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1,user-scalable=no">
+		<title>Highcharts Example</title>
+
+		<script type="text/javascript" src="http://cdn.hcharts.cn/jquery/jquery-1.8.3.min.js"></script>
+		<script type="text/javascript">
+$(function () {
+    var categories = ['03-17', '03-18', '03-19'];
+    var data = [5, 4, 19];   
+    var data_type = "访客数";        
+    $('#container').highcharts({
+        chart: {
+            backgroundColor: '#f15353',
+        },
+        title: {
+            text: '',
+            x: -20 //center
+        },
+        credits: {
+            enabled: false,
+        },
+        legend: {
+            itemStyle: {
+                color: '#fff'
+            },
+        },
+        xAxis: {
+            categories: categories,
+            labels: {
+                style: {
+                    color: '#fff',
+                    fontSize: '14px',
+                }
+            },
+        },
+        yAxis: {
+            title: {
+                text: ''
+            },
+            gridLineColor: '#fff',
+            labels: {
+                style: {
+                    color: '#fff',
+                    fontSize: '14px',
+                }
+            },
+        },
+        series: [{
+            enabled: false,
+            name: data_type,
+            data: data,
+            color: '#fff',
+        },]
+    });
+});
+		</script>
+	</head>
+	<body>
+<script src="{work=$Think.const.WORK_LOG}/highcharts/js/highcharts.js"></script>
+
+<div id="container" style="min-width: 310px; height: 400px; margin: 0 auto"></div>
+
+	</body>
+</html>

@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="ID=edge, chorome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1,user-scalable=no">
+	<meta name="format-detection" content="telephone=no">
+	<title>工作日志</title>
+	<link rel="stylesheet" href="{work=$Think.const.WORK_LOG}/fonts/style.css">
+	<link rel="stylesheet" href="{work=$Think.const.WORK_LOG}/css/index.css">
+	<link rel="stylesheet" href="{work=$Think.const.WORK_LOG}/calendar/sign.css">
+	<script type="text/javascript" src="{work=$Think.const.WORK_LOG}/js/jquery-1.11.1.min.js"></script>
+	<script type="text/javascript" src="{work=$Think.const.WORK_LOG}/calendar/calendar.js"></script>
+</head>
+<body id="worklog-index">
+	<div id="loading">
+		<canvas id="c"></canvas>
+	</div>	
+	<!-- 吉祥物 -->
+	<!-- <section id="mascot-wrapper">
+		<div class="rabbit rabbit-move">
+			
+		</div>
+	</section> -->
+	<!-- 浮动窗口 -->
+	<include file="floats"/>
+	<div id="wrapper">
+		<!-- 日历，新增，搜索，随摘，标题，全部/已完成/未完成 -->
+		<header>
+			<div id="title">Robin's JobLogs</div>
+			<span class="calendar-icon">
+				<img src="{work=$Think.const.WORK_LOG}/images/calendar_icon.png">
+			</span>
+			<span class="write-icon">
+				<img src="{work=$Think.const.WORK_LOG}/images/write_icon.png">
+			</span>
+			<span class="search-icon">
+				<img src="{work=$Think.const.WORK_LOG}/images/search_icon.png">
+			</span>
+			<span class="pick-icon">
+				<img src="{work=$Think.const.WORK_LOG}/images/pick_icon.png">
+			</span>
+			<span class="nums-all nums">
+				{work=$data.all}
+			</span>
+			<span class="nums-finished nums">
+				{work=$data.finished}
+			</span>
+			<span class="nums-unfinished nums">
+				{work=$data.unfinished}
+			</span>
+		</header>
+		<!-- 搜索模块，日历列表，随摘模块，日历模块，蒙版，添加日志模块 -->
+		<main>
+			<div id="search">
+				<form id="search-box" action="" method="post">
+					<input type="text" id="search-con" placeholder="输入关键词...">
+					<i id="search-btn" class="icon-search"></i>
+				</form>
+			</div>
+			<div id="logs-list">	
+				<ul id="logs">
+					<volist id="list" name="list">
+						<li data-id="{work=$list.id}" data-pid="{work=$list.pid}" data-finish="{work=$list.finished}">
+							<div class="check-finished <eq name='list.finished' value='0'>unfinished<else/>finished</eq>" data-id="{work=$list.id}"></div>
+							<input type="text" class="edit-content" contenteditable="true" data-id="{work=$list.id}" value="{work=$list.content}"/>
+							<div class="add-time <eq name='list.finished' value='1'>done</eq>">
+								<eq name="list['finished']" value="0">
+									{work=$list.create_time|date="Y-m-d",###}
+									<else/>
+									{work=$list.finish_time|date="Y-m-d",###}
+								</eq>
+							</div>
+							<div class="operation">
+								<span class="delete">删除</span>
+							</div>
+						</li>
+					</volist>
+				</ul>
+			</div>	
+			<include file="picks"/>
+		</main>
+		<!-- 日志模块 BEGIN-->
+		<div id="calendar"></div>
+		<!-- 日志模块 END-->
+		<div id="calendar-mask"></div>
+		<div id="add-log">
+			<div class="add-log-box">
+				<p class="difficulty-nums">
+					<span data-nums="1" class="on">狼</span>
+					<span data-nums="2">虎</span>
+					<span data-nums="3">鬼</span>
+					<span data-nums="4">龙</span>
+					<span  data-nums="5">神</span>
+				</p>
+				<p class="add-log-type">
+					<span class="on" data-nums="1">功能</span>
+					<span data-nums="2">BUG</span>
+				</p>
+				<p class="add-log-content">
+					<textarea><?php echo S('NOW_CLASS_NAME'); ?></textarea>
+				</p>
+				<p class="add-log-button">
+					<button>确认</button>
+					<button>取消</button>
+				</p>
+			</div>
+		</div>
+		<!-- 项目分类模块 -->
+		<footer>
+			<div class="footer-move-box"></div>
+			<div id="project-box">
+				<volist id="list" name="pc">
+					<span class="project-class" data-id="{work=$list.id}">{work=$list.name}</span>
+				</volist>
+			</div>
+		</footer>
+	</div>
+	<!-- 判断有没AJAX在执行 -->
+	<input type="hidden" id="ajax-running">
+	<script>
+		var controller="__CONTROLLER__";
+		var d = new Date();
+		var signList=[{"signYear":d.getFullYear(),"signMonth":d.getMonth()+1,"signDay":d.getDate()}];
+		   calUtil.init(signList);
+	</script>
+	<!-- 根据屏幕宽度变化而变化 -->
+	 <script type="text/javascript">
+	//     //rem设置
+	//     (function(doc, win) {
+	//         var docEl = doc.documentElement,
+	//             resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+	//             recalc = function() {
+	//                 var clientWidth = docEl.clientWidth;
+	//                 if (!clientWidth) return;
+	//                 docEl.style.fontSize = 20 * (clientWidth / 320) + 'px';
+	//                 //宽与高度
+	//                 document.body.style.height = clientWidth * (900 / 1440) + "px"
+	//             };
+	//         win.addEventListener(resizeEvt, recalc, false);
+	//         doc.addEventListener('DOMContentLoaded', recalc, false);
+	//     })(document, window);
+	</script>
+	<script src="{work=$Think.const.WORK_LOG}/loading/js/index.js"></script>
+	<script src="{work=$Think.const.WORK_LOG}/loading/js/prefixfree.min.js"></script>
+	<script type="text/javascript" src="{work=$Think.const.WORK_LOG}/js/require.js" data-main="{work=$Think.const.WORK_LOG}/js/main"></script>
+	<script>
+		var test_time
+		$("#title").click(function(){
+			if($(this).hasClass("active")){
+				$(this).removeClass("active")
+				loading.hide();
+				clearInterval(test_time);
+			}else{
+				$(this).addClass("active")
+				loading.show();
+				test_time=setInterval(loop, 16);
+			}
+		})
+		// $(document).loading("start");
+		// $(document).loading("stop");
+	</script>
+</body>
+</html>

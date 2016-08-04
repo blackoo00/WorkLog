@@ -1,0 +1,171 @@
+[ 2016-04-22T16:15:45+08:00 ] 127.0.0.1 /work_log/index.php/Home/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `w_logs` [ RunTime:0.0110s ]
+SQL: SELECT * FROM `w_logs` WHERE `delete` = 0 ORDER BY finished,create_time desc  [ RunTime:0.0050s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `w_logs` WHERE `finished` = 1 AND `delete` = 0 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `w_logs` WHERE `finished` = 0 AND `delete` = 0 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `w_project_class` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `w_project_class` WHERE `delete` = 0  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.020001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-04-22T16:15:45+08:00 ] 127.0.0.1 /work_log/index.php/Home/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `w_logs` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `w_logs` WHERE `delete` = 0 ORDER BY finished,create_time desc  [ RunTime:0.0020s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `w_logs` WHERE `finished` = 1 AND `delete` = 0 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `w_logs` WHERE `finished` = 0 AND `delete` = 0 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `w_project_class` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `w_project_class` WHERE `delete` = 0  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.021001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-04-22T16:15:48+08:00 ] 127.0.0.1 /work_log/index.php/Home/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `w_logs` [ RunTime:0.0090s ]
+SQL: SELECT * FROM `w_logs` WHERE `delete` = 0 ORDER BY finished,create_time desc  [ RunTime:0.0020s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `w_logs` WHERE `finished` = 1 AND `delete` = 0 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `w_logs` WHERE `finished` = 0 AND `delete` = 0 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `w_project_class` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `w_project_class` WHERE `delete` = 0  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.022001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001001s ]
+
+[ 2016-04-22T16:15:52+08:00 ] 127.0.0.1 /work_log/index.php/Home/Index/screeningLog?pid=19&type=3
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `w_logs` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `w_logs` WHERE `pid` = 19 AND `delete` = 0 ORDER BY finished,create_time desc  [ RunTime:0.0010s ]
+NOTIC: [8] Undefined variable: str D:\wamp\www\work_log\Application\Home\Controller\IndexController.class.php 第 186 行.
+
+[ 2016-04-22T16:15:53+08:00 ] 127.0.0.1 /work_log/index.php/Home/Index/screeningLog?pid=24&type=3
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `w_logs` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `w_logs` WHERE `pid` = 24 AND `delete` = 0 ORDER BY finished,create_time desc  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: str D:\wamp\www\work_log\Application\Home\Controller\IndexController.class.php 第 208 行.
+
+[ 2016-04-22T16:16:01+08:00 ] 127.0.0.1 /work_log/index.php/Home/Index/screeningLog?pid=19&type=3
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `w_logs` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `w_logs` WHERE `pid` = 19 AND `delete` = 0 ORDER BY finished,create_time desc  [ RunTime:0.0010s ]
+NOTIC: [8] Undefined variable: str D:\wamp\www\work_log\Application\Home\Controller\IndexController.class.php 第 186 行.
+
+[ 2016-04-22T16:16:05+08:00 ] 127.0.0.1 /work_log/index.php/Home/Index/getProjectDescribe?pid=19
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `w_logs` [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `w_project_describe` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `w_project_describe` WHERE `pid` = 19 LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2016-04-22T16:16:10+08:00 ] 127.0.0.1 /work_log/index.php/Home/Index/editProjectDescribe?pid=19&content=%E9%9B%B6%E8%B7%9D%E7%A6%BB%E9%A1%B9%E7%9B%AE%E6%8F%8F%E8%BF%B0%EF%BC%9A%0A%E6%B6%89%E5%8F%8A%E5%88%B0%E7%9A%84%E6%96%B0%E8%A1%A8%0A%E2%91%B4shop%3A%E7%9B%B4%E8%90%A5%E5%BA%97%E8%A1%A8%0A%E2%91%B5shop_courier%3A%E9%94%80%E5%94%AE%E4%BA%BA%E5%91%98%E5%88%97%E8%A1%A8%0A%E2%91%B6shop_sales%3A%E9%85%8D%E9%80%81%E4%BA%BA%E5%91%98%E5%88%97%E8%A1%A8%0A%E2%91%B7ticket%3A%E6%B0%B4%E7%A5%A8%E5%88%97%E8%A1%A8%0A%E2%91%B8ticket_order%3A%E6%B0%B4%E7%A5%A8%E7%AE%A1%E7%90%86%E5%88%97%E8%A1%A8%0A%E2%91%B9ticket_rule%3A%E6%B0%B4%E7%A5%A8%E8%A7%84%E5%88%99%0A%E2%91%BAsign_in%3A%E7%AD%BE%E5%88%B0%E5%88%97%E8%A1%A8%0A%0A%E7%B3%BB%E7%BB%9F%E6%8F%8F%E8%BF%B0%EF%BC%9A%0A%E6%B2%A1%E6%9C%89%E4%B8%89%E7%BA%A7%E5%88%86%E9%94%80%EF%BC%8C%E5%85%85%E5%80%BC%E7%94%A8%E6%B0%B4%E7%A5%A8%E7%9A%84%E5%BD%A2%E5%BC%8F%EF%BC%8C%E4%B8%8D%E5%90%8C%E7%9A%84%E6%B0%B4%E7%A5%A8%E4%B8%8D%E5%90%8C%E7%9A%84%E4%BB%B7%E6%A0%BC%EF%BC%8C%E5%B9%B6%E4%B8%94%E8%B5%A0%E9%80%81%E9%87%91%E5%B8%81%EF%BC%8C%E5%BD%93%E4%BB%B7%E6%A0%BC%E5%88%B0%E4%B8%80%E5%AE%9A%E5%80%BC%E7%9A%84%E6%97%B6%E5%80%99%E6%A0%B9%E6%8D%AE%E8%A7%84%E5%88%99%E5%8F%A6%E5%A4%96%E8%B5%A0%E9%80%81%E9%87%91%E5%B8%81%EF%BC%8C%E9%87%91%E5%B8%81%E5%92%8C%E7%8E%B0%E9%87%911%3A1%EF%BC%8C%E4%B8%8B%E5%8D%95%E7%9A%84%E6%97%B6%E5%80%99%E5%8F%AF%E4%BB%A5%E6%8A%B5%E6%89%A3%E3%80%82%E7%AD%BE%E5%8D%95%E7%A7%AF%E5%88%86%E6%A0%B9%E6%8D%AE%E4%BA%BA%E5%B7%A5%E5%A4%84%E7%90%86%E5%A5%96%E5%93%81
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `w_logs` [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `w_project_describe` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `w_project_describe` WHERE `pid` = 19 LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `w_project_describe` SET `content`='零距离项目描述：
+涉及到的新表
+⑴shop:直营店表
+⑵shop_courier:销售人员列表
+⑶shop_sales:配送人员列表
+⑷ticket:水票列表
+⑸ticket_order:水票管理列表
+⑹ticket_rule:水票规则
+⑺sign_in:签到列表
+
+系统描述：
+没有三级分销，充值用水票的形式，不同的水票不同的价格，并且赠送金币，当价格到一定值的时候根据规则另外赠送金币，金币和现金1:1，下单的时候可以抵扣。签单积分根据人工处理奖品' WHERE `pid` = 19 [ RunTime:0.0000s ]
+SQL: SELECT * FROM `w_project_describe` WHERE `pid` = 19 LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2016-04-22T16:16:42+08:00 ] 127.0.0.1 /work_log/index.php/Home/Index/editProjectDescribe?pid=19&content=%E9%9B%B6%E8%B7%9D%E7%A6%BB%E9%A1%B9%E7%9B%AE%E6%8F%8F%E8%BF%B0%EF%BC%9A%0A%E6%B6%89%E5%8F%8A%E5%88%B0%E7%9A%84%E6%96%B0%E8%A1%A8%0A%E2%91%B4shop%3A%E7%9B%B4%E8%90%A5%E5%BA%97%E8%A1%A8%0A%E2%91%B5shop_courier%3A%E9%94%80%E5%94%AE%E4%BA%BA%E5%91%98%E5%88%97%E8%A1%A8%0A%E2%91%B6shop_sales%3A%E9%85%8D%E9%80%81%E4%BA%BA%E5%91%98%E5%88%97%E8%A1%A8%0A%E2%91%B7ticket%3A%E6%B0%B4%E7%A5%A8%E5%88%97%E8%A1%A8%0A%E2%91%B8ticket_order%3A%E6%B0%B4%E7%A5%A8%E7%AE%A1%E7%90%86%E5%88%97%E8%A1%A8%0A%E2%91%B9ticket_rule%3A%E6%B0%B4%E7%A5%A8%E8%A7%84%E5%88%99%0A%E2%91%BAsign_in%3A%E7%AD%BE%E5%88%B0%E5%88%97%E8%A1%A8%0A%0A%E7%B3%BB%E7%BB%9F%E6%8F%8F%E8%BF%B0%EF%BC%9A%0A%E6%B2%A1%E6%9C%89%E4%B8%89%E7%BA%A7%E5%88%86%E9%94%80%EF%BC%8C%E5%85%85%E5%80%BC%E7%94%A8%E6%B0%B4%E7%A5%A8%E7%9A%84%E5%BD%A2%E5%BC%8F%EF%BC%8C%E4%B8%8D%E5%90%8C%E7%9A%84%E6%B0%B4%E7%A5%A8%E4%B8%8D%E5%90%8C%E7%9A%84%E4%BB%B7%E6%A0%BC%EF%BC%8C%E5%B9%B6%E4%B8%94%E8%B5%A0%E9%80%81%E9%87%91%E5%B8%81%EF%BC%8C%E5%BD%93%E4%BB%B7%E6%A0%BC%E5%88%B0%E4%B8%80%E5%AE%9A%E5%80%BC%E7%9A%84%E6%97%B6%E5%80%99%E6%A0%B9%E6%8D%AE%E8%A7%84%E5%88%99%E5%8F%A6%E5%A4%96%E8%B5%A0%E9%80%81%E9%87%91%E5%B8%81%EF%BC%8C%E9%87%91%E5%B8%81%E5%92%8C%E7%8E%B0%E9%87%911%3A1%EF%BC%8C%E4%B8%8B%E5%8D%95%E7%9A%84%E6%97%B6%E5%80%99%E5%8F%AF%E4%BB%A5%E6%8A%B5%E6%89%A3%E3%80%82%E7%AD%BE%E5%8D%95%E7%A7%AF%E5%88%86%E6%A0%B9%E6%8D%AE%E4%BA%BA%E5%B7%A5%E5%A4%84%E7%90%86%E5%A5%96%E5%93%81%0A%E8%B4%A7%E5%88%B0%E4%BB%98%E6%AC%BEpaymode%E4%B8%BA3+%E5%9C%A8%E5%90%8E%E5%8F%B0orderinfo%E4%B8%AD%E9%80%89%E6%8B%A9%E5%B7%B2%E6%94%B6%E8%B4%A7paid%E8%AE%BE%E4%B8%BA1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `w_logs` [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `w_project_describe` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `w_project_describe` WHERE `pid` = 19 LIMIT 1   [ RunTime:0.0010s ]
+SQL: UPDATE `w_project_describe` SET `content`='零距离项目描述：
+涉及到的新表
+⑴shop:直营店表
+⑵shop_courier:销售人员列表
+⑶shop_sales:配送人员列表
+⑷ticket:水票列表
+⑸ticket_order:水票管理列表
+⑹ticket_rule:水票规则
+⑺sign_in:签到列表
+
+系统描述：
+没有三级分销，充值用水票的形式，不同的水票不同的价格，并且赠送金币，当价格到一定值的时候根据规则另外赠送金币，金币和现金1:1，下单的时候可以抵扣。签单积分根据人工处理奖品
+货到付款paymode为3 在后台orderinfo中选择已收货paid设为1' WHERE `pid` = 19 [ RunTime:0.0000s ]
+SQL: SELECT * FROM `w_project_describe` WHERE `pid` = 19 LIMIT 1   [ RunTime:0.0000s ]
+

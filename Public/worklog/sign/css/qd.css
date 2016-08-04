@@ -1,0 +1,115 @@
+@charset "utf-8";
+*{
+	margin:0px;
+	padding:0px;
+	border:none;
+	text-decoration:none;
+	list-style-type:none;
+	box-sizing:border-box;
+}
+ul li{
+	list-style:none;
+}
+.clear{
+	clear:both;
+}
+ul{
+	margin:0px;
+	padding:0px;
+	list-style:none;
+}
+
+
+/**rl**/
+
+.text{
+	width:100%;
+	height:35px;
+	line-height:35px;
+	font-size:15px;
+	color:#c9c9c9;
+	border-top:1px solid #ccc;
+	padding-left:10px;
+	font-family:"黑体";
+}
+.yy{
+	width:100%;
+	height:10px;
+	background:#e3e2e2;
+}
+
+/**gz**/
+.gz{
+	width:100%;
+	height:auto;
+}
+.gz .title{
+	width:100%;
+	height:40px;
+	line-height:40px;
+	padding-left:10px;
+	font-size:18px;
+	color:#a8a8a8;
+}
+.gz .text1{
+	width:100%;
+	height:auto;
+	line-height:25px;
+	font-size:15px;
+	color:#b1b1b1;
+	padding-left:10px;
+}
+
+
+/**foot**/
+.foot{
+	width:90%;
+	margin:15px 5% 15px 5%;
+	background:#3180f7;
+	height:50px;
+	line-height:50px;
+	color:#fff;
+	font-family:"黑体";
+	font-size:22px;
+	text-align:center;
+	border-radius:5px;
+	z-index: 99999999;
+}
+.signed{
+	background-color:#A2A2A2;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

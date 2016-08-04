@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0">
+    <title>WeUI</title>
+    <script type="text/javascript" src="{work=$Think.const.WORK_LOG}/js/jquery-1.11.1.min.js"></script>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    li{
+        list-style: none;
+        list-style: none;
+        height: 60px;
+        line-height: 60px;
+        text-align: center;
+        background-color: #D6D6D6;
+        border-bottom: 1px solid;
+    }
+    .choose{
+        background-color: red;
+    }
+    .left{
+        width: 30%;
+        float: left;
+    }
+    .clear{
+        clear: both;
+    }
+    .right{
+        width: 70%;
+        float: left;
+        height: 300px;
+        overflow-y: auto;
+    }
+</style>
+<body ontouchstart>
+    <div id="wrapper">
+        <div class="left">
+            <ul>
+                <li class="choose">1</li>
+                <li data-nums="3">2</li>
+                <li data-nums="6">3</li>
+            </ul>
+        </div>
+        <div class="right">
+            <ul>
+                <li>1</li>
+                <li>2</li>
+                <li>3</li>
+                <li>4</li>
+                <li>5</li>
+                <li>6</li>
+                <li>7</li>
+                <li>8</li>
+                <li>9</li>
+                <li>10</li>
+                <li>11</li>
+                <li>12</li>
+            </ul>
+        </div>
+        <div class="clear"></div>
+    </div>
+</body>
+<script>
+    // $(".left ul li").each(function(){
+    //     var index = $(this).index();
+    //     console.log(index);
+    //     // if(num>nums){
+    //     //     $(this).addClass("choose").siblings().removeClass('choose');
+    //     // }
+    // })
+    $('.right').on('scroll',function(){
+        var top = $(this).scrollTop();
+        var li_h = $('li').height();
+        var num =top/li_h;
+        var f_num = $(".left ul li:eq(1)").data('nums');
+        $(".left ul li").each(function(){
+            var nums = $(this).data('nums');
+            if(num>nums){
+                $(this).addClass("choose").siblings().removeClass('choose');
+            }
+            if(num<f_num){
+                $(".left ul li:eq(0)").addClass("choose").siblings().removeClass('choose');
+            }
+
+        })
+    })
+</script>
+</html>

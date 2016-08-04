@@ -1,0 +1,19 @@
+<?php if (!defined('THINK_PATH')) exit();?><!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1,user-scalable=no">
+	<link rel="stylesheet" href="http://192.168.1.121/work_log/Public/project/others/css/wavesCss3.css?time=1466064659">
+	<title>Document</title>
+</head>
+<body>
+	<div class='wrap'>
+		<div id="animate-area1">
+			
+		</div>
+		<div id="animate-area2">
+			
+		</div>
+	</div>
+</body>
+</html>

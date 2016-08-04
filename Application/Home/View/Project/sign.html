@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+<title>签到页面</title>
+
+<script type="text/javascript" src="{work=$Think.const.WORK_LOG}/js/jquery-1.11.1.min.js"></script>
+<script src="{work=$Think.const.WORK_LOG}/sign/js/calendar.js" type="text/javascript"></script>
+<link href="{work=$Think.const.WORK_LOG}/sign/css/sign.css" rel="stylesheet" type="text/css" />
+<link href="{work=$Think.const.WORK_LOG}/sign/css/qd.css" rel="stylesheet" type="text/css" />
+<link href="{work=$Think.const.WORK_LOG}/sign/css/iconfont.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body style="background:#fff;" id="scnhtm5">
+	<div class="container">
+    
+    	<div id="calendar"></div>
+        <div class="clear"></div>
+        <div class="foot" id="sign">立即签到</div>
+        <div class="text">您总共签到<span id="sign-all-days" style="font-size:20px; color:#c9c9c9;">{work=$all}</span>天</div>
+        <div class="text" style="border-top:0px;">您已经连续签到<span id="sign-days" style="font-size:20px; color:#c9c9c9;">{work=$daysnums|default=0}</span>天</div>
+        <div class="text" style="border-top:0px;">您已获得<span id="get-integral" style="font-size:20px; color:#398cea;">{work=$signIn}</span>积分</div>
+        <div class="yy">&nbsp;&nbsp;</div>
+        <div class="gz">
+        <div class="title">活动说明：</div>
+        <div class="text1">1.你已经登录人人学苑了;</div>
+        <div class="text1">2.点击【签到】按钮，签到成功即加积分;</div>
+        <div class="text1">3.一天只能签到一次哦;</div>
+        <div class="text1">4.连续签到7天，每次签到送2积分;</div>
+        <div class="text1">注：签到成功后直接给您加上积分，不会消息通知您哦！</div>
+        </div>
+</div>
+<script type="text/javascript">
+	$(function(){
+	   var signList={work=$sign};
+	   calUtil.init(signList);
+	});
+	(function($){
+	    var sign_box=$("#sign");
+	    var sign_days=$("#sign-days");
+	    var get_integral=$("#get-integral");
+	    var all_days=$("#sign-all-days");
+	    $.ajax({
+	        url:"{work=:U('Project/memberSign')}",
+	        dataType:"json",
+	        success:function(data){
+	            console.log(data);
+	            if(data.status==1){
+	                sign_box.addClass("signed");
+	            }
+	        }
+	    })
+	    sign_box.bind("click",function(){
+	        if($(this).hasClass("signed")){
+	            alert("今天已经签到过");
+	            return false;
+	        }else{
+	            $.ajax({
+	                url:"{work=:U('Project/memberSign')}",
+	                type:"post",
+	                dataType:"json",
+	                success:function(data){
+	                    if(data.status==1){
+	                        alert("签到成功！");
+	                        sign_box.addClass("signed");
+	                        sign_days.text(data.data);
+	                        get_integral.text(data.info);
+	                        all_days.text(parseInt(all_days.text())+1);
+	                        $(".today").addClass("on");
+	                    }else{
+	                        alert("今天已经签到过");
+	                        sign_box.addClass("signed");
+	                    }
+	                }
+	            });
+	        }
+	    })
+	})(jQuery)
+</script>
+</body>
+</html>

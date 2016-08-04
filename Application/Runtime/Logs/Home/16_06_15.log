@@ -1,0 +1,956 @@
+[ 2016-06-15T08:34:27+08:00 ] 127.0.0.1 /work_log/index.php/Home/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001001s ]
+SQL: SHOW COLUMNS FROM `w_logs` [ RunTime:0.0090s ]
+SQL: SHOW COLUMNS FROM `w_project_class` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `w_logs` WHERE `delete` = 0 ORDER BY finished,create_time desc  [ RunTime:0.0030s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `w_logs` WHERE `finished` = 1 AND `delete` = 0 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `w_logs` WHERE `finished` = 0 AND `delete` = 0 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `w_project_class` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `w_project_class` WHERE `delete` = 0  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.019001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-06-15T08:35:34+08:00 ] 127.0.0.1 /work_log/index.php/Home/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `w_logs` [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `w_project_class` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `w_logs` WHERE `delete` = 0 ORDER BY finished,create_time desc  [ RunTime:0.0020s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `w_logs` WHERE `finished` = 1 AND `delete` = 0 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `w_logs` WHERE `finished` = 0 AND `delete` = 0 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `w_project_class` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `w_project_class` WHERE `delete` = 0  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-06-15T10:56:54+08:00 ] 127.0.0.1 /work_log/index.php/Home/Index/finishLog?id=312
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `w_logs` [ RunTime:0.0100s ]
+SQL: SHOW COLUMNS FROM `w_project_class` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `w_logs` WHERE ( id=312 ) LIMIT 1   [ RunTime:0.0030s ]
+SQL: UPDATE `w_logs` SET `finished`='1',`finish_time`='1465959414' WHERE ( id=312 ) [ RunTime:0.0020s ]
+
+[ 2016-06-15T11:47:27+08:00 ] 127.0.0.1 /work_log/index.php/Home/Project/Address/style=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: style D:\wamp\www\work_log\Application\Home\Controller\ProjectController.class.php 第 272 行.
+SQL: SHOW COLUMNS FROM `w_address_list` [ RunTime:0.0360s ]
+SQL: SELECT * FROM `w_address_list` WHERE `mid` = 1  [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001001s ]
+
+[ 2016-06-15T11:47:32+08:00 ] 127.0.0.1 /work_log/index.php/Home/Project/Address/style/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `w_address_list` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `w_address_list` WHERE `mid` = 1  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: token D:\wamp\www\work_log\Application\Runtime\Cache\Home\524d629a807888917f9cfdd00640cd2b.php 第 84 行.
+NOTIC: [8] Undefined index: wecha_id D:\wamp\www\work_log\Application\Runtime\Cache\Home\524d629a807888917f9cfdd00640cd2b.php 第 84 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.020001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-06-15T11:47:35+08:00 ] 127.0.0.1 /work_log/index.php/Home/Project/Address/style/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `w_address_list` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `w_address_list` WHERE `mid` = 1  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: token D:\wamp\www\work_log\Application\Runtime\Cache\Home\524d629a807888917f9cfdd00640cd2b.php 第 84 行.
+NOTIC: [8] Undefined index: wecha_id D:\wamp\www\work_log\Application\Runtime\Cache\Home\524d629a807888917f9cfdd00640cd2b.php 第 84 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-06-15T11:47:37+08:00 ] 127.0.0.1 /work_log/index.php/Home/Project/Address/style/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `w_address_list` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `w_address_list` WHERE `mid` = 1  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: token D:\wamp\www\work_log\Application\Runtime\Cache\Home\524d629a807888917f9cfdd00640cd2b.php 第 84 行.
+NOTIC: [8] Undefined index: wecha_id D:\wamp\www\work_log\Application\Runtime\Cache\Home\524d629a807888917f9cfdd00640cd2b.php 第 84 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-06-15T11:47:40+08:00 ] 127.0.0.1 /work_log/index.php/Home/Project/Address/style/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `w_address_list` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `w_address_list` WHERE `mid` = 1  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001001s ]
+NOTIC: [8] Undefined index: token D:\wamp\www\work_log\Application\Runtime\Cache\Home\524d629a807888917f9cfdd00640cd2b.php 第 84 行.
+NOTIC: [8] Undefined index: wecha_id D:\wamp\www\work_log\Application\Runtime\Cache\Home\524d629a807888917f9cfdd00640cd2b.php 第 84 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-06-15T11:55:17+08:00 ] 127.0.0.1 /work_log/index.php/Home/Project/Address/style/2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `w_address_list` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `w_address_list` WHERE `mid` = 1  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+NOTIC: [2] file_get_contents(./Application/Home/View/Public/footer.html): failed to open stream: No such file or directory D:\wamp\www\work_log\ThinkPHP\Library\Think\Template.class.php 第 696 行.
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: token D:\wamp\www\work_log\Application\Runtime\Cache\Home\be8c8992988e031170ef01373175436a.php 第 25 行.
+NOTIC: [8] Undefined variable: wecha_id D:\wamp\www\work_log\Application\Runtime\Cache\Home\be8c8992988e031170ef01373175436a.php 第 25 行.
+NOTIC: [8] Undefined index: token D:\wamp\www\work_log\Application\Runtime\Cache\Home\be8c8992988e031170ef01373175436a.php 第 29 行.
+NOTIC: [8] Undefined index: wecha_id D:\wamp\www\work_log\Application\Runtime\Cache\Home\be8c8992988e031170ef01373175436a.php 第 29 行.
+NOTIC: [8] Undefined index: doorplate D:\wamp\www\work_log\Application\Runtime\Cache\Home\be8c8992988e031170ef01373175436a.php 第 40 行.
+NOTIC: [8] Undefined index: token D:\wamp\www\work_log\Application\Runtime\Cache\Home\be8c8992988e031170ef01373175436a.php 第 42 行.
+NOTIC: [8] Undefined index: wecha_id D:\wamp\www\work_log\Application\Runtime\Cache\Home\be8c8992988e031170ef01373175436a.php 第 42 行.
+NOTIC: [8] Undefined index: doorplate D:\wamp\www\work_log\Application\Runtime\Cache\Home\be8c8992988e031170ef01373175436a.php 第 40 行.
+NOTIC: [8] Undefined index: token D:\wamp\www\work_log\Application\Runtime\Cache\Home\be8c8992988e031170ef01373175436a.php 第 42 行.
+NOTIC: [8] Undefined index: wecha_id D:\wamp\www\work_log\Application\Runtime\Cache\Home\be8c8992988e031170ef01373175436a.php 第 42 行.
+NOTIC: [8] Undefined index: token D:\wamp\www\work_log\Application\Runtime\Cache\Home\be8c8992988e031170ef01373175436a.php 第 71 行.
+NOTIC: [8] Undefined index: wecha_id D:\wamp\www\work_log\Application\Runtime\Cache\Home\be8c8992988e031170ef01373175436a.php 第 71 行.
+NOTIC: [8] Undefined index: token D:\wamp\www\work_log\Application\Runtime\Cache\Home\be8c8992988e031170ef01373175436a.php 第 83 行.
+NOTIC: [8] Undefined index: wecha_id D:\wamp\www\work_log\Application\Runtime\Cache\Home\be8c8992988e031170ef01373175436a.php 第 83 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-06-15T14:17:53+08:00 ] 127.0.0.1 /work_log/index.php/Home/Project/Address/style/2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `w_address_list` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `w_address_list` WHERE `mid` = 1  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+NOTIC: [2] file_get_contents(./Application/Home/View/Public/footer.html): failed to open stream: No such file or directory D:\wamp\www\work_log\ThinkPHP\Library\Think\Template.class.php 第 696 行.
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: token D:\wamp\www\work_log\Application\Runtime\Cache\Home\be8c8992988e031170ef01373175436a.php 第 25 行.
+NOTIC: [8] Undefined variable: wecha_id D:\wamp\www\work_log\Application\Runtime\Cache\Home\be8c8992988e031170ef01373175436a.php 第 25 行.
+NOTIC: [8] Undefined index: token D:\wamp\www\work_log\Application\Runtime\Cache\Home\be8c8992988e031170ef01373175436a.php 第 29 行.
+NOTIC: [8] Undefined index: wecha_id D:\wamp\www\work_log\Application\Runtime\Cache\Home\be8c8992988e031170ef01373175436a.php 第 29 行.
+NOTIC: [8] Undefined index: doorplate D:\wamp\www\work_log\Application\Runtime\Cache\Home\be8c8992988e031170ef01373175436a.php 第 40 行.
+NOTIC: [8] Undefined index: token D:\wamp\www\work_log\Application\Runtime\Cache\Home\be8c8992988e031170ef01373175436a.php 第 42 行.
+NOTIC: [8] Undefined index: wecha_id D:\wamp\www\work_log\Application\Runtime\Cache\Home\be8c8992988e031170ef01373175436a.php 第 42 行.
+NOTIC: [8] Undefined index: doorplate D:\wamp\www\work_log\Application\Runtime\Cache\Home\be8c8992988e031170ef01373175436a.php 第 40 行.
+NOTIC: [8] Undefined index: token D:\wamp\www\work_log\Application\Runtime\Cache\Home\be8c8992988e031170ef01373175436a.php 第 42 行.
+NOTIC: [8] Undefined index: wecha_id D:\wamp\www\work_log\Application\Runtime\Cache\Home\be8c8992988e031170ef01373175436a.php 第 42 行.
+NOTIC: [8] Undefined index: token D:\wamp\www\work_log\Application\Runtime\Cache\Home\be8c8992988e031170ef01373175436a.php 第 71 行.
+NOTIC: [8] Undefined index: wecha_id D:\wamp\www\work_log\Application\Runtime\Cache\Home\be8c8992988e031170ef01373175436a.php 第 71 行.
+NOTIC: [8] Undefined index: token D:\wamp\www\work_log\Application\Runtime\Cache\Home\be8c8992988e031170ef01373175436a.php 第 83 行.
+NOTIC: [8] Undefined index: wecha_id D:\wamp\www\work_log\Application\Runtime\Cache\Home\be8c8992988e031170ef01373175436a.php 第 83 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.021001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-06-15T14:18:01+08:00 ] 127.0.0.1 /work_log/index.php?m=Home&c=Distribution&a=addAddress&
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+ERR: 无法加载控制器:Distribution
+
+[ 2016-06-15T14:20:53+08:00 ] 127.0.0.1 /work_log/index.php?m=Home&c=Distribution&a=chooseAdd&&id=4
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+ERR: 无法加载控制器:Distribution
+
+[ 2016-06-15T14:32:27+08:00 ] 127.0.0.1 /work_log/index.php/Home/Project/Address/style/2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `w_address_list` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `w_address_list` WHERE `mid` = 1  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+NOTIC: [2] file_get_contents(./Application/Home/View/Public/footer.html): failed to open stream: No such file or directory D:\wamp\www\work_log\ThinkPHP\Library\Think\Template.class.php 第 696 行.
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined variable: token D:\wamp\www\work_log\Application\Runtime\Cache\Home\be8c8992988e031170ef01373175436a.php 第 25 行.
+NOTIC: [8] Undefined variable: wecha_id D:\wamp\www\work_log\Application\Runtime\Cache\Home\be8c8992988e031170ef01373175436a.php 第 25 行.
+NOTIC: [8] Undefined index: token D:\wamp\www\work_log\Application\Runtime\Cache\Home\be8c8992988e031170ef01373175436a.php 第 29 行.
+NOTIC: [8] Undefined index: wecha_id D:\wamp\www\work_log\Application\Runtime\Cache\Home\be8c8992988e031170ef01373175436a.php 第 29 行.
+NOTIC: [8] Undefined index: doorplate D:\wamp\www\work_log\Application\Runtime\Cache\Home\be8c8992988e031170ef01373175436a.php 第 40 行.
+NOTIC: [8] Undefined index: doorplate D:\wamp\www\work_log\Application\Runtime\Cache\Home\be8c8992988e031170ef01373175436a.php 第 40 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-06-15T14:32:28+08:00 ] 127.0.0.1 /work_log/index.php?m=Home&c=Project&a=editAddress&id=3
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `w_address_list` [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `w_class_city` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `w_class_city` WHERE `depth` < 3  [ RunTime:0.0150s ]
+SQL: SELECT * FROM `w_address_list` WHERE ( id=3 ) LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001001s ]
+NOTIC: [8] Undefined variable: setting D:\wamp\www\work_log\Application\Runtime\Cache\Home\4fcbfa50c39ddd4aea050603bd249d39.php 第 154 行.
+NOTIC: [8] Undefined index: total_score D:\wamp\www\work_log\Application\Runtime\Cache\Home\4fcbfa50c39ddd4aea050603bd249d39.php 第 155 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.029001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.031001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001001s ]
+
+[ 2016-06-15T14:32:33+08:00 ] 127.0.0.1 /work_log/index.php/Home/Project/Address/style/2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `w_address_list` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `w_address_list` WHERE `mid` = 1  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+NOTIC: [2] file_get_contents(./Application/Home/View/Public/footer.html): failed to open stream: No such file or directory D:\wamp\www\work_log\ThinkPHP\Library\Think\Template.class.php 第 696 行.
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: token D:\wamp\www\work_log\Application\Runtime\Cache\Home\be8c8992988e031170ef01373175436a.php 第 25 行.
+NOTIC: [8] Undefined variable: wecha_id D:\wamp\www\work_log\Application\Runtime\Cache\Home\be8c8992988e031170ef01373175436a.php 第 25 行.
+NOTIC: [8] Undefined index: token D:\wamp\www\work_log\Application\Runtime\Cache\Home\be8c8992988e031170ef01373175436a.php 第 29 行.
+NOTIC: [8] Undefined index: wecha_id D:\wamp\www\work_log\Application\Runtime\Cache\Home\be8c8992988e031170ef01373175436a.php 第 29 行.
+NOTIC: [8] Undefined index: doorplate D:\wamp\www\work_log\Application\Runtime\Cache\Home\be8c8992988e031170ef01373175436a.php 第 40 行.
+NOTIC: [8] Undefined index: doorplate D:\wamp\www\work_log\Application\Runtime\Cache\Home\be8c8992988e031170ef01373175436a.php 第 40 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001001s ]
+
+[ 2016-06-15T14:32:34+08:00 ] 127.0.0.1 /work_log/index.php?m=Home&c=Project&a=editAddress&id=3
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `w_address_list` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `w_class_city` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `w_class_city` WHERE `depth` < 3  [ RunTime:0.0150s ]
+SQL: SELECT * FROM `w_address_list` WHERE ( id=3 ) LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined variable: setting D:\wamp\www\work_log\Application\Runtime\Cache\Home\4fcbfa50c39ddd4aea050603bd249d39.php 第 154 行.
+NOTIC: [8] Undefined index: total_score D:\wamp\www\work_log\Application\Runtime\Cache\Home\4fcbfa50c39ddd4aea050603bd249d39.php 第 155 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.038002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.038002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-06-15T14:32:41+08:00 ] 127.0.0.1 /work_log/index.php?m=Home&c=Project&a=addAddress&
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `w_class_city` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `w_class_city` WHERE `depth` < 3  [ RunTime:0.0110s ]
+SQL: SHOW COLUMNS FROM `w_address_list` [ RunTime:0.0060s ]
+INFO: [ view_parse ] --START--
+NOTIC: [2] file_get_contents(./Application/Home/View/Public/footer.html): failed to open stream: No such file or directory D:\wamp\www\work_log\ThinkPHP\Library\Think\Template.class.php 第 696 行.
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: token D:\wamp\www\work_log\Application\Runtime\Cache\Home\0a9f12ad4b71970d619984826c5e54ae.php 第 20 行.
+NOTIC: [8] Undefined variable: wecha_id D:\wamp\www\work_log\Application\Runtime\Cache\Home\0a9f12ad4b71970d619984826c5e54ae.php 第 20 行.
+NOTIC: [8] Undefined variable: info D:\wamp\www\work_log\Application\Runtime\Cache\Home\0a9f12ad4b71970d619984826c5e54ae.php 第 33 行.
+NOTIC: [8] Undefined variable: info D:\wamp\www\work_log\Application\Runtime\Cache\Home\0a9f12ad4b71970d619984826c5e54ae.php 第 34 行.
+NOTIC: [8] Undefined variable: info D:\wamp\www\work_log\Application\Runtime\Cache\Home\0a9f12ad4b71970d619984826c5e54ae.php 第 35 行.
+NOTIC: [8] Undefined variable: info D:\wamp\www\work_log\Application\Runtime\Cache\Home\0a9f12ad4b71970d619984826c5e54ae.php 第 36 行.
+NOTIC: [8] Undefined variable: info D:\wamp\www\work_log\Application\Runtime\Cache\Home\0a9f12ad4b71970d619984826c5e54ae.php 第 36 行.
+NOTIC: [8] Undefined variable: area D:\wamp\www\work_log\Application\Runtime\Cache\Home\0a9f12ad4b71970d619984826c5e54ae.php 第 43 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.019001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-06-15T14:34:16+08:00 ] 127.0.0.1 /work_log/index.php?m=Home&c=Distribution&a=myAddress&
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+ERR: 无法加载控制器:Distribution
+
+[ 2016-06-15T14:35:15+08:00 ] 127.0.0.1 /work_log/index.php?m=Home&c=Project&a=addAddress&
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `w_class_city` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `w_class_city` WHERE `depth` < 3  [ RunTime:0.0100s ]
+SQL: SHOW COLUMNS FROM `w_address_list` [ RunTime:0.0040s ]
+INFO: [ view_parse ] --START--
+NOTIC: [2] file_get_contents(./Application/Home/View/Public/footer.html): failed to open stream: No such file or directory D:\wamp\www\work_log\ThinkPHP\Library\Think\Template.class.php 第 696 行.
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: token D:\wamp\www\work_log\Application\Runtime\Cache\Home\0a9f12ad4b71970d619984826c5e54ae.php 第 20 行.
+NOTIC: [8] Undefined variable: wecha_id D:\wamp\www\work_log\Application\Runtime\Cache\Home\0a9f12ad4b71970d619984826c5e54ae.php 第 20 行.
+NOTIC: [8] Undefined variable: info D:\wamp\www\work_log\Application\Runtime\Cache\Home\0a9f12ad4b71970d619984826c5e54ae.php 第 33 行.
+NOTIC: [8] Undefined variable: info D:\wamp\www\work_log\Application\Runtime\Cache\Home\0a9f12ad4b71970d619984826c5e54ae.php 第 34 行.
+NOTIC: [8] Undefined variable: info D:\wamp\www\work_log\Application\Runtime\Cache\Home\0a9f12ad4b71970d619984826c5e54ae.php 第 35 行.
+NOTIC: [8] Undefined variable: info D:\wamp\www\work_log\Application\Runtime\Cache\Home\0a9f12ad4b71970d619984826c5e54ae.php 第 36 行.
+NOTIC: [8] Undefined variable: info D:\wamp\www\work_log\Application\Runtime\Cache\Home\0a9f12ad4b71970d619984826c5e54ae.php 第 36 行.
+NOTIC: [8] Undefined variable: area D:\wamp\www\work_log\Application\Runtime\Cache\Home\0a9f12ad4b71970d619984826c5e54ae.php 第 43 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-06-15T14:35:16+08:00 ] 127.0.0.1 /work_log/index.php?m=Home&c=Distribution&a=Address&
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+ERR: 无法加载控制器:Distribution
+
+[ 2016-06-15T14:35:23+08:00 ] 127.0.0.1 /work_log/index.php?m=Home&c=Project&a=addAddress&
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `w_class_city` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `w_class_city` WHERE `depth` < 3  [ RunTime:0.0110s ]
+SQL: SHOW COLUMNS FROM `w_address_list` [ RunTime:0.0040s ]
+INFO: [ view_parse ] --START--
+NOTIC: [2] file_get_contents(./Application/Home/View/Public/footer.html): failed to open stream: No such file or directory D:\wamp\www\work_log\ThinkPHP\Library\Think\Template.class.php 第 696 行.
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: token D:\wamp\www\work_log\Application\Runtime\Cache\Home\0a9f12ad4b71970d619984826c5e54ae.php 第 20 行.
+NOTIC: [8] Undefined variable: wecha_id D:\wamp\www\work_log\Application\Runtime\Cache\Home\0a9f12ad4b71970d619984826c5e54ae.php 第 20 行.
+NOTIC: [8] Undefined variable: info D:\wamp\www\work_log\Application\Runtime\Cache\Home\0a9f12ad4b71970d619984826c5e54ae.php 第 33 行.
+NOTIC: [8] Undefined variable: info D:\wamp\www\work_log\Application\Runtime\Cache\Home\0a9f12ad4b71970d619984826c5e54ae.php 第 34 行.
+NOTIC: [8] Undefined variable: info D:\wamp\www\work_log\Application\Runtime\Cache\Home\0a9f12ad4b71970d619984826c5e54ae.php 第 35 行.
+NOTIC: [8] Undefined variable: info D:\wamp\www\work_log\Application\Runtime\Cache\Home\0a9f12ad4b71970d619984826c5e54ae.php 第 36 行.
+NOTIC: [8] Undefined variable: info D:\wamp\www\work_log\Application\Runtime\Cache\Home\0a9f12ad4b71970d619984826c5e54ae.php 第 36 行.
+NOTIC: [8] Undefined variable: area D:\wamp\www\work_log\Application\Runtime\Cache\Home\0a9f12ad4b71970d619984826c5e54ae.php 第 43 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-06-15T14:35:24+08:00 ] 127.0.0.1 /work_log/index.php?m=Home&c=Project&a=Address&
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: style D:\wamp\www\work_log\Application\Home\Controller\ProjectController.class.php 第 272 行.
+SQL: SHOW COLUMNS FROM `w_address_list` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `w_address_list` WHERE `mid` = 1  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+NOTIC: [2] file_get_contents(./Application/Home/View/Public/footer.html): failed to open stream: No such file or directory D:\wamp\www\work_log\ThinkPHP\Library\Think\Template.class.php 第 696 行.
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: token D:\wamp\www\work_log\Application\Runtime\Cache\Home\be8c8992988e031170ef01373175436a.php 第 25 行.
+NOTIC: [8] Undefined variable: wecha_id D:\wamp\www\work_log\Application\Runtime\Cache\Home\be8c8992988e031170ef01373175436a.php 第 25 行.
+NOTIC: [8] Undefined index: token D:\wamp\www\work_log\Application\Runtime\Cache\Home\be8c8992988e031170ef01373175436a.php 第 29 行.
+NOTIC: [8] Undefined index: wecha_id D:\wamp\www\work_log\Application\Runtime\Cache\Home\be8c8992988e031170ef01373175436a.php 第 29 行.
+NOTIC: [8] Undefined index: doorplate D:\wamp\www\work_log\Application\Runtime\Cache\Home\be8c8992988e031170ef01373175436a.php 第 40 行.
+NOTIC: [8] Undefined index: doorplate D:\wamp\www\work_log\Application\Runtime\Cache\Home\be8c8992988e031170ef01373175436a.php 第 40 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-06-15T14:36:31+08:00 ] 127.0.0.1 /work_log/index.php?m=Home&c=Project&a=Address&
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [8] Undefined index: style D:\wamp\www\work_log\Application\Home\Controller\ProjectController.class.php 第 272 行.
+SQL: SHOW COLUMNS FROM `w_address_list` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `w_address_list` WHERE `mid` = 1  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+NOTIC: [2] file_get_contents(./Application/Home/View/Public/footer.html): failed to open stream: No such file or directory D:\wamp\www\work_log\ThinkPHP\Library\Think\Template.class.php 第 696 行.
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: token D:\wamp\www\work_log\Application\Runtime\Cache\Home\be8c8992988e031170ef01373175436a.php 第 25 行.
+NOTIC: [8] Undefined variable: wecha_id D:\wamp\www\work_log\Application\Runtime\Cache\Home\be8c8992988e031170ef01373175436a.php 第 25 行.
+NOTIC: [8] Undefined index: token D:\wamp\www\work_log\Application\Runtime\Cache\Home\be8c8992988e031170ef01373175436a.php 第 29 行.
+NOTIC: [8] Undefined index: wecha_id D:\wamp\www\work_log\Application\Runtime\Cache\Home\be8c8992988e031170ef01373175436a.php 第 29 行.
+NOTIC: [8] Undefined index: doorplate D:\wamp\www\work_log\Application\Runtime\Cache\Home\be8c8992988e031170ef01373175436a.php 第 40 行.
+NOTIC: [8] Undefined index: doorplate D:\wamp\www\work_log\Application\Runtime\Cache\Home\be8c8992988e031170ef01373175436a.php 第 40 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-06-15T14:36:42+08:00 ] 127.0.0.1 /work_log/index.php?m=Home&c=Project&a=Address&
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: style D:\wamp\www\work_log\Application\Home\Controller\ProjectController.class.php 第 272 行.
+SQL: SHOW COLUMNS FROM `w_address_list` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `w_address_list` WHERE `mid` = 1  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+NOTIC: [2] file_get_contents(./Application/Home/View/Public/footer.html): failed to open stream: No such file or directory D:\wamp\www\work_log\ThinkPHP\Library\Think\Template.class.php 第 696 行.
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: token D:\wamp\www\work_log\Application\Runtime\Cache\Home\be8c8992988e031170ef01373175436a.php 第 25 行.
+NOTIC: [8] Undefined variable: wecha_id D:\wamp\www\work_log\Application\Runtime\Cache\Home\be8c8992988e031170ef01373175436a.php 第 25 行.
+NOTIC: [8] Undefined index: token D:\wamp\www\work_log\Application\Runtime\Cache\Home\be8c8992988e031170ef01373175436a.php 第 29 行.
+NOTIC: [8] Undefined index: wecha_id D:\wamp\www\work_log\Application\Runtime\Cache\Home\be8c8992988e031170ef01373175436a.php 第 29 行.
+NOTIC: [8] Undefined index: doorplate D:\wamp\www\work_log\Application\Runtime\Cache\Home\be8c8992988e031170ef01373175436a.php 第 40 行.
+NOTIC: [8] Undefined index: doorplate D:\wamp\www\work_log\Application\Runtime\Cache\Home\be8c8992988e031170ef01373175436a.php 第 40 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-06-15T14:36:44+08:00 ] 127.0.0.1 /work_log/index.php?m=Home&c=Project&a=delAddress
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002001s ]
+NOTIC: [8] Undefined index: id D:\wamp\www\work_log\Application\Home\Controller\ProjectController.class.php 第 364 行.
+SQL: SHOW COLUMNS FROM `w_address_list` [ RunTime:0.0030s ]
+SQL: DELETE FROM `w_address_list` WHERE `mid` = 1 AND `id` = null [ RunTime:0.0010s ]
+
+[ 2016-06-15T14:36:47+08:00 ] 127.0.0.1 /work_log/index.php?m=Home&c=Project&a=Address&
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: style D:\wamp\www\work_log\Application\Home\Controller\ProjectController.class.php 第 272 行.
+SQL: SHOW COLUMNS FROM `w_address_list` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `w_address_list` WHERE `mid` = 1  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+NOTIC: [2] file_get_contents(./Application/Home/View/Public/footer.html): failed to open stream: No such file or directory D:\wamp\www\work_log\ThinkPHP\Library\Think\Template.class.php 第 696 行.
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: token D:\wamp\www\work_log\Application\Runtime\Cache\Home\be8c8992988e031170ef01373175436a.php 第 25 行.
+NOTIC: [8] Undefined variable: wecha_id D:\wamp\www\work_log\Application\Runtime\Cache\Home\be8c8992988e031170ef01373175436a.php 第 25 行.
+NOTIC: [8] Undefined index: token D:\wamp\www\work_log\Application\Runtime\Cache\Home\be8c8992988e031170ef01373175436a.php 第 29 行.
+NOTIC: [8] Undefined index: wecha_id D:\wamp\www\work_log\Application\Runtime\Cache\Home\be8c8992988e031170ef01373175436a.php 第 29 行.
+NOTIC: [8] Undefined index: doorplate D:\wamp\www\work_log\Application\Runtime\Cache\Home\be8c8992988e031170ef01373175436a.php 第 40 行.
+NOTIC: [8] Undefined index: doorplate D:\wamp\www\work_log\Application\Runtime\Cache\Home\be8c8992988e031170ef01373175436a.php 第 40 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001001s ]
+
+[ 2016-06-15T14:36:49+08:00 ] 127.0.0.1 /work_log/index.php?m=Home&c=Project&a=delAddress
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: id D:\wamp\www\work_log\Application\Home\Controller\ProjectController.class.php 第 364 行.
+SQL: SHOW COLUMNS FROM `w_address_list` [ RunTime:0.0050s ]
+SQL: DELETE FROM `w_address_list` WHERE `mid` = 1 AND `id` = null [ RunTime:0.0010s ]
+
+[ 2016-06-15T14:37:39+08:00 ] 127.0.0.1 /work_log/index.php?m=Home&c=Project&a=Address&
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: style D:\wamp\www\work_log\Application\Home\Controller\ProjectController.class.php 第 272 行.
+SQL: SHOW COLUMNS FROM `w_address_list` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `w_address_list` WHERE `mid` = 1  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+NOTIC: [2] file_get_contents(./Application/Home/View/Public/footer.html): failed to open stream: No such file or directory D:\wamp\www\work_log\ThinkPHP\Library\Think\Template.class.php 第 696 行.
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: token D:\wamp\www\work_log\Application\Runtime\Cache\Home\be8c8992988e031170ef01373175436a.php 第 25 行.
+NOTIC: [8] Undefined variable: wecha_id D:\wamp\www\work_log\Application\Runtime\Cache\Home\be8c8992988e031170ef01373175436a.php 第 25 行.
+NOTIC: [8] Undefined index: token D:\wamp\www\work_log\Application\Runtime\Cache\Home\be8c8992988e031170ef01373175436a.php 第 29 行.
+NOTIC: [8] Undefined index: wecha_id D:\wamp\www\work_log\Application\Runtime\Cache\Home\be8c8992988e031170ef01373175436a.php 第 29 行.
+NOTIC: [8] Undefined index: doorplate D:\wamp\www\work_log\Application\Runtime\Cache\Home\be8c8992988e031170ef01373175436a.php 第 40 行.
+NOTIC: [8] Undefined index: doorplate D:\wamp\www\work_log\Application\Runtime\Cache\Home\be8c8992988e031170ef01373175436a.php 第 40 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-06-15T14:37:41+08:00 ] 127.0.0.1 /work_log/index.php?m=Home&c=Project&a=delAddress
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: id D:\wamp\www\work_log\Application\Home\Controller\ProjectController.class.php 第 364 行.
+SQL: SHOW COLUMNS FROM `w_address_list` [ RunTime:0.0040s ]
+SQL: DELETE FROM `w_address_list` WHERE `mid` = 1 AND `id` = null [ RunTime:0.0000s ]
+
+[ 2016-06-15T14:38:56+08:00 ] 127.0.0.1 /work_log/index.php?m=Home&c=Project&a=Address&
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: style D:\wamp\www\work_log\Application\Home\Controller\ProjectController.class.php 第 272 行.
+SQL: SHOW COLUMNS FROM `w_address_list` [ RunTime:0.0090s ]
+SQL: SELECT * FROM `w_address_list` WHERE `mid` = 1  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+NOTIC: [2] file_get_contents(./Application/Home/View/Public/footer.html): failed to open stream: No such file or directory D:\wamp\www\work_log\ThinkPHP\Library\Think\Template.class.php 第 696 行.
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined variable: token D:\wamp\www\work_log\Application\Runtime\Cache\Home\be8c8992988e031170ef01373175436a.php 第 25 行.
+NOTIC: [8] Undefined variable: wecha_id D:\wamp\www\work_log\Application\Runtime\Cache\Home\be8c8992988e031170ef01373175436a.php 第 25 行.
+NOTIC: [8] Undefined index: token D:\wamp\www\work_log\Application\Runtime\Cache\Home\be8c8992988e031170ef01373175436a.php 第 29 行.
+NOTIC: [8] Undefined index: wecha_id D:\wamp\www\work_log\Application\Runtime\Cache\Home\be8c8992988e031170ef01373175436a.php 第 29 行.
+NOTIC: [8] Undefined index: doorplate D:\wamp\www\work_log\Application\Runtime\Cache\Home\be8c8992988e031170ef01373175436a.php 第 40 行.
+NOTIC: [8] Undefined index: doorplate D:\wamp\www\work_log\Application\Runtime\Cache\Home\be8c8992988e031170ef01373175436a.php 第 40 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-06-15T14:38:57+08:00 ] 127.0.0.1 /work_log/index.php?m=Home&c=Project&a=delAddress
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: id D:\wamp\www\work_log\Application\Home\Controller\ProjectController.class.php 第 364 行.
+SQL: SHOW COLUMNS FROM `w_address_list` [ RunTime:0.0060s ]
+SQL: DELETE FROM `w_address_list` WHERE `mid` = 1 AND `id` = null [ RunTime:0.0000s ]
+
+[ 2016-06-15T14:39:04+08:00 ] 127.0.0.1 /work_log/index.php?m=Home&c=Project&a=Address&
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: style D:\wamp\www\work_log\Application\Home\Controller\ProjectController.class.php 第 272 行.
+SQL: SHOW COLUMNS FROM `w_address_list` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `w_address_list` WHERE `mid` = 1  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+NOTIC: [2] file_get_contents(./Application/Home/View/Public/footer.html): failed to open stream: No such file or directory D:\wamp\www\work_log\ThinkPHP\Library\Think\Template.class.php 第 696 行.
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: token D:\wamp\www\work_log\Application\Runtime\Cache\Home\be8c8992988e031170ef01373175436a.php 第 25 行.
+NOTIC: [8] Undefined variable: wecha_id D:\wamp\www\work_log\Application\Runtime\Cache\Home\be8c8992988e031170ef01373175436a.php 第 25 行.
+NOTIC: [8] Undefined index: token D:\wamp\www\work_log\Application\Runtime\Cache\Home\be8c8992988e031170ef01373175436a.php 第 29 行.
+NOTIC: [8] Undefined index: wecha_id D:\wamp\www\work_log\Application\Runtime\Cache\Home\be8c8992988e031170ef01373175436a.php 第 29 行.
+NOTIC: [8] Undefined index: doorplate D:\wamp\www\work_log\Application\Runtime\Cache\Home\be8c8992988e031170ef01373175436a.php 第 40 行.
+NOTIC: [8] Undefined index: doorplate D:\wamp\www\work_log\Application\Runtime\Cache\Home\be8c8992988e031170ef01373175436a.php 第 40 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-06-15T14:39:06+08:00 ] 127.0.0.1 /work_log/index.php?m=Home&c=Project&a=delAddress&id=4
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `w_address_list` [ RunTime:0.0040s ]
+SQL: DELETE FROM `w_address_list` WHERE `mid` = 1 AND `id` = 4 [ RunTime:0.0010s ]
+
+[ 2016-06-15T14:39:22+08:00 ] 127.0.0.1 /work_log/index.php?m=Home&c=Project&a=Address&
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002001s ]
+NOTIC: [8] Undefined index: style D:\wamp\www\work_log\Application\Home\Controller\ProjectController.class.php 第 272 行.
+SQL: SHOW COLUMNS FROM `w_address_list` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `w_address_list` WHERE `mid` = 1  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+NOTIC: [2] file_get_contents(./Application/Home/View/Public/footer.html): failed to open stream: No such file or directory D:\wamp\www\work_log\ThinkPHP\Library\Think\Template.class.php 第 696 行.
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: token D:\wamp\www\work_log\Application\Runtime\Cache\Home\be8c8992988e031170ef01373175436a.php 第 25 行.
+NOTIC: [8] Undefined variable: wecha_id D:\wamp\www\work_log\Application\Runtime\Cache\Home\be8c8992988e031170ef01373175436a.php 第 25 行.
+NOTIC: [8] Undefined index: token D:\wamp\www\work_log\Application\Runtime\Cache\Home\be8c8992988e031170ef01373175436a.php 第 29 行.
+NOTIC: [8] Undefined index: wecha_id D:\wamp\www\work_log\Application\Runtime\Cache\Home\be8c8992988e031170ef01373175436a.php 第 29 行.
+NOTIC: [8] Undefined index: doorplate D:\wamp\www\work_log\Application\Runtime\Cache\Home\be8c8992988e031170ef01373175436a.php 第 40 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-06-15T14:39:49+08:00 ] 127.0.0.1 /work_log/index.php?m=Home&c=Project&a=Address&
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: style D:\wamp\www\work_log\Application\Home\Controller\ProjectController.class.php 第 272 行.
+SQL: SHOW COLUMNS FROM `w_address_list` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `w_address_list` WHERE `mid` = 1  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+NOTIC: [2] file_get_contents(./Application/Home/View/Public/footer.html): failed to open stream: No such file or directory D:\wamp\www\work_log\ThinkPHP\Library\Think\Template.class.php 第 696 行.
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: token D:\wamp\www\work_log\Application\Runtime\Cache\Home\be8c8992988e031170ef01373175436a.php 第 25 行.
+NOTIC: [8] Undefined variable: wecha_id D:\wamp\www\work_log\Application\Runtime\Cache\Home\be8c8992988e031170ef01373175436a.php 第 25 行.
+NOTIC: [8] Undefined index: token D:\wamp\www\work_log\Application\Runtime\Cache\Home\be8c8992988e031170ef01373175436a.php 第 29 行.
+NOTIC: [8] Undefined index: wecha_id D:\wamp\www\work_log\Application\Runtime\Cache\Home\be8c8992988e031170ef01373175436a.php 第 29 行.
+NOTIC: [8] Undefined index: doorplate D:\wamp\www\work_log\Application\Runtime\Cache\Home\be8c8992988e031170ef01373175436a.php 第 40 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001001s ]
+
+[ 2016-06-15T14:39:50+08:00 ] 127.0.0.1 /work_log/index.php?m=Home&c=Project&a=delAddress&id=3
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `w_address_list` [ RunTime:0.0040s ]
+
+[ 2016-06-15T14:40:02+08:00 ] 127.0.0.1 /work_log/index.php?m=Home&c=Project&a=Address&
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: style D:\wamp\www\work_log\Application\Home\Controller\ProjectController.class.php 第 272 行.
+SQL: SHOW COLUMNS FROM `w_address_list` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `w_address_list` WHERE `mid` = 1  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+NOTIC: [2] file_get_contents(./Application/Home/View/Public/footer.html): failed to open stream: No such file or directory D:\wamp\www\work_log\ThinkPHP\Library\Think\Template.class.php 第 696 行.
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined variable: token D:\wamp\www\work_log\Application\Runtime\Cache\Home\be8c8992988e031170ef01373175436a.php 第 25 行.
+NOTIC: [8] Undefined variable: wecha_id D:\wamp\www\work_log\Application\Runtime\Cache\Home\be8c8992988e031170ef01373175436a.php 第 25 行.
+NOTIC: [8] Undefined index: token D:\wamp\www\work_log\Application\Runtime\Cache\Home\be8c8992988e031170ef01373175436a.php 第 29 行.
+NOTIC: [8] Undefined index: wecha_id D:\wamp\www\work_log\Application\Runtime\Cache\Home\be8c8992988e031170ef01373175436a.php 第 29 行.
+NOTIC: [8] Undefined index: doorplate D:\wamp\www\work_log\Application\Runtime\Cache\Home\be8c8992988e031170ef01373175436a.php 第 40 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-06-15T14:40:03+08:00 ] 127.0.0.1 /work_log/index.php?m=Home&c=Project&a=delAddress&id=3
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `w_address_list` [ RunTime:0.0040s ]
+SQL: DELETE FROM `w_address_list` WHERE `mid` = 1 AND `id` = 3 [ RunTime:0.0000s ]
+
+[ 2016-06-15T14:40:17+08:00 ] 127.0.0.1 /work_log/index.php?m=Home&c=Project&a=Address&
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: style D:\wamp\www\work_log\Application\Home\Controller\ProjectController.class.php 第 272 行.
+SQL: SHOW COLUMNS FROM `w_address_list` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `w_address_list` WHERE `mid` = 1  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `w_class_city` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `w_class_city` WHERE `depth` < 3  [ RunTime:0.0130s ]
+INFO: [ view_parse ] --START--
+NOTIC: [2] file_get_contents(./Application/Home/View/Public/footer.html): failed to open stream: No such file or directory D:\wamp\www\work_log\ThinkPHP\Library\Think\Template.class.php 第 696 行.
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: token D:\wamp\www\work_log\Application\Runtime\Cache\Home\0a9f12ad4b71970d619984826c5e54ae.php 第 20 行.
+NOTIC: [8] Undefined variable: wecha_id D:\wamp\www\work_log\Application\Runtime\Cache\Home\0a9f12ad4b71970d619984826c5e54ae.php 第 20 行.
+NOTIC: [8] Undefined variable: info D:\wamp\www\work_log\Application\Runtime\Cache\Home\0a9f12ad4b71970d619984826c5e54ae.php 第 33 行.
+NOTIC: [8] Undefined variable: info D:\wamp\www\work_log\Application\Runtime\Cache\Home\0a9f12ad4b71970d619984826c5e54ae.php 第 34 行.
+NOTIC: [8] Undefined variable: info D:\wamp\www\work_log\Application\Runtime\Cache\Home\0a9f12ad4b71970d619984826c5e54ae.php 第 35 行.
+NOTIC: [8] Undefined variable: info D:\wamp\www\work_log\Application\Runtime\Cache\Home\0a9f12ad4b71970d619984826c5e54ae.php 第 36 行.
+NOTIC: [8] Undefined variable: info D:\wamp\www\work_log\Application\Runtime\Cache\Home\0a9f12ad4b71970d619984826c5e54ae.php 第 36 行.
+NOTIC: [8] Undefined variable: area D:\wamp\www\work_log\Application\Runtime\Cache\Home\0a9f12ad4b71970d619984826c5e54ae.php 第 43 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-06-15T16:16:14+08:00 ] 127.0.0.1 /work_log/index.php?m=Home&c=Project&a=artEditor
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-06-15T16:30:05+08:00 ] 127.0.0.1 /work_log/index.php?m=Home&c=Project&a=artEditor
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-06-15T16:32:41+08:00 ] 127.0.0.1 /work_log/index.php?m=Home&c=Project&a=artEditor
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+

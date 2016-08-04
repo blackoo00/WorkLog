@@ -1,0 +1,366 @@
+[ 2016-06-07T16:45:24+08:00 ] 127.0.0.1 /work_log/index.php/Home/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `w_logs` [ RunTime:0.0190s ]
+SQL: SHOW COLUMNS FROM `w_project_class` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `w_logs` WHERE `delete` = 0 ORDER BY finished,create_time desc  [ RunTime:0.0030s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `w_logs` WHERE `finished` = 1 AND `delete` = 0 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `w_logs` WHERE `finished` = 0 AND `delete` = 0 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `w_project_class` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `w_project_class` WHERE `delete` = 0  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.032002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.032002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-06-07T16:45:35+08:00 ] 127.0.0.1 /work_log/index.php/Home/Project/wxGetInfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-06-07T16:45:37+08:00 ] 127.0.0.1 /work_log/index.php/Home/Project/wxGetInfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-06-07T16:50:23+08:00 ] 127.0.0.1 /work_log/index.php/Home/Project/wxGetInfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-06-07T16:52:10+08:00 ] 127.0.0.1 /work_log/index.php/Home/Project/wxGetInfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003000s ]
+
+[ 2016-06-07T16:54:16+08:00 ] 127.0.0.1 /work_log/index.php/Home/Project/wxGetInfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2048] Non-static method Think\Storage\Driver\File::put() should not be called statically, assuming $this from incompatible context D:\wamp\www\work_log\Application\Home\Controller\ProjectController.class.php 第 257 行.
+NOTIC: [8] Indirect modification of overloaded property Home\Controller\ProjectController::$contents has no effect D:\wamp\www\work_log\ThinkPHP\Library\Think\Storage\Driver\File.class.php 第 50 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.005001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.006001s ]
+
+[ 2016-06-07T16:56:27+08:00 ] 127.0.0.1 /work_log/index.php/Home/Project/wxGetInfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-06-07T17:00:49+08:00 ] 127.0.0.1 /work_log/index.php/Home/Project/wxGetInfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [2048] Non-static method Think\Storage\Driver\File::put() should not be called statically, assuming $this from incompatible context D:\wamp\www\work_log\Application\Home\Controller\ProjectController.class.php 第 257 行.
+NOTIC: [8] Indirect modification of overloaded property Home\Controller\ProjectController::$contents has no effect D:\wamp\www\work_log\ThinkPHP\Library\Think\Storage\Driver\File.class.php 第 50 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003000s ]
+
+[ 2016-06-07T17:01:18+08:00 ] 127.0.0.1 /work_log/index.php/Home/Project/wxGetInfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002001s ]
+NOTIC: [2048] Non-static method Think\Storage\Driver\File::put() should not be called statically, assuming $this from incompatible context D:\wamp\www\work_log\Application\Home\Controller\ProjectController.class.php 第 257 行.
+NOTIC: [8] Indirect modification of overloaded property Home\Controller\ProjectController::$contents has no effect D:\wamp\www\work_log\ThinkPHP\Library\Think\Storage\Driver\File.class.php 第 50 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-06-07T17:02:05+08:00 ] 127.0.0.1 /work_log/index.php/Home/Project/wxGetInfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [2048] Non-static method Think\Storage\Driver\File::put() should not be called statically, assuming $this from incompatible context D:\wamp\www\work_log\Application\Home\Controller\ProjectController.class.php 第 257 行.
+NOTIC: [8] Indirect modification of overloaded property Home\Controller\ProjectController::$contents has no effect D:\wamp\www\work_log\ThinkPHP\Library\Think\Storage\Driver\File.class.php 第 50 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-06-07T17:02:38+08:00 ] 127.0.0.1 /work_log/index.php/Home/Project/wxGetInfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002001s ]
+NOTIC: [2048] Non-static method Think\Storage\Driver\File::put() should not be called statically, assuming $this from incompatible context D:\wamp\www\work_log\Application\Home\Controller\ProjectController.class.php 第 257 行.
+NOTIC: [8] Indirect modification of overloaded property Home\Controller\ProjectController::$contents has no effect D:\wamp\www\work_log\ThinkPHP\Library\Think\Storage\Driver\File.class.php 第 50 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003000s ]
+
+[ 2016-06-07T17:03:40+08:00 ] 127.0.0.1 /work_log/index.php/Home/Project/wxGetInfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2048] Non-static method Think\Storage\Driver\File::put() should not be called statically, assuming $this from incompatible context D:\wamp\www\work_log\Application\Home\Controller\ProjectController.class.php 第 257 行.
+NOTIC: [8] Indirect modification of overloaded property Home\Controller\ProjectController::$contents has no effect D:\wamp\www\work_log\ThinkPHP\Library\Think\Storage\Driver\File.class.php 第 50 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003000s ]
+
+[ 2016-06-07T17:04:33+08:00 ] 127.0.0.1 /work_log/index.php/Home/Project/wxGetInfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2048] Non-static method Think\Storage\Driver\File::put() should not be called statically, assuming $this from incompatible context D:\wamp\www\work_log\Application\Home\Controller\ProjectController.class.php 第 253 行.
+NOTIC: [8] Indirect modification of overloaded property Home\Controller\ProjectController::$contents has no effect D:\wamp\www\work_log\ThinkPHP\Library\Think\Storage\Driver\File.class.php 第 50 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004000s ]
+
+[ 2016-06-07T17:06:38+08:00 ] 127.0.0.1 /work_log/index.php/Home/Project/wxGetInfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2048] Non-static method Think\Storage\Driver\File::put() should not be called statically, assuming $this from incompatible context D:\wamp\www\work_log\Application\Home\Controller\ProjectController.class.php 第 254 行.
+NOTIC: [8] Indirect modification of overloaded property Home\Controller\ProjectController::$contents has no effect D:\wamp\www\work_log\ThinkPHP\Library\Think\Storage\Driver\File.class.php 第 50 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004000s ]
+
+[ 2016-06-07T17:07:46+08:00 ] 127.0.0.1 /work_log/index.php/Home/Project/wxGetInfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001001s ]
+NOTIC: [2048] Non-static method Think\Storage\Driver\File::put() should not be called statically, assuming $this from incompatible context D:\wamp\www\work_log\Application\Home\Controller\ProjectController.class.php 第 258 行.
+NOTIC: [8] Indirect modification of overloaded property Home\Controller\ProjectController::$contents has no effect D:\wamp\www\work_log\ThinkPHP\Library\Think\Storage\Driver\File.class.php 第 50 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003000s ]
+
+[ 2016-06-07T17:08:58+08:00 ] 127.0.0.1 /work_log/index.php/Home/Project/wxGetInfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2048] Non-static method Think\Storage\Driver\File::put() should not be called statically, assuming $this from incompatible context D:\wamp\www\work_log\Application\Home\Controller\ProjectController.class.php 第 258 行.
+NOTIC: [8] Indirect modification of overloaded property Home\Controller\ProjectController::$contents has no effect D:\wamp\www\work_log\ThinkPHP\Library\Think\Storage\Driver\File.class.php 第 50 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-06-07T17:11:05+08:00 ] 127.0.0.1 /work_log/index.php/Home/Project/wxGetInfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined variable: curl D:\wamp\www\work_log\ThinkPHP\Library\Think\Controller.class.php 第 323 行.
+NOTIC: [2] curl_setopt() expects parameter 1 to be resource, null given D:\wamp\www\work_log\ThinkPHP\Library\Think\Controller.class.php 第 323 行.
+NOTIC: [8] Undefined variable: data D:\wamp\www\work_log\ThinkPHP\Library\Think\Controller.class.php 第 328 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-06-07T17:11:18+08:00 ] 127.0.0.1 /work_log/index.php/Home/Project/wxGetInfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001001s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined variable: content D:\wamp\www\work_log\Application\Home\Controller\ProjectController.class.php 第 260 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-06-07T17:11:20+08:00 ] 127.0.0.1 /work_log/index.php/Home/Project/wxGetInfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined variable: curl D:\wamp\www\work_log\ThinkPHP\Library\Think\Controller.class.php 第 323 行.
+NOTIC: [2] curl_setopt() expects parameter 1 to be resource, null given D:\wamp\www\work_log\ThinkPHP\Library\Think\Controller.class.php 第 323 行.
+NOTIC: [8] Undefined variable: data D:\wamp\www\work_log\ThinkPHP\Library\Think\Controller.class.php 第 328 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002001s ]
+
+[ 2016-06-07T17:12:29+08:00 ] 127.0.0.1 /work_log/index.php/Home/Project/wxGetInfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined variable: curl D:\wamp\www\work_log\ThinkPHP\Library\Think\Controller.class.php 第 323 行.
+NOTIC: [2] curl_setopt() expects parameter 1 to be resource, null given D:\wamp\www\work_log\ThinkPHP\Library\Think\Controller.class.php 第 323 行.
+NOTIC: [8] Undefined variable: data D:\wamp\www\work_log\ThinkPHP\Library\Think\Controller.class.php 第 328 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-06-07T17:13:07+08:00 ] 127.0.0.1 /work_log/index.php/Home/Project/wxGetInfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined variable: curl D:\wamp\www\work_log\ThinkPHP\Library\Think\Controller.class.php 第 323 行.
+NOTIC: [2] curl_setopt() expects parameter 1 to be resource, null given D:\wamp\www\work_log\ThinkPHP\Library\Think\Controller.class.php 第 323 行.
+NOTIC: [8] Undefined variable: data D:\wamp\www\work_log\ThinkPHP\Library\Think\Controller.class.php 第 328 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003000s ]
+
+[ 2016-06-07T17:13:22+08:00 ] 127.0.0.1 /work_log/index.php/Home/Project/wxGetInfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined variable: curl D:\wamp\www\work_log\ThinkPHP\Library\Think\Controller.class.php 第 323 行.
+NOTIC: [2] curl_setopt() expects parameter 1 to be resource, null given D:\wamp\www\work_log\ThinkPHP\Library\Think\Controller.class.php 第 323 行.
+NOTIC: [8] Undefined variable: data D:\wamp\www\work_log\ThinkPHP\Library\Think\Controller.class.php 第 328 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-06-07T17:13:24+08:00 ] 127.0.0.1 /work_log/index.php/Home/Project/wxGetInfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined variable: curl D:\wamp\www\work_log\ThinkPHP\Library\Think\Controller.class.php 第 323 行.
+NOTIC: [2] curl_setopt() expects parameter 1 to be resource, null given D:\wamp\www\work_log\ThinkPHP\Library\Think\Controller.class.php 第 323 行.
+NOTIC: [8] Undefined variable: data D:\wamp\www\work_log\ThinkPHP\Library\Think\Controller.class.php 第 328 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-06-07T17:16:15+08:00 ] 127.0.0.1 /work_log/index.php/Home/Project/wxGetInfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined variable: dir D:\wamp\www\work_log\Application\Home\Controller\ProjectController.class.php 第 246 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-06-07T17:30:44+08:00 ] 127.0.0.1 /work_log/index.php/Home/Project/wxGetInfo2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined variable: curl D:\wamp\www\work_log\ThinkPHP\Library\Think\Controller.class.php 第 323 行.
+NOTIC: [2] curl_setopt() expects parameter 1 to be resource, null given D:\wamp\www\work_log\ThinkPHP\Library\Think\Controller.class.php 第 323 行.
+NOTIC: [8] Undefined variable: data D:\wamp\www\work_log\ThinkPHP\Library\Think\Controller.class.php 第 328 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003000s ]
+
+[ 2016-06-07T17:32:08+08:00 ] 127.0.0.1 /work_log/index.php/Home/Project/wxGetInfo2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-06-07T17:32:21+08:00 ] 127.0.0.1 /work_log/index.php/Home/Project/wxGetInfo2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-06-07T17:37:14+08:00 ] 127.0.0.1 /work_log/index.php/Home/Project/wxGetInfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004000s ]
+
+[ 2016-06-07T17:37:34+08:00 ] 127.0.0.1 /work_log/index.php/Home/Project/wxGetInfo2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003000s ]
+

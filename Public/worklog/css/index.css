@@ -1,0 +1,465 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 12px;
+  font-family: font2; }
+
+li {
+  list-style: none; }
+
+html, body {
+  height: 100%;
+  overflow: hidden; }
+
+a {
+  color: #000;
+  text-decoration: none; }
+
+/*阿里图标*/
+@font-face {
+  font-family: 'iconfont';
+  src: url("//at.alicdn.com/t/font_1460125304_2144465.eot");
+  /* IE9*/
+  src: url("//at.alicdn.com/t/font_1460125304_2144465.eot?#iefix") format("embedded-opentype"), url("//at.alicdn.com/t/font_1460125304_2144465.woff") format("woff"), url("//at.alicdn.com/t/font_1460125304_2144465.ttf") format("truetype"), url("//at.alicdn.com/t/font_1460125304_2144465.svg#iconfont") format("svg");
+  /* iOS 4.1- */ }
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-stroke-width: 0.2px;
+  -moz-osx-font-smoothing: grayscale; }
+
+@font-face {
+  font-family: 'font1';
+  src: url("../fonts/Plaster of Paris.ttf") format("truetype"); }
+@font-face {
+  font-family: 'font2';
+  src: url("../fonts/LingZhiTi.ttf") format("truetype"); }
+@font-face {
+  font-family: 'shuzi1';
+  src: url("../fonts/ShuZi1.ttf") format("truetype"); }
+#worklog-index {
+  background-color: #4d4d4d;
+  /* float */ }
+  #worklog-index #loading {
+    position: fixed;
+    z-index: 10;
+    top: 50%;
+    margin-top: -150px;
+    left: 50%;
+    margin-left: -200px;
+    display: none; }
+  #worklog-index #float-wrap {
+    position: fixed;
+    z-index: 99999999999;
+    top: 40vh;
+    left: 58%; }
+    #worklog-index #float-wrap span {
+      display: block;
+      position: absolute;
+      font-size: 7rem;
+      background-color: #31BB3A;
+      border-radius: 50%;
+      height: 7vh;
+      width: 7vh;
+      line-height: 6vh;
+      text-align: center;
+      color: #fff; }
+      #worklog-index #float-wrap span:not(:first-of-type) {
+        background-color: #9C9797;
+        font-size: 3rem;
+        line-height: 6rem;
+        z-index: -1; }
+    #worklog-index #float-wrap .statistical:before {
+      content: "\e601"; }
+    #worklog-index #float-wrap .details:before {
+      content: "\e604"; }
+    #worklog-index #float-wrap .bug:before {
+      content: "\e605"; }
+    #worklog-index #float-wrap .function:before {
+      content: "\e606"; }
+  #worklog-index #details-wrap {
+    position: fixed;
+    width: 90vw;
+    height: 90vh;
+    background: url(../images/details_bg.jpg) no-repeat center top;
+    background-size: cover;
+    z-index: 3;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    top: 5vh;
+    padding: 2%;
+    display: none; }
+    #worklog-index #details-wrap #o-content {
+      background-color: rgba(255, 255, 255, 0);
+      font-size: 2rem;
+      width: 100%;
+      border: 1px solid #C5C0C0;
+      margin-bottom: 25px;
+      min-height: 86vh;
+      padding: 1%;
+      outline: none; }
+  #worklog-index #wrapper {
+    max-width: 976px;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    background: url("../images/bg.jpg") no-repeat top center;
+    background-size: cover; }
+    #worklog-index #wrapper header {
+      position: relative;
+      height: 8.3rem; }
+      #worklog-index #wrapper header #title {
+        left: 50%;
+        padding: 2.6rem 0 0;
+        text-align: center;
+        font-family: "font1";
+        font-size: 2.2rem;
+        font-weight: 500;
+        z-index: 10; }
+      #worklog-index #wrapper header span {
+        display: inline-block;
+        position: absolute;
+        z-index: 2;
+        width: 6%;
+        top: 3.2rem; }
+        #worklog-index #wrapper header span img {
+          width: 100%; }
+      #worklog-index #wrapper header .calendar-icon {
+        left: 1%; }
+      #worklog-index #wrapper header .write-icon {
+        left: 8%; }
+      #worklog-index #wrapper header .search-icon {
+        left: 15%; }
+      #worklog-index #wrapper header .pick-icon {
+        left: 21.5%; }
+      #worklog-index #wrapper header .nums {
+        background: url("../images/top_icon.png") no-repeat top center;
+        height: 50px;
+        background-size: 100% 100%;
+        font-family: "font1";
+        font-size: 2rem;
+        text-align: center;
+        line-height: 50px;
+        font-weight: bold;
+        width: 7%; }
+      #worklog-index #wrapper header .nums-all {
+        right: 20%;
+        color: #000; }
+      #worklog-index #wrapper header .nums-finished {
+        right: 10%;
+        color: #218221; }
+      #worklog-index #wrapper header .nums-unfinished {
+        right: 1%;
+        color: #961D1D; }
+    #worklog-index #wrapper #add-log {
+      position: absolute;
+      display: none;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      transform: scale(0);
+      z-index: 11; }
+      #worklog-index #wrapper #add-log .add-log-box {
+        width: 80%;
+        height: 100%;
+        margin: 7rem auto 0;
+        background: url("../images/addlog_bj.jpg") no-repeat center top;
+        -webkit-background-size: 100%;
+        background-size: 100%;
+        overflow: hidden; }
+        #worklog-index #wrapper #add-log .add-log-box .difficulty-nums {
+          width: 60%;
+          display: flex;
+          justify-content: space-between;
+          margin: 18rem 0 0 10rem; }
+          #worklog-index #wrapper #add-log .add-log-box .difficulty-nums span {
+            display: inline-block;
+            font-size: 3rem;
+            border: 1px solid;
+            border-radius: 50%;
+            font-weight: bold; }
+          #worklog-index #wrapper #add-log .add-log-box .difficulty-nums .on {
+            background-color: #220601;
+            color: red; }
+        #worklog-index #wrapper #add-log .add-log-box .add-log-type {
+          text-align: center;
+          margin: 1.5rem 0; }
+          #worklog-index #wrapper #add-log .add-log-box .add-log-type span {
+            display: inline-block;
+            font-size: 2.5rem;
+            border: 1px solid;
+            border-radius: 2rem;
+            padding: 0.1rem 2rem;
+            margin: 0 2rem; }
+          #worklog-index #wrapper #add-log .add-log-box .add-log-type .on {
+            background-color: #220601;
+            color: red; }
+        #worklog-index #wrapper #add-log .add-log-box .add-log-content {
+          width: 70%;
+          margin: 0 auto; }
+          #worklog-index #wrapper #add-log .add-log-box .add-log-content textarea {
+            background-color: rgba(255, 255, 255, 0);
+            border: none;
+            outline: none;
+            font-size: 1.8rem;
+            width: 100%;
+            height: 20rem;
+            line-height: 2rem;
+            border: 1px solid red; }
+        #worklog-index #wrapper #add-log .add-log-box .add-log-button {
+          width: 60%;
+          margin: 1rem auto;
+          text-align: center;
+          display: flex;
+          justify-content: space-around; }
+          #worklog-index #wrapper #add-log .add-log-box .add-log-button button {
+            background-color: rgba(255, 255, 255, 0);
+            font-size: 3rem;
+            border: none;
+            outline: none;
+            display: inline-block; }
+            #worklog-index #wrapper #add-log .add-log-box .add-log-button button:nth-of-type(1) {
+              display: none; }
+    #worklog-index #wrapper #calendar {
+      position: absolute;
+      z-index: 3;
+      top: -628px;
+      width: 100%; }
+      #worklog-index #wrapper #calendar td {
+        font-family: "shuzi1";
+        font-size: 2.6rem; }
+    #worklog-index #wrapper #calendar-mask {
+      position: absolute;
+      display: none;
+      z-index: 2;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.5); }
+    #worklog-index #wrapper main {
+      height: 100%; }
+      #worklog-index #wrapper main #search {
+        position: relative;
+        overflow: hidden;
+        height: 0; }
+        #worklog-index #wrapper main #search #search-con {
+          display: block;
+          width: 95%;
+          margin: 1rem auto 1rem;
+          height: 3rem;
+          border: 1px solid #6F6969;
+          box-shadow: 0px 0px 5px #888888;
+          border-radius: 2rem;
+          background-color: rgba(255, 255, 255, 0);
+          text-indent: 1rem;
+          font-family: font2;
+          font-size: 1.8rem;
+          outline: none; }
+        #worklog-index #wrapper main #search #search-btn {
+          position: absolute;
+          right: 3.2%;
+          top: 1rem;
+          width: 3rem;
+          height: 3rem;
+          background-color: rgba(255, 255, 255, 0);
+          border: none;
+          outline: none;
+          text-align: center;
+          line-height: 3rem;
+          font-size: 2rem;
+          color: #8E8E8E; }
+      #worklog-index #wrapper main #logs-list {
+        height: 88%; }
+        #worklog-index #wrapper main #logs-list #logs {
+          overflow: hidden; }
+          #worklog-index #wrapper main #logs-list #logs li {
+            width: 108%;
+            display: flex;
+            margin: 10px 0; }
+            #worklog-index #wrapper main #logs-list #logs li div, #worklog-index #wrapper main #logs-list #logs li input {
+              font-size: 2rem;
+              height: 3rem;
+              line-height: 3rem; }
+            #worklog-index #wrapper main #logs-list #logs li .edit-content {
+              width: 76%;
+              background: none;
+              border: none;
+              text-indent: 0.5rem; }
+            #worklog-index #wrapper main #logs-list #logs li .add-time {
+              width: 19%;
+              color: red; }
+            #worklog-index #wrapper main #logs-list #logs li .operation {
+              overflow: visible; }
+              #worklog-index #wrapper main #logs-list #logs li .operation span {
+                font-size: 2rem;
+                display: inline-block;
+                white-space: nowrap;
+                border: 2px solid #fff;
+                background-color: red;
+                color: #fff;
+                border-radius: 10px;
+                padding: 0 2px;
+                margin-left: 4px; }
+            #worklog-index #wrapper main #logs-list #logs li .done {
+              color: green; }
+            #worklog-index #wrapper main #logs-list #logs li .check-finished {
+              width: 5%;
+              margin-left: 5px; }
+            #worklog-index #wrapper main #logs-list #logs li .unfinished {
+              background: url("../images/unfinished.png");
+              background-size: 100% 100%; }
+            #worklog-index #wrapper main #logs-list #logs li .finished {
+              background: url("../images/finished.png");
+              background-size: 100% 100%; }
+      #worklog-index #wrapper main #pick-list p {
+        font-size: 2rem; }
+      #worklog-index #wrapper main #pick-list #picks li p {
+        line-height: 4rem;
+        text-indent: 1rem; }
+    #worklog-index #wrapper footer {
+      position: fixed;
+      bottom: 0;
+      width: 100%; }
+      #worklog-index #wrapper footer .footer-move-box {
+        height: 2rem;
+        width: 100%; }
+      #worklog-index #wrapper footer #project-box {
+        height: 0;
+        background-color: rgba(207, 207, 207, 0.71);
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        overflow: hidden; }
+        #worklog-index #wrapper footer #project-box span {
+          display: inline-flex;
+          width: 8rem;
+          background-color: rgba(188, 188, 188, 0.57);
+          height: 8rem;
+          text-align: center;
+          font-size: 1.8rem;
+          align-items: center;
+          justify-content: center;
+          border-radius: 1rem; }
+  #worklog-index #mascot-wrapper {
+    display: none; }
+    #worklog-index #mascot-wrapper .rabbit {
+      position: fixed;
+      top: 20%;
+      left: 0;
+      width: 100px;
+      height: 100px;
+      background: url("../images/frame2.png");
+      background-size: 1200% 100%;
+      background-position: 36% 100%;
+      z-index: 1; }
+    #worklog-index #mascot-wrapper .rabbit-move {
+      animation: boyWalk 4s steps(12, end) infinite; }
+@-webkit-keyframes boyWalk {
+  0% {
+    background-position: 0 100%; }
+  100% {
+    background-position: 100% 100%; } }
+#statistical-body header {
+  display: -webkit-box;
+  -webkit-box-align: center;
+  -webkit-box-pack: center;
+  background-color: #eee;
+  height: 6vh;
+  background-color: rgba(236, 236, 236, 0.92); }
+  #statistical-body header .title {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-flex: 1;
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    -webkit-box-align: center;
+    color: #000;
+    font-size: 3rem;
+    width: 100%;
+    justify-content: center; }
+  #statistical-body header a {
+    font-size: 2.6rem;
+    padding: 1rem; }
+  #statistical-body header .back:before {
+    content: "\e602"; }
+  #statistical-body header .home:before {
+    content: "\e603"; }
+#statistical-body .statistical-wrap {
+  width: 100%;
+  margin: 0 auto;
+  box-sizing: border-box;
+  padding: 2%; }
+  #statistical-body .statistical-wrap .skillbar {
+    position: relative;
+    display: block;
+    margin-bottom: 15px;
+    width: 100%;
+    background: #eee;
+    height: 35px;
+    border-radius: 3px;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -webkit-transition: 0.4s linear;
+    -moz-transition: 0.4s linear;
+    -ms-transition: 0.4s linear;
+    -o-transition: 0.4s linear;
+    transition: 0.4s linear;
+    -webkit-transition-property: width, background-color;
+    -moz-transition-property: width, background-color;
+    -ms-transition-property: width, background-color;
+    -o-transition-property: width, background-color;
+    transition-property: width, background-color; }
+  #statistical-body .statistical-wrap .skillbar-title {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 110px;
+    font-weight: bold;
+    color: #ffffff;
+    background: #6adcfa;
+    -webkit-border-top-left-radius: 3px;
+    -webkit-border-bottom-left-radius: 4px;
+    -moz-border-radius-topleft: 3px;
+    -moz-border-radius-bottomleft: 3px;
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px; }
+  #statistical-body .statistical-wrap .skillbar-title span {
+    display: block;
+    background: rgba(0, 0, 0, 0.1);
+    padding: 0 20px;
+    height: 35px;
+    line-height: 35px;
+    font-size: 1.4rem;
+    -webkit-border-top-left-radius: 3px;
+    -webkit-border-bottom-left-radius: 3px;
+    -moz-border-radius-topleft: 3px;
+    -moz-border-radius-bottomleft: 3px;
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px; }
+  #statistical-body .statistical-wrap .skillbar-bar {
+    height: 35px;
+    width: 0px;
+    background: #6adcfa;
+    border-radius: 3px;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px; }
+  #statistical-body .statistical-wrap .skill-bar-percent {
+    position: absolute;
+    right: 10px;
+    top: 0;
+    font-size: 2rem;
+    height: 35px;
+    line-height: 35px;
+    color: #ffffff;
+    color: rgba(0, 0, 0, 0.4); }
+
+/*# sourceMappingURL=index.css.map */
