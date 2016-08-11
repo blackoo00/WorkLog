@@ -1,4 +1,4 @@
-define(['jquery','jqueryUI'],function($,$UI){
+define(['widget','jquery','jqueryUI'],function(widget,$,$UI){
 	function Window(){
 		this.cfg = {
 			width : 500,
@@ -10,72 +10,141 @@ define(['jquery','jqueryUI'],function($,$UI){
 			isDraggable : true,//是否可拖动
 			dragHandle : null,//拖动把手
 			skinClassName : null,//定制皮肤
+
 			text4AlerBtn : "确定",//按钮文案
+			text4ConfirmBtn : "确定",
+			text4CancelBtn : "取消",
+
 			handler4AlertBtn : null,//确定回调函数
 			handler4CloseBtn : null,//关闭回调函数
-		}
+			handler4ConfirmBtn : null,//Confirm回调函数
+			handler4CancelBtn : null,//Cancel回调函数
+
+			text4PromptBtn:"确定",
+			isPromptInputPassword:false,
+			defaultValue4PromptInput:"",
+			maxlength4PromptInput:10,
+			handler4PromptBtn:null,
+		};
+		this.handlers = {};
 	}
 
-	Window.prototype = {
-		alert : function(cfg){
-			var CFG = $.extend(this.cfg,cfg);
-
-			var boundingBox = $('<div class="window_boundingBox">'+
-				'<div class="window_header">'+CFG.title+'</div>'+
-				'<div class="window_body">' +CFG.content+'</div>'+
-				'<div class="window_footer"><input class="window_alertBtn" type="button" value="'+CFG.text4AlerBtn+'"></div>'
-				+'</div>');
-			boundingBox.appendTo('body');
-			//遮罩层
-			mask = null;
-			if(CFG.hasMask){
-				mask = $('<div class="window_mask"></div>');
-				mask.appendTo('body');
+	Window.prototype = $.extend({},new widget.Widget(),{
+		renderUI : function(){
+			var footerContent = "";
+			switch(this.cfg.winType){
+				case "alert":
+					footerContent = '<input type="button" value="' + this.cfg.text4AlertBtn + '" class="window_alertBtn">';
+					break;
+				case "confirm":
+					footerContent = '<input type="button" value="'+this.cfg.text4ConfirmBtn+'" class="window_confirmBtn"><input type="button" value="'+this.cfg.text4CancelBtn+'" class="window_cancelBtn">';
+					break;
+				case "prompt":
+					this.cfg.content += '<p class="window_promptInputWrapper"><input type="' + (this.cfg.isPromptInputPassword?"password":"text") + '" value="' + this.cfg.defaultValue4PromptInput + '" maxlength="' + this.cfg.maxlength4PromptInput + '" class="window_promptInput"></p>';
+					footerContent = '<input type="button" value="' +this.cfg.text4PromptBtn+ '" class="window_promptBtn"><input type="button" value="' + this.cfg.text4CancelBtn + '" class="window_cancelBtn">';
+					break;
 			}
-			//确定按钮
-			var btn = boundingBox.find('.window_alertBtn');
-			btn.click(function(){
-				CFG.handler4AlertBtn && CFG.handler4AlertBtn();
-				boundingBox.remove();
-				mask && mask.remove();
+
+			this.boundingBox = $('<div class="window_boundingBox">'+
+				'<div class="window_body">' +this.cfg.content+'</div>'+
+				+'</div>');
+			if(this.cfg.winType != 'common'){
+				this.boundingBox.prepend('<div class="window_header">'+this.cfg.title+'</div>');
+				this.boundingBox.append('<div class="window_footer">'+footerContent+'</div>');
+			};
+			this._promptInput = this.boundingBox.find(".window_promptInput");
+
+			if(this.cfg.hasMask){
+				this._mask = $('<div class="window_mask"></div>');
+				this._mask.appendTo('body');
+			}
+			if(this.cfg.hasCloseBtn){
+				this.boundingBox.append('<span class="window_closeBtn">×</span>');
+			}
+			this.boundingBox.appendTo(document.body);
+		},
+		bindUI : function(){
+			var that = this;
+			this.boundingBox.delegate(".window_alertBtn","click",function(){
+				that.fire("alert");
+				that.destroy();
+			}).delegate(".window_closeBtn","click",function(){
+				that.fire("close");
+				that.destroy();
+			}).delegate(".window_confirmBtn","click",function(){
+				that.fire("confirm");
+				that.destroy();
+			}).delegate(".window_cancelBtn","click",function(){
+				that.fire("cancel");
+				that.destroy();
+			}).delegate(".window_promptBtn","click",function(){
+				that.fire("prompt",that._promptInput.val());
+				that.destroy();
 			});
+			//确定回调函数
+			if(this.cfg.handler4AlertBtn){
+				this.on('alert',this.cfg.handler4AlertBtn);
+			}
+			//关闭回调函数
+			if(this.cfg.handler4CloseBtn){
+				this.on('close',this.cfg.handler4CloseBtn);
+			}
+			if(this.cfg.handler4ConfirmBtn){
+				this.on('confirm',this.cfg.handler4ConfirmBtn);
+			}
+			if(this.cfg.handler4CancelBtn){
+				this.on('cancel',this.cfg.handler4CancelBtn);
+			}
+			if(this.cfg.handler4PromptBtn){
+				this.on('prompt',this.cfg.handler4PromptBtn);
+			}
+		},
+		syncUI : function(){
 			//样式
-			boundingBox.css({
+			this.boundingBox.css({
 				width : this.cfg.width + "px",
 				height : this.cfg.height + "px",
 				left : (this.cfg.x || (window.innerWidth - this.cfg.width) / 2) + "px",
 				top : (this.cfg.x || (window.innerHeight - this.cfg.height) / 2) + "px",
 			});
-			//关闭按钮
-			if(CFG.hasCloseBtn){
-				var closeBtn = $('<span class="window_closeBtn">×</span>');
-				closeBtn.appendTo(boundingBox);
-				closeBtn.click(function() {
-					CFG.handler4CloseBtn && CFG.handler4CloseBtn();
-					boundingBox.remove();
-					mask && mask.remove();
-				});
-			}
 			//定制皮肤
-			if(CFG.skinClassName){
-				boundingBox.addClass(CFG.skinClassName);
+			if(this.cfg.skinClassName){
+				this.boundingBox.addClass(this.cfg.skinClassName);
 			}
 			//拖动
-			if(CFG.isDraggable){
-				if(CFG.dragHandle){
-					boundingBox.draggable({handle:CFG.dragHandle});
+			if(this.cfg.isDraggable){
+				if(this.cfg.dragHandle){
+					this.boundingBox.draggable({handle:this.cfg.dragHandle});
 				}else{
-					boundingBox.draggable();
+					this.boundingBox.draggable();
 				}
 			}
 		},
-		confirm : function(){
-
+		destructor : function(){
+			this._mask && this._mask.remove();
 		},
-		prompt : function(){
-
-		}
-	}
+		alert : function(cfg){
+			$.extend(this.cfg,cfg,{winType:"alert"}),
+			this.render();
+			return this;
+		},
+		confirm : function(cfg){
+			$.extend(this.cfg,cfg,{winType:"confirm"}),
+			this.render();
+			return this;
+		},
+		prompt : function(cfg){
+			$.extend(this.cfg,cfg,{winType:"prompt"}),
+			this.render();
+			this._promptInput.select();
+			return this;
+		},
+		common : function(cfg){
+			$.extend(this.cfg,cfg,{winType:"common"}),
+			this.render();
+			return this;
+		},
+	});
 
 	return {
 		Window : Window

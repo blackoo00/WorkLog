@@ -9,5 +9,8 @@
 </head>
 <body>
 	<input type="button" value="alert弹窗" id="a">
+	<input type="button" value="confirm弹窗" id="c">
+	<input type="button" value="prompt弹窗" id="p">
+	<input type="button" value="common弹窗" id="co">
 </body>
 </html>
