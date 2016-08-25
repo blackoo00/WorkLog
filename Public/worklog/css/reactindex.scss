@@ -33,7 +33,7 @@ src: url('../fonts/ShuZi1.ttf')  format('truetype'), /* chrome、firefox、opera
 	margin: 0;
 	padding: 0;
 	box-sizing:border-box;
-	font-size: 12px;
+	font-size: 16px;
 	font-family: "font2";
 }
 li{
@@ -41,7 +41,6 @@ li{
 }
 html,body{
 	height: 100%;
-	overflow: hidden;
 }
 a{
 	color: #000;
@@ -177,7 +176,6 @@ a{
 				background: url("../images/top_icon.png") no-repeat top center;
 			    height: 50px;
 			    background-size: 100% 100%;
-			    font-family: "font1";
 			    font-size: 2rem;
 			    text-align: center;
 			    line-height: 50px;
@@ -301,24 +299,22 @@ a{
 			background-color: rgba(0,0,0,0.5);
 		}
 		main{
-			height: 100%;
 			#search{
 				position: relative;
 				overflow: hidden;
-				height: 0;
+				/*height: 0;*/
 				#search-con{
 					display: block;
-					width: 95%;
-					margin: 1rem auto 1rem;
+					width: 99%;
+					margin: 5px auto;
 					height: 3rem;
 					border: 1px solid #6F6969;
 					box-shadow: 0px 0px 5px #888888;
 					border-radius: 2rem;
-					background-color: rgba(255,255,255,0);
+					background-color: rgba(255, 255, 255, 0);
 					text-indent: 1rem;
 					font-family: font2;
 					font-size: 1.8rem;
-					outline: none;
 				}
 				#search-btn{
 					position: absolute;
@@ -336,20 +332,21 @@ a{
 				}
 			}
 			#logs-list{
-				height: 88%;
+				height: 1078px;
+				overflow-y: scroll;
 				#logs{
-					overflow: hidden;
+				overflow: hidden;
 					li{
 						width: 108%;
 						display: flex;
 						margin: 10px 0;
 						div,input{
-							font-size: 2rem;
+							font-size: 1.5rem;
 							height: 3rem;
 							line-height: 3rem;
 						}
 						.edit-content{
-							width: 76%;
+							width: 100%;
 							background: none;
 							border:none;
 							text-indent: 0.5rem;
@@ -376,7 +373,7 @@ a{
 							color: green;
 						}
 						.check-finished{
-							width: 5%;
+							width: 4rem;
 							margin-left: 5px;
 						}
 						.unfinished{
