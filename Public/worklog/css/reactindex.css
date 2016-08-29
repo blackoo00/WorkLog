@@ -121,13 +121,13 @@ a {
         font-size: 2.2rem;
         font-weight: 500;
         z-index: 10; }
-      #worklog-index #wrapper header span {
+      #worklog-index #wrapper header .header_item {
         display: inline-block;
         position: absolute;
         z-index: 2;
         width: 6%;
         top: 3.2rem; }
-        #worklog-index #wrapper header span img {
+        #worklog-index #wrapper header .header_item img {
           width: 100%; }
       #worklog-index #wrapper header .calendar-icon {
         left: 1%; }
@@ -156,12 +156,10 @@ a {
         right: 1%;
         color: #961D1D; }
     #worklog-index #wrapper #add-log {
-      position: absolute;
-      display: none;
+      position: fixed;
       top: 0;
       width: 100%;
       height: 100%;
-      transform: scale(0);
       z-index: 11; }
       #worklog-index #wrapper #add-log .add-log-box {
         width: 80%;
@@ -233,8 +231,7 @@ a {
         font-family: "shuzi1";
         font-size: 2.6rem; }
     #worklog-index #wrapper #calendar-mask {
-      position: absolute;
-      display: none;
+      position: fixed;
       z-index: 2;
       top: 0;
       width: 100%;

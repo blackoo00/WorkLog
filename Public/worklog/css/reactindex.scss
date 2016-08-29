@@ -150,7 +150,7 @@ a{
 				font-weight: 500;
 				z-index: 10;
 			}
-			span{
+			.header_item{
 				display: inline-block;
 			    position: absolute;
 			    z-index: 2;
@@ -196,12 +196,10 @@ a{
 			}
 		}
 		#add-log{
-			position: absolute;
-			display: none;
+			position: fixed;
 			top: 0;
 			width: 100%;
 			height: 100%;
-			transform:scale(0);
 			z-index: 11;
 			.add-log-box{
 				width: 80%;
@@ -212,6 +210,7 @@ a{
 				background-size: 100%;
 				overflow: hidden;
 				p{
+
 				}
 				.difficulty-nums{
 				    width: 60%;
@@ -290,8 +289,7 @@ a{
 			}
 		}
 		#calendar-mask{
-			position: absolute;
-			display: none;
+			position: fixed;
 			z-index: 2;
 			top: 0;
 			width: 100%;

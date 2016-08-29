@@ -150,7 +150,7 @@
 	随摘
 </div>
 		</main>
-		<!-- 日志模块 BEGIN-->
+		<!-- 日历模块 BEGIN-->
 		<div id="calendar"></div>
 		<!-- 日志模块 END-->
 		<div id="calendar-mask"></div>

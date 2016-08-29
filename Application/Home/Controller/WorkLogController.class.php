@@ -55,6 +55,27 @@
 			);
 			$this->ajaxReturn($data,'',1);
 		}
+		//确认完成日志（AJAX）
+		public function finishLog(){
+			$id=$_GET['id'];
+			$db=$this->logsDb;
+			$log=$db->where("id=".$id)->find();
+			if($log){
+		        $time = time();
+		        $data=array(
+		            "finished"=>1,
+		            "finish_time"=>$time,
+		        );
+		        $finish_time = date('Y-m-d',$time);
+				$s=$db->where("id=".$id)->save($data);
+		        $s = 1;
+				if($s){
+					$this->ajaxReturn("1",$finish_time,"JSON");
+				}else{
+					$this->ajaxReturn("0","JSON");
+				}
+			}
+		}
 		//添加/修改日志（AJAX）
 		public function editlogs(){
 			$con=$_GET['con'];
@@ -84,14 +105,14 @@
 		public function deletelog(){
 		    $id=$_GET['id'];
 		    $log=$this->logsDb->where("id=".$id)->find();
-		    // if($log['content']==""){
-		    //     $res=$this->logsDb->where("id=".$id)->delete();
-		    // }else{
-		    //     $res=$this->logsDb->where("id=".$id)->setField("delete",1);
-		    // }
-		    // if($res&&$log['pid']){
-		    //     M("ProjectClass")->where("id=".$log['pid'])->setDec("nums");
-		    // }
+		    if($log['content']==""){
+		        $res=$this->logsDb->where("id=".$id)->delete();
+		    }else{
+		        $res=$this->logsDb->where("id=".$id)->setField("delete",1);
+		    }
+		    if($res&&$log['pid']){
+		        M("ProjectClass")->where("id=".$log['pid'])->setDec("nums");
+		    }
 		    $this->ajaxReturn($this->logsDb->getLastsql(),"",1);
 		}
 	}

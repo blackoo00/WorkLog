@@ -1,3 +1,4 @@
+/*日志总数 完成 未完成 筛选*/
 var HeaderRight = React.createClass({
 	getInitialState: function() {
 	  return {
@@ -21,32 +22,90 @@ var HeaderRight = React.createClass({
 	},
 	render:function(){
 		var arr = [
-			<span key="header_right_1" className="nums-all nums">{this.state.all}</span>,
-			<span key="header_right_2" className="nums-finished nums">{this.state.finished}</span>,
-			<span key="header_right_3" className="nums-unfinished nums">{this.state.unfinished}</span>,
+			<span key="header_right_1" className="nums-all nums header_item">{this.state.all}</span>,
+			<span key="header_right_2" className="nums-finished nums header_item">{this.state.finished}</span>,
+			<span key="header_right_3" className="nums-unfinished nums header_item">{this.state.unfinished}</span>,
 		]
 		return <div>{arr}</div>;
 	}
 });
-var Header = React.createClass({
-	render: function() {
+/*顶部左侧栏目筛选(日历，添加日志)*/
+var HeaderLeft = React.createClass({
+	getInitialState:function(){
+		return{
+			addLogShow:false,
+		}
+	},
+	handleAddLog:function(){
+		this.setState({
+			addLogShow:true,
+		})
+	},
+	render: function(){
 		var dir ='http://127.0.0.1/work_log/Public/worklog/images/';
 	    var imgs_classname = ['calendar-icon', 'write-icon', 'search-icon','pick-icon'];
 	    var imgs =[dir+'calendar_icon.png',dir+'write_icon.png',dir+'search_icon.png',dir+'pick_icon.png'];
-
-		var nums = ['nums-all','nums-finished','nums-unfinished'];
-		var nums_con = ['{work=$data.all}','{work=$data.finished}','{work=$data.unfinished}'];
+		return <div>
+			<span key='img_1' className="calendar-icon header_item"><img src={imgs[0]}/></span>
+			<span key='img_2' className="write-icon header_item" onClick={this.handleAddLog}><img src={imgs[1]}/></span>
+			<span key='img_3' className="search-icon header_item"><img src={imgs[2]}/></span>
+			<span key='img_4' className="pick-icon header_item"><img src={imgs[3]}/></span>
+			<LogAdd ref="logadd" isVisible={this.state.addLogShow}/>
+		</div>
+	}
+})
+/*添加日志*/
+var LogAdd = React.createClass({
+	getInitialState:function(){
+		return{
+			isVisible:false,
+		}
+	},
+	handleHide(){
+		this.setState({
+			isVisible:false,
+		})
+	},
+	render:function(){
+		var style={
+			display: this.props.isVisible ? 'fixed' : 'none',
+		}
+		return (<div><div id="calendar-mask" style={style}></div>
+			<div id="add-log" style={style}>
+			<div className="add-log-box">
+				<p className="difficulty-nums">
+					<span data-nums="1" className="on">狼</span>
+					<span data-nums="2">虎</span>
+					<span data-nums="3">鬼</span>
+					<span data-nums="4">龙</span>
+					<span  data-nums="5">神</span>
+				</p>
+				<p className="add-log-type">
+					<span className="on" data-nums="1">功能</span>
+					<span data-nums="2">BUG</span>
+				</p>
+				<p className="add-log-content">
+					<textarea></textarea>
+				</p>
+				<p className="add-log-button">
+					<button>确认</button>
+					<button>取消</button>
+				</p>
+			</div>
+			</div></div>);
+	}
+})
+/*顶部*/
+var Header = React.createClass({
+	render: function() {
 		return <header id="header">
+				    <HeaderLeft/>
 				    <div id="title">Robin's JobLogs</div>
-				    {
-				      imgs.map(function (img,index) {
-				        	return <span key={'img_' + index} className={imgs_classname[index]}><img src={img}/></span>;
-				      })
-				    }
 				    <HeaderRight/>
 			    </header>;
 	}
 });
+/*加载动画*/
 var Loading = React.createClass({
 	componentDidMount:function(){
 		$.getScript('http://127.0.0.1/work_log/Public/worklog/react/loading.js');
@@ -59,6 +118,7 @@ var Loading = React.createClass({
 		</div>;	
 	}
 })
+/*搜索功能*/
 var Search = React.createClass({
 	handKeyUp:function(){
 		var key = this.refs.target.value;
@@ -73,40 +133,13 @@ var Search = React.createClass({
 			</div>;
 	}
 });
+/*日志列表*/
 var Logs = React.createClass({
-	handleSearchTextUpdate: function(searchText) {
-	  this.state.searchText = searchText;
-	  this.setState(this.state);
-	},
-	handleLogTextUpdate: function(event){
-		var con = event.target.value;
-		var id = event.target.getAttribute('data-id');
-		$.ajax({
-			url:'/work_log/index.php?m=Home&c=WorkLog&a=editlogs',
-			data:{con:con,id:id},
-			dataType:'json',
-			success:function(data){
-				console.log(data);
-			}
-		});
-	},
-	handleLogDelete:function(event){
-		var id = event.target.getAttribute('data-id');
-		var li = $(this).parents('li');
-		li.hide();
-		console.log(li);
-		// $.ajax({
-		// 	url:'/work_log/index.php?m=Home&c=WorkLog&a=deletelog',
-		// 	data:{id:id},
-		// 	success:function(data){
-		// 		console.log(data);
-		// 	}
-		// });
-	},
 	getInitialState:function(){
 		return {
 			loglist : [],
 			searchText: '',
+			deleteId : 0,
 		};
 	},
 	componentDidMount:function(){
@@ -140,31 +173,94 @@ var Logs = React.createClass({
 		    }
 		});
 	},
+	handleSearchTextUpdate: function(searchText) {
+	  this.state.searchText = searchText;
+	  this.setState(this.state);
+	},
+	/*点击完成日志*/
+	handleLogFinish:function(index){
+		var loglist = this.state.loglist;
+		var log = loglist[index];
+		var id = log.id;
+		loglist[index].finished = 1;
+		this.setState({
+			loglist : loglist,
+		})
+		$.ajax({
+			url:'/work_log/index.php?m=Home&c=WorkLog&a=finishLog',
+			data:{id:id},
+			dataType:'json',
+			success:function(data){
+				console.log(data);
+			}
+		});
+	},
+	/*列表中直接更新内容*/
+	handleLogTextUpdate: function(index,event){
+		var con = event.target.value;
+		var loglist = this.state.loglist.slice();
+		var id = loglist[index].id;
+		loglist[index].content = con;
+		this.setState({loglist: loglist});
+		$.ajax({
+			url:'/work_log/index.php?m=Home&c=WorkLog&a=editlogs',
+			data:{con:con,id:id},
+			dataType:'json',
+			success:function(data){
+				console.log(data);
+			}
+		});
+	},
+	/*删除日志*/
+	handleLogDelete:function(index){
+		var loglist = this.state.loglist.slice();
+		var id = loglist[index].id;
+	    loglist.splice(index, 1);
+	    this.setState({loglist: loglist});
+		$.ajax({
+			url:'/work_log/index.php?m=Home&c=WorkLog&a=deletelog',
+			data:{id:id},
+			success:function(data){
+			    _self.setState({
+			    	loglist:_self.state.loglist.filter(function(data) {
+				      	return data.id != id;
+				    })
+			    });
+			}
+		});
+	},
 	render: function() {
+		/*日志列表*/
+		var loglist = [];
+		this.state.loglist.filter(function(data) {
+	      return (data.content.toLowerCase().indexOf(this.state.searchText.toLowerCase()) > -1 && data.delete == 0);
+	    }.bind(this)).map(function (log,index){
+	    	loglist.push(
+	    		<li key={'log_' + index}>
+	    			{/*勾勾*/}
+					<div className={(log.finished == 0?"unfinished":"finished") + " check-finished"} onClick={this.handleLogFinish.bind(this,index)}></div>
+					{/*日志内容*/}
+					<input type="text" className="edit-content" value={log.content} onChange={this.handleLogTextUpdate.bind(this, index)}/>
+					{/*完成时间*/}
+					<div className={(log.finished == 0?"doen":"") + " add-time"}>
+						{log.showtime}
+					</div>
+					{/*操作*/}
+					<div className="operation">
+						<span className="delete" onClick={this.handleLogDelete.bind(this, index)}>删除</span>
+					</div>
+				</li>
+	    	)
+		}.bind(this))
 		return <div><Search onSearchTextUpdate={this.handleSearchTextUpdate}/><div id="logs-list">	
 			<ul id="logs">
-				{
-					this.state.loglist.filter(function(data) {
-				      return data.content.toLowerCase().indexOf(this.state.searchText.toLowerCase()) > -1;
-				    }.bind(this)).map(function (log,index){
-						return <li key={'log_' + index} data-id={log.id} data-pid={log.pid} data-finish={log.finished}>
-						<div className={(log.finished == 0?"unfinished":"finished") + " check-finished"} data-id={log.id}></div>
-						<input type="text" className="edit-content" data-id={log.id} defaultValue={log.content} ref="input" onChange={this.handleLogTextUpdate}/>
-						<div className={(log.finished == 0?"doen":"") + " add-time"}>
-							{log.showtime}
-						</div>
-						<div className="operation">
-							<span className="delete" data-id={log.id} onClick={this.handleLogDelete}>删除</span>
-						</div>
-						</li>;
-					}.bind(this))
-				}
+				{loglist}
 			</ul>
 			</div></div>;
 	}
 });
 
 ReactDOM.render(
-<div><Loading/><Header/><main><Logs source='/work_log/index.php?m=Home&c=WorkLog&a=getLogListByScroll'/></main></div>,
+	<div><Loading/><Header/><main><Logs source='/work_log/index.php?m=Home&c=WorkLog&a=getLogListByScroll'/></main></div>,
     document.getElementById('wrapper')
 );
