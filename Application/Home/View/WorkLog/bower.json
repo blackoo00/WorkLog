@@ -1,0 +1,17 @@
+{
+  "name": "reactqa",
+  "description": "",
+  "main": "index.js",
+  "authors": [
+    "blackoo00 <460544293@qq.com>"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/blackoo00/react-test",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

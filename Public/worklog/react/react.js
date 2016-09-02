@@ -33,12 +33,12 @@ var HeaderRight = React.createClass({
 var HeaderLeft = React.createClass({
 	getInitialState:function(){
 		return{
-			addLogShow:false,
+			isVisible:false,
 		}
 	},
 	handleAddLog:function(){
 		this.setState({
-			addLogShow:true,
+			isVisible:true,
 		})
 	},
 	render: function(){
@@ -50,7 +50,7 @@ var HeaderLeft = React.createClass({
 			<span key='img_2' className="write-icon header_item" onClick={this.handleAddLog}><img src={imgs[1]}/></span>
 			<span key='img_3' className="search-icon header_item"><img src={imgs[2]}/></span>
 			<span key='img_4' className="pick-icon header_item"><img src={imgs[3]}/></span>
-			<LogAdd ref="logadd" isVisible={this.state.addLogShow}/>
+			<LogAdd ref="logadd" isVisible={this.state.isVisible}/>
 		</div>
 	}
 })
@@ -58,7 +58,7 @@ var HeaderLeft = React.createClass({
 var LogAdd = React.createClass({
 	getInitialState:function(){
 		return{
-			isVisible:false,
+			isVisible:true,
 		}
 	},
 	handleHide(){
@@ -70,6 +70,7 @@ var LogAdd = React.createClass({
 		var style={
 			display: this.props.isVisible ? 'fixed' : 'none',
 		}
+		console.log(style);
 		return (<div><div id="calendar-mask" style={style}></div>
 			<div id="add-log" style={style}>
 			<div className="add-log-box">

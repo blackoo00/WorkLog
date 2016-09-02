@@ -18,6 +18,7 @@ if(version_compare(PHP_VERSION,'5.3.0','<'))  die('require PHP > 5.3.0 !');
 define('APP_DEBUG',True);
 
 define("SITE_URL", "http://127.0.0.1/work_log");
+define("REACT_URL", SITE_URL."/Application/Home/View/WorkLog/dist/js/main.js");
 define("WORK_LOG", SITE_URL."/Public/worklog");
 define("PROJECT", SITE_URL."/Public/project");
 define("COMMON", SITE_URL."/Public/common");
