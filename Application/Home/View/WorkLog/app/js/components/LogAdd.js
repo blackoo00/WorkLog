@@ -1,46 +1,134 @@
 var React = require('react');
+var ReactDOM = require('react-dom');
+var $ = require('jquery');
 
 /*添加日志*/
 module.exports = React.createClass({
 	getInitialState:function(){
-		return{
-			isVisible:this.props.isVisible,
+		return {
+			difficulty: [],
+			classification:[],
+			trueBtnIsVisible: false,
 		}
 	},
-	handleShowHide(){
+	componentDidMount:function(){
+		if (this.isMounted()) {
+			this.setState({
+				difficulty : [{'name':'狼','click':'on'},{'name':'虎','click':'off'},{'name':'鬼','click':'off'},{'name':'龙','click':'off'},{'name':'神','click':'off'}],
+				classification : [{'name':'功能','click':'on'},{'name':'BUG','click':'off'}],
+			})
+		};
+	},
+	handleChooseDfct:function(index){
+		var difficulty = this.state.difficulty;
+		difficulty.map(function(elem, num) {
+			if(num == index){
+				difficulty[num]['click'] = 'on';
+			}else{
+				difficulty[num]['click'] = 'off';
+			}
+		})
 		this.setState({
-			isVisible:!this.state.isVisible,
+			difficulty:difficulty,
 		})
 	},
-	shouldComponentUpdate:function(){
-		console.log('aa');
+	/*选择类型*/
+	handleChooseType:function(index){
+		var classification = this.state.classification;
+		classification.map(function(elem, num) {
+			if(num == index){
+				classification[num]['click'] = 'on';
+			}else{
+				classification[num]['click'] = 'off';
+			}
+		})
+		this.setState({
+			classification:classification,
+		})
+	},
+	/*随着内容的输入显示确定按钮*/
+	handleShowTrueBtn:function(e){
+		var con = e.target.value;
+		var re;
+		if(con != ''){
+			re = true;
+		}else{
+			re = false;
+		}
+		this.setState({
+			trueBtnIsVisible : re,
+		})
+	},
+	/*确认提交*/
+	handleSubmit:function(){
+		var content = ReactDOM.findDOMNode(this.refs.content).value;
+		var difficulty = 0;
+		var type = 0;
+		this.state.difficulty.map(function(item,index){
+			if(item['click'] == 'on'){
+				difficulty = index + 1;
+			}
+		}.bind(this));
+		this.state.classification.map(function(item,index){
+			if(item['click'] == 'on'){
+				type = index + 1;
+			}
+		}.bind(this));
+		if(difficulty == 0 || type == 0){
+			alert('难度或类别选择出错！');
+			return;
+		};
+		// $.ajax({
+		// 	url:"/work_log/index.php?m=Home&c=WorkLog&a=addlogs",
+		// 	data:{content:content,difficulty:difficulty,type:type},
+		// 	dataType:'json',
+		// 	success:function(data){
+		// 		console.log(data);
+		// 		if(data.status==1){
+					
+		// 		}else{
+		// 			console.log("添加日志出错");
+		// 		}
+		// 	}
+		// });
 	},
 	render:function(){
-		var style={
-			display: this.state.isVisible ? 'fixed' : 'none',
+		var addshow={
+			display: this.props.LogAddIsVisible ? 'block' : 'none',
 		};
-		// console.log(style);
-		// console.log(this.props.isVisible);
-		return (<div><div id="calendar-mask" style={style}></div>
-			<div id="add-log" style={style}>
+		/*选择难度*/
+		var difficultyList = [];
+		this.state.difficulty.map(function(item,index){
+			difficultyList.push(
+				<span key={'difficulty-nums' + index} className={item.click} onClick={this.handleChooseDfct.bind(this,index)}>{item.name}</span>
+			)
+		}.bind(this));
+		/*选功能*/
+		var classification = [];
+		this.state.classification.map(function(item,index){
+			classification.push(
+				<span key={'add-log-type' + index} className={item.click} onClick={this.handleChooseType.bind(this,index)}>{item.name}</span>
+			)
+		}.bind(this));
+		/*确定按钮是否显示*/
+		var truebtnshow = {
+			display : this.state.trueBtnIsVisible ? 'inline-block' : 'none',
+		};
+		return (<div><div id="calendar-mask" style={addshow}></div>
+			<div id="add-log" style={addshow}>
 			<div className="add-log-box">
 				<p className="difficulty-nums">
-					<span data-nums="1" className="on">狼</span>
-					<span data-nums="2">虎</span>
-					<span data-nums="3">鬼</span>
-					<span data-nums="4">龙</span>
-					<span  data-nums="5">神</span>
+					{difficultyList}
 				</p>
 				<p className="add-log-type">
-					<span className="on" data-nums="1">功能</span>
-					<span data-nums="2">BUG</span>
+					{classification}
 				</p>
 				<p className="add-log-content">
-					<textarea></textarea>
+					<textarea ref="content" onKeyUp={this.handleShowTrueBtn}></textarea>
 				</p>
 				<p className="add-log-button">
-					<button>确认</button>
-					<button>取消</button>
+					<button style={truebtnshow} onClick={this.handleSubmit}>确认</button>
+					<button onClick={this.props.onToggleForm}>取消</button>
 				</p>
 			</div>
 			</div></div>);

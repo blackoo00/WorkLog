@@ -1,6 +1,7 @@
 var React = require('react');
 var Search = require('./Search');
 var $ = require('jquery');
+var signals= require('signals');
 
 /*日志列表*/
 module.exports = React.createClass({
@@ -8,7 +9,6 @@ module.exports = React.createClass({
 		return {
 			loglist : [],
 			searchText: '',
-			deleteId : 0,
 		};
 	},
 	componentDidMount:function(){
@@ -84,17 +84,19 @@ module.exports = React.createClass({
 	handleLogDelete:function(index){
 		var loglist = this.state.loglist.slice();
 		var id = loglist[index].id;
-	    loglist.splice(index, 1);
-	    this.setState({loglist: loglist});
+		var _self = this;
 		$.ajax({
 			url:'/work_log/index.php?m=Home&c=WorkLog&a=deletelog',
 			data:{id:id},
+			async:false,
 			success:function(data){
-			    _self.setState({
-			    	loglist:_self.state.loglist.filter(function(data) {
-				      	return data.id != id;
-				    })
-			    });
+			    // _self.setState({
+			    // 	loglist:_self.state.loglist.filter(function(data) {
+				   //    	return data.id != id;
+				   //  })
+			    // });
+			    loglist.splice(index, 1);
+			    _self.setState({loglist: loglist});
 			}
 		});
 	},

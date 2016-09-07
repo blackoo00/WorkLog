@@ -115,5 +115,51 @@
 		    }
 		    $this->ajaxReturn($this->logsDb->getLastsql(),"",1);
 		}
+		//添加日志列表（AJAX）
+		public function addlogs(){
+			$db=$this->logsDb;
+			//智能添加项目
+		    // $newp=$this->smartAddClass($_GET['content']);
+			$data=array(
+				'content'=>$_GET['content'],
+		        'difficulty'=>$_GET['difficulty'],
+		        'type'=>$_GET['type'],
+			);
+			if ($db->create($data,1) === false) {
+				$this->ajaxReturn('',$db->getError(),2);
+			}
+			$id=$db->add();
+		    //智能分类
+		    $this->smartBelongTo($id);
+			if($id){
+		        //拼接日志列表
+				$this->ajaxReturn('','',1);
+			}else{
+				$this->ajaxReturn('',"添加日志失败",2);
+			}
+		}
+		//智能分类
+		public function smartBelongTo($id){
+		    $log=$this->logsDb->where("id=".$id)->find();
+		    for ($i=2; $i < 6; $i++) { 
+		        $keyword=mb_substr($log['content'], 0, $i, 'utf-8');
+		        $db=D("ProjectClass");
+		        $condition['name']=array("like","%".$keyword."%");
+		        $condition['delete']=0;
+		        $pc=$db->where($condition)->find();
+		        if($pc){
+		            $this->common->saveClassName($pc['id']);//缓存项目名
+		            $res=$this->logsDb->where("id=".$id)->setField("pid",$pc['id']);
+		            if($res){
+		                $db->where("id=".$pc['id'])->setInc("nums");
+		                return true;
+		            }else{
+		            	return false;
+		            }
+		        }else{
+		            return false;
+		        }
+		    }
+		}
 	}
 ?>

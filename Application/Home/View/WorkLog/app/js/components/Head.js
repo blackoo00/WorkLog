@@ -5,7 +5,7 @@ var HeadRight = require('./HeadRight');
 module.exports = React.createClass({
 	render: function() {
 		return <header id="header">
-		    <HeadLeft/>
+		    <HeadLeft onToggleForm={this.props.onToggleForm}/>
 		    <div id="title">Robin's JobLogs</div>
 		    <HeadRight/>
 	    </header>;
