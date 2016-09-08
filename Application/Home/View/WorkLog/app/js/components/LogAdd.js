@@ -93,9 +93,6 @@ module.exports = React.createClass({
 		// });
 	},
 	render:function(){
-		var addshow={
-			display: this.props.LogAddIsVisible ? 'block' : 'none',
-		};
 		/*选择难度*/
 		var difficultyList = [];
 		this.state.difficulty.map(function(item,index){
@@ -114,8 +111,8 @@ module.exports = React.createClass({
 		var truebtnshow = {
 			display : this.state.trueBtnIsVisible ? 'inline-block' : 'none',
 		};
-		return (<div><div id="calendar-mask" style={addshow}></div>
-			<div id="add-log" style={addshow}>
+		return (<div className="example">
+			<div id="add-log">
 			<div className="add-log-box">
 				<p className="difficulty-nums">
 					{difficultyList}
