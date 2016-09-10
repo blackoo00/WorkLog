@@ -22,11 +22,14 @@ module.exports = React.createClass({
 	    }
 	  }.bind(this));
 	},
+	handleScreeningLog:function(data){
+		this.props.handleScreeningLog(data);
+	},
 	render:function(){
 		var arr = [
-			<span key="header_right_1" className="nums-all nums header_item">{this.state.all}</span>,
-			<span key="header_right_2" className="nums-finished nums header_item">{this.state.finished}</span>,
-			<span key="header_right_3" className="nums-unfinished nums header_item">{this.state.unfinished}</span>,
+			<span key="header_right_1" onClick={this.handleScreeningLog.bind(this,'')} className="nums-all nums header_item">{this.state.all}</span>,
+			<span key="header_right_2" onClick={this.handleScreeningLog.bind(this,'1')} className="nums-finished nums header_item">{this.state.finished}</span>,
+			<span key="header_right_3" onClick={this.handleScreeningLog.bind(this,'0')} className="nums-unfinished nums header_item">{this.state.unfinished}</span>,
 		]
 		return <div>{arr}</div>;
 	}

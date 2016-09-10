@@ -4,31 +4,42 @@
 	<meta charset="UTF-8">
 	<title>React版工作日志</title>
 	<link rel="stylesheet" href="{work=$Think.const.WORK_LOG}/fonts/style.css">
-	<link rel="stylesheet" href="{work=$Think.const.WORK_LOG}/css/reactindex.css"></head>
+	<link rel="stylesheet" href="{work=$Think.const.WORK_LOG}/css/reactindex.css">
+	<link rel="stylesheet" href="{work=$Think.const.WORK_LOG}/calendar/sign.css">
+	<script type="text/javascript" src="{work=$Think.const.WORK_LOG}/js/jquery-1.11.1.min.js"></script>
+	<script type="text/javascript" src="{work=$Think.const.WORK_LOG}/calendar/calendar.js"></script>
+</head>
 <body id="worklog-index">
+		<div id="calendar"></div>
+		<div id="calendar-mask"></div>
+		<script>
+			var controller="__CONTROLLER__";
+			var d = new Date();
+			var signList=[{"signYear":d.getFullYear(),"signMonth":d.getMonth()+1,"signDay":d.getDate()}];
+			   calUtil.init(signList);
+		</script>
 	<style>
-	.example{
+	.log_add_wrap{
 		position: fixed;
-	    background-color: rgba(0, 0, 0, 0.5);
 	    top: 0;
 	    width: 100%;
 	    height: 100%;
 	    z-index: 2;
 	}
-	.example-enter {
+	.log_add_wrap-enter {
 		top: -100%;
 	    transition: top .5s;
 	}
 
-	.example-enter.example-enter-active {
+	.log_add_wrap-enter.log_add_wrap-enter-active {
 		top: 0;
 	}
-	.example-leave {
+	.log_add_wrap-leave {
 		top: 0;
 	    transition: top .5s;
 	}
 
-	.example-enter.example-leave-active {
+	.log_add_wrap-enter.log_add_wrap-leave-active {
 		top: -100%;
 	}
 	.student {

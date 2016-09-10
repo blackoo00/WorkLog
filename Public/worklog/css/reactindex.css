@@ -102,6 +102,22 @@ a {
       min-height: 86vh;
       padding: 1%;
       outline: none; }
+  #worklog-index #calendar {
+    position: absolute;
+    z-index: 3;
+    top: -628px;
+    width: 100%; }
+    #worklog-index #calendar td {
+      font-family: "shuzi1";
+      font-size: 2.6rem; }
+  #worklog-index #calendar-mask {
+    position: fixed;
+    z-index: 2;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: none; }
   #worklog-index #wrapper {
     max-width: 976px;
     position: relative;
@@ -216,21 +232,6 @@ a {
             border: none;
             outline: none;
             display: inline-block; }
-    #worklog-index #wrapper #calendar {
-      position: absolute;
-      z-index: 3;
-      top: -628px;
-      width: 100%; }
-      #worklog-index #wrapper #calendar td {
-        font-family: "shuzi1";
-        font-size: 2.6rem; }
-    #worklog-index #wrapper #calendar-mask {
-      position: fixed;
-      z-index: 2;
-      top: 0;
-      width: 100%;
-      height: 100%;
-      background-color: rgba(0, 0, 0, 0.5); }
     #worklog-index #wrapper main #search {
       position: relative;
       overflow: hidden;

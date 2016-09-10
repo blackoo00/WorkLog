@@ -111,7 +111,7 @@ module.exports = React.createClass({
 		var truebtnshow = {
 			display : this.state.trueBtnIsVisible ? 'inline-block' : 'none',
 		};
-		return (<div className="example">
+		return (<div className="log_add_wrap">
 			<div id="add-log">
 			<div className="add-log-box">
 				<p className="difficulty-nums">

@@ -7,20 +7,11 @@ var signals= require('signals');
 module.exports = React.createClass({
 	getInitialState:function(){
 		return {
-			loglist : [],
 			searchText: '',
 		};
 	},
 	componentDidMount:function(){
-		$.get(this.props.source,function(data){
-			if(this.isMounted){
-				this.setState({
-					loglist:eval("("+data+")").data,
-				});
-			}
-		}.bind(this));
-		$("#loading").hide();
-		//滑动删除
+		//滑动
 		var startX;
 		var startY;
 		$(document).on("touchstart","#logs li", function(e) {
@@ -42,69 +33,32 @@ module.exports = React.createClass({
 		    }
 		});
 	},
+	/*搜索*/
 	handleSearchTextUpdate: function(searchText) {
 	  this.state.searchText = searchText;
 	  this.setState(this.state);
 	},
 	/*点击完成日志*/
 	handleLogFinish:function(index){
-		var loglist = this.state.loglist;
-		var log = loglist[index];
-		var id = log.id;
-		loglist[index].finished = 1;
-		this.setState({
-			loglist : loglist,
-		})
-		$.ajax({
-			url:'/work_log/index.php?m=Home&c=WorkLog&a=finishLog',
-			data:{id:id},
-			dataType:'json',
-			success:function(data){
-				console.log(data);
-			}
-		});
+		this.props.handleLogFinish(index)
 	},
 	/*列表中直接更新内容*/
 	handleLogTextUpdate: function(index,event){
-		var con = event.target.value;
-		var loglist = this.state.loglist.slice();
-		var id = loglist[index].id;
-		loglist[index].content = con;
-		this.setState({loglist: loglist});
-		$.ajax({
-			url:'/work_log/index.php?m=Home&c=WorkLog&a=editlogs',
-			data:{con:con,id:id},
-			dataType:'json',
-			success:function(data){
-				console.log(data);
-			}
-		});
+		this.props.handleLogTextUpdate(index,event);
 	},
 	/*删除日志*/
 	handleLogDelete:function(index){
-		var loglist = this.state.loglist.slice();
-		var id = loglist[index].id;
-		var _self = this;
-		$.ajax({
-			url:'/work_log/index.php?m=Home&c=WorkLog&a=deletelog',
-			data:{id:id},
-			async:false,
-			success:function(data){
-			    // _self.setState({
-			    // 	loglist:_self.state.loglist.filter(function(data) {
-				   //    	return data.id != id;
-				   //  })
-			    // });
-			    loglist.splice(index, 1);
-			    _self.setState({loglist: loglist});
-			}
-		});
+		this.props.handleLogDelete(index);
 	},
 	render: function() {
 		/*日志列表*/
 		var loglist = [];
-		this.state.loglist.filter(function(data) {
-	      return (data.content.toLowerCase().indexOf(this.state.searchText.toLowerCase()) > -1 && data.delete == 0);
+		this.props.loglist.filter(function(data) {
+			if(this.props.showCondition != ''){
+	      		return (data.content.toLowerCase().indexOf(this.state.searchText.toLowerCase()) > -1 && data.delete == 0 && data.finished == this.props.showCondition);
+			}else{
+	      		return (data.content.toLowerCase().indexOf(this.state.searchText.toLowerCase()) > -1 && data.delete == 0);
+			}
 	    }.bind(this)).map(function (log,index){
 	    	loglist.push(
 	    		<li key={'log_' + index}>
@@ -118,7 +72,7 @@ module.exports = React.createClass({
 					</div>
 					{/*操作*/}
 					<div className="operation">
-						<span className="delete" onClick={this.handleLogDelete.bind(this, index)}>删除</span>
+						<span className="delete" onClick={this.handleLogDelete.bind(this,index)}>删除</span>
 					</div>
 				</li>
 	    	)

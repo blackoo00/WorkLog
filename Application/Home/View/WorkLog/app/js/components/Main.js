@@ -10,13 +10,18 @@ module.exports = React.createClass({
 		if (this.props.loadAddLog) {
 			var LogAdd = require('./LogAdd');
 		  	logadd = <LogAdd onToggleForm={this.props.onToggleForm}/>;
-		}else{
-			logadd = '';
 		}
 		return(
 			<main>
-				<LogList source='/work_log/index.php?m=Home&c=WorkLog&a=getLogListByScroll'/>
-				<ReactCSSTransitionGroup transitionName="example" transitionEnterTimeout={1000} transitionLeaveTimeout={1000}>
+				<LogList 
+				source='/work_log/index.php?m=Home&c=WorkLog&a=getLogListByScroll' 
+				loglist={this.props.loglist} 
+				handleLogDelete = {this.props.handleLogDelete} 
+				handleLogTextUpdate = {this.props.handleLogTextUpdate} 
+				handleLogFinish = {this.props.handleLogFinish} 
+				showCondition = {this.props.showCondition} 
+				/>
+				<ReactCSSTransitionGroup transitionName="log_add_wrap" transitionEnterTimeout={1000} transitionLeaveTimeout={1000}>
 					{logadd}
 				</ReactCSSTransitionGroup>
 			</main>

@@ -7,7 +7,7 @@ module.exports = React.createClass({
 		return <header id="header">
 		    <HeadLeft onToggleForm={this.props.onToggleForm}/>
 		    <div id="title">Robin's JobLogs</div>
-		    <HeadRight/>
+		    <HeadRight handleScreeningLog={this.props.handleScreeningLog}/>
 	    </header>;
 	}
 });
