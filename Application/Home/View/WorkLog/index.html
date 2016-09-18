@@ -7,17 +7,8 @@
 	<link rel="stylesheet" href="{work=$Think.const.WORK_LOG}/css/reactindex.css">
 	<link rel="stylesheet" href="{work=$Think.const.WORK_LOG}/calendar/sign.css">
 	<script type="text/javascript" src="{work=$Think.const.WORK_LOG}/js/jquery-1.11.1.min.js"></script>
-	<script type="text/javascript" src="{work=$Think.const.WORK_LOG}/calendar/calendar.js"></script>
 </head>
 <body id="worklog-index">
-		<div id="calendar"></div>
-		<div id="calendar-mask"></div>
-		<script>
-			var controller="__CONTROLLER__";
-			var d = new Date();
-			var signList=[{"signYear":d.getFullYear(),"signMonth":d.getMonth()+1,"signDay":d.getDate()}];
-			   calUtil.init(signList);
-		</script>
 	<style>
 	.log_add_wrap{
 		position: fixed;
@@ -42,26 +33,6 @@
 	.log_add_wrap-enter.log_add_wrap-leave-active {
 		top: -100%;
 	}
-	.student {
-	    float: left;
-	    margin: 20px;
-	  }
-	  .student-enter {
-	    opacity: .2;
-	    transition: opacity 1s;
-	  }
-	  .student-enter-active {
-	    opacity: 1;
-	  }
-	  .student-leave {
-	    transform: scale(1);
-	    opacity: 1;
-	    transition: all .5s ease-in;
-	  }
-	  .student-leave-active {
-	    transform: scale(5);
-	    opacity: 0;
-	  }
 	</style>
 	<div id="wrapper"></div>
 </body>

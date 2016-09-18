@@ -77,6 +77,7 @@ var WorkLog = React.createClass({
 			showcondition:data,
 		});
 	},
+	//点击显示添加日志页面
 	onToggleForm:function(){
 		if(this.state.loadAddLog){
 			if($('.log_add_wrap').is(':visible')){
@@ -97,7 +98,26 @@ var WorkLog = React.createClass({
 			});
 		}
 	},
+	//通过日历筛选日志
+	handleCalendarChooseLogs:function(time){
+		var loglist_source = '/work_log/index.php?m=Home&c=WorkLog&a=handleCalendarChooseLogs';
+		var _self = this;
+		$.ajax({
+			url:loglist_source,
+			data:{time:time},
+			success:function(data){
+			    if(_self.isMounted){
+    				_self.setState({
+    					loglist:eval("("+data+")").data,
+    				});
+    			}
+			}
+		});
+	},
 	/*筛选是否完成*/
+	handleChooseLogsType:function(type){
+		
+	},
 	render:function(){
 		return(
 			<div>
@@ -105,6 +125,7 @@ var WorkLog = React.createClass({
 				<Head 
 					onToggleForm={this.onToggleForm} 
 					handleScreeningLog={this.handleScreeningLog} 
+					handleCalendarChooseLogs={this.handleCalendarChooseLogs}  
 				/>
 				<Main 
 					loadAddLog={this.state.loadAddLog} 
@@ -120,34 +141,4 @@ var WorkLog = React.createClass({
 	}
 })
 
-var Calendar = require('react-date-range/lib/Calendar');
-
-var MyComponent = React.createClass({
-	handleSelect:function(date){
-	    console.log(date); // Momentjs object
-	},
-
-	render:function(){
-	    return (
-	        <div>
-	            <Calendar
-	                linkedCalendars={ true } 
-	                onChange={this.handleSelect} 
-                    theme={{
-                      Calendar : { width: 976 },
-                      Day : { fontSize: 40 },
-                      Weekday : { fontSize: 40 },
-                      MonthAndYear : { fontSize: 40, height:50 },
-                      MonthButton : { width: 40, height:40 },
-                      MonthArrow : { border: '14px solid transparent',},
-                      MonthArrowPrev : { borderRightWidth: 14,marginLeft: -4},
-                      MonthArrowNext : { borderLeftWidth: 14,marginLeft: 16},
-                      PredefinedRanges : { marginLeft: 10, marginTop: 10 }
-                    }}
-	            />
-	        </div>
-	    )
-	}
-})
-
-module.exports = MyComponent;
+module.exports = WorkLog;

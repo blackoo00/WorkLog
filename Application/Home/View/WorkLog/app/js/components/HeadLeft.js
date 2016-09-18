@@ -5,7 +5,7 @@ var HeadLeftButton = require('./HeadLeftButton');
 module.exports = React.createClass({
 	render: function(){
 		return <div>
-			<HeadLeftButton onToggleForm={this.props.onToggleForm}/>
+			<HeadLeftButton onToggleForm={this.props.onToggleForm} handleCalendarStartMove={this.props.handleCalendarStartMove}/>
 		</div>
 	}
 })

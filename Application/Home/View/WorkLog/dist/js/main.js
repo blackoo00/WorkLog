@@ -2,18 +2,71 @@
 var React = require('react');
 var HeadLeft = require('./HeadLeft');
 var HeadRight = require('./HeadRight');
+var Calendar = require('react-date-range/lib/Calendar');
+var $ = require('jquery');
 /*顶部*/
 module.exports = React.createClass({displayName: "exports",
+	getInitialState:function(){
+		return {
+			'calendarIsVisible':false,
+			'calendarStartMove':false,
+			'calendarEndMove':false,
+		};
+	},
+	//显示日历
+	handleCalendarStartMove:function(){
+		$('#loading').show();
+		this.setState({'calendarIsVisible':true,});
+		setTimeout(function(){
+			this.setState({'calendarStartMove':true,'calendarEndMove':false});
+			$('#loading').hide();
+		}.bind(this),500);
+	},
+	//关闭日历
+	handleSelect:function(data){
+		var timestamp = Date.parse(data._d)/1000;
+		this.setState({'calendarEndMove':true,'calendarStartMove':false,});
+		this.props.handleCalendarChooseLogs(timestamp);
+	},
 	render: function() {
-		return React.createElement("header", {id: "header"}, 
-		    React.createElement(HeadLeft, {onToggleForm: this.props.onToggleForm}), 
+		var calendar;
+		if(this.state.calendarIsVisible){
+			var calendarAnimationClass = 'calendar_wrap ';
+			if(this.state.calendarStartMove){
+				calendarAnimationClass += 'from-top-to-bottom';
+			}
+			if(this.state.calendarEndMove){
+				calendarAnimationClass += 'from-bottom-to-top';
+			}
+			calendar =
+			React.createElement("div", {className: calendarAnimationClass}, 
+				React.createElement(Calendar, {
+	                linkedCalendars:  true, 
+	                onChange: this.handleSelect, 
+	                theme: {
+		                Calendar : { width: 976},
+		                Day : { fontSize: 40 },
+		                Weekday : { fontSize: 40 },
+		                MonthAndYear : { fontSize: 40, height:50 },
+		                MonthButton : { width: 40, height:40 },
+		                MonthArrow : { border: '14px solid transparent',},
+		                MonthArrowPrev : { borderRightWidth: 14,marginLeft: -4},
+		                MonthArrowNext : { borderLeftWidth: 14,marginLeft: 16},
+		                PredefinedRanges : { marginLeft: 10, marginTop: 10 }
+	                }}
+	            )
+			);
+		}
+		return (React.createElement("header", {id: "header"}, 
+			calendar, 
+		    React.createElement(HeadLeft, {onToggleForm: this.props.onToggleForm, handleCalendarStartMove: this.handleCalendarStartMove}), 
 		    React.createElement("div", {id: "title"}, "Robin's JobLogs"), 
 		    React.createElement(HeadRight, {handleScreeningLog: this.props.handleScreeningLog})
-	    );
+	    ))
 	}
 });
 
-},{"./HeadLeft":2,"./HeadRight":4,"react":196}],2:[function(require,module,exports){
+},{"./HeadLeft":2,"./HeadRight":4,"jquery":39,"react":196,"react-date-range/lib/Calendar":44}],2:[function(require,module,exports){
 var React = require('react');
 var HeadLeftButton = require('./HeadLeftButton');
 
@@ -21,7 +74,7 @@ var HeadLeftButton = require('./HeadLeftButton');
 module.exports = React.createClass({displayName: "exports",
 	render: function(){
 		return React.createElement("div", null, 
-			React.createElement(HeadLeftButton, {onToggleForm: this.props.onToggleForm})
+			React.createElement(HeadLeftButton, {onToggleForm: this.props.onToggleForm, handleCalendarStartMove: this.props.handleCalendarStartMove})
 		)
 	}
 })
@@ -36,7 +89,7 @@ module.exports = React.createClass({displayName: "exports",
 	    var imgs =[dir+'calendar_icon.png',dir+'write_icon.png',dir+'search_icon.png',dir+'pick_icon.png'];
 		return (
 			React.createElement("div", null, 
-				React.createElement("span", {key: "img_1", className: "calendar-icon header_item"}, React.createElement("img", {src: imgs[0]})), 
+				React.createElement("span", {key: "img_1", className: "calendar-icon header_item", onClick: this.props.handleCalendarStartMove}, React.createElement("img", {src: imgs[0]})), 
 				React.createElement("span", {key: "img_2", className: "write-icon header_item", onClick: this.props.onToggleForm}, React.createElement("img", {src: imgs[1]})), 
 				React.createElement("span", {key: "img_3", className: "search-icon header_item"}, React.createElement("img", {src: imgs[2]})), 
 				React.createElement("span", {key: "img_4", className: "pick-icon header_item"}, React.createElement("img", {src: imgs[3]}))
@@ -455,6 +508,7 @@ var WorkLog = React.createClass({displayName: "WorkLog",
 			showcondition:data,
 		});
 	},
+	//点击显示添加日志页面
 	onToggleForm:function(){
 		if(this.state.loadAddLog){
 			if($('.log_add_wrap').is(':visible')){
@@ -475,14 +529,34 @@ var WorkLog = React.createClass({displayName: "WorkLog",
 			});
 		}
 	},
+	//通过日历筛选日志
+	handleCalendarChooseLogs:function(time){
+		var loglist_source = '/work_log/index.php?m=Home&c=WorkLog&a=handleCalendarChooseLogs';
+		var _self = this;
+		$.ajax({
+			url:loglist_source,
+			data:{time:time},
+			success:function(data){
+			    if(_self.isMounted){
+    				_self.setState({
+    					loglist:eval("("+data+")").data,
+    				});
+    			}
+			}
+		});
+	},
 	/*筛选是否完成*/
+	handleChooseLogsType:function(type){
+		
+	},
 	render:function(){
 		return(
 			React.createElement("div", null, 
 				React.createElement(Loading, null), 
 				React.createElement(Head, {
 					onToggleForm: this.onToggleForm, 
-					handleScreeningLog: this.handleScreeningLog}
+					handleScreeningLog: this.handleScreeningLog, 
+					handleCalendarChooseLogs: this.handleCalendarChooseLogs}
 				), 
 				React.createElement(Main, {
 					loadAddLog: this.state.loadAddLog, 
@@ -498,39 +572,9 @@ var WorkLog = React.createClass({displayName: "WorkLog",
 	}
 })
 
-var Calendar = require('react-date-range/lib/Calendar');
+module.exports = WorkLog;
 
-var MyComponent = React.createClass({displayName: "MyComponent",
-	handleSelect:function(date){
-	    console.log(date); // Momentjs object
-	},
-
-	render:function(){
-	    return (
-	        React.createElement("div", null, 
-	            React.createElement(Calendar, {
-	                linkedCalendars:  true, 
-	                onChange: this.handleSelect, 
-                    theme: {
-                      Calendar : { width: 976 },
-                      Day : { fontSize: 40 },
-                      Weekday : { fontSize: 40 },
-                      MonthAndYear : { fontSize: 40, height:50 },
-                      MonthButton : { width: 40, height:40 },
-                      MonthArrow : { border: '14px solid transparent',},
-                      MonthArrowPrev : { borderRightWidth: 14,marginLeft: -4},
-                      MonthArrowNext : { borderLeftWidth: 14,marginLeft: 16},
-                      PredefinedRanges : { marginLeft: 10, marginTop: 10 }
-                    }}
-	            )
-	        )
-	    )
-	}
-})
-
-module.exports = MyComponent;
-
-},{"./Head":1,"./Loading":5,"./Main":8,"jquery":39,"react":196,"react-date-range/lib/Calendar":44}],11:[function(require,module,exports){
+},{"./Head":1,"./Loading":5,"./Main":8,"jquery":39,"react":196}],11:[function(require,module,exports){
 var React = require('react');
 var ReactDOM = require('react-dom');
 var WorkLogApp = require('./components/WorkLogApp.js');
@@ -16936,7 +16980,7 @@ var defaultTheme = {
     display: 'inline-block',
     boxSizing: 'border-box',
     letterSpacing: 0,
-    color: '#000000'
+    color: '#000000',
   },
 
   Day: {

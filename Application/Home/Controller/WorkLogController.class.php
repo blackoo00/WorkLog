@@ -161,5 +161,15 @@
 		        }
 		    }
 		}
+		//通过日历筛选日志
+		public function handleCalendarChooseLogs(){
+			$time = $_GET['time'];
+			$db = D('Logs');
+			$condition = array(
+				'create_time' => array(array('egt',$time),array('elt',$time+86400),'AND'),
+			);
+			$logs = $this->getLogList($condition);
+			$this->ajaxReturn($logs,'',1);
+		}
 	}
 ?>

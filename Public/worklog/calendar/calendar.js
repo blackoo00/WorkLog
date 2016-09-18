@@ -18,7 +18,6 @@ var calUtil = {
     //绑定日历
     var str = calUtil.drawCal(calUtil.showYear,calUtil.showMonth,signList);
     $("#calendar").html(str);
-    console.log('aa');
     //绑定日历表头
     var calendarName=calUtil.showYear+"年"+calUtil.showMonth+"月";
     $(".calendar_month_span").html(calendarName);  
